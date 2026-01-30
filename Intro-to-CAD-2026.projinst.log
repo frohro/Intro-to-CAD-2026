@@ -1,0 +1,22 @@
+Plugin v0.0.1 running on KiCad 9.0.7-9.0.7~ubuntu24.04.1 and Python 3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0] on linux.
+Config file /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.projinst.json not found. Creating new one.
+Valid Board found for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
+5 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/pcm1808.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/pcm1808.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/VDDA.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/VDDA.kicad_sch
+Root item: <wx._dataview.TreeListItem object at 0x7e5f74edfad0>
+No Valid Child board for 06516c79-bfe4-40ed-9cd2-382c74eaa2ba
+No Valid Child board for 58bffccf-78a9-420a-b783-106f2192f85c
+No Valid Child board for 67b06689-3919-4df5-b91a-49763b999930
+No Valid Child board for 92dd9c1d-6abe-4fcc-9674-073b26b9f8e4
+No Valid Child board for a84c0954-e6fc-41e6-ac67-288f95c58801
+No Valid Child board for 
+Instance is a dead branch: 
