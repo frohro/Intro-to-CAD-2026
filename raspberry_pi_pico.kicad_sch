@@ -8792,7 +8792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "092881a3-368d-4688-acb7-f8f3d973c4f9")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR0109"
 			(at 205.74 85.09 0)
 			(effects
 				(font
@@ -8849,7 +8849,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR026")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -9197,7 +9197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14c232c3-9f4c-43ce-b051-6e8900def42a")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR0104"
 			(at 166.37 59.69 0)
 			(effects
 				(font
@@ -9254,7 +9254,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR029")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -10223,7 +10223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35de28f3-5091-489b-b91f-872d1c79bc89")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0101"
 			(at 95.25 72.39 0)
 			(effects
 				(font
@@ -10280,7 +10280,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR032")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -10541,7 +10541,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d1d4a41-d206-4b7a-9acf-46a130af5787")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG0101"
 			(at 154.305 55.88 0)
 			(effects
 				(font
@@ -10598,7 +10598,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#FLG01")
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -10615,7 +10615,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4416b1ab-03c2-41c4-9156-ef63453c3a6b")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR0102"
 			(at 77.47 127 0)
 			(effects
 				(font
@@ -10671,7 +10671,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR054")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -10861,7 +10861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46af4e20-0d06-45d4-83f9-136079087460")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR0107"
 			(at 234.95 81.28 0)
 			(effects
 				(font
@@ -10917,7 +10917,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR025")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -11511,7 +11511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5466b143-4fdf-4b82-a928-2d724c9ca822")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR0103"
 			(at 113.03 127 0)
 			(effects
 				(font
@@ -11567,7 +11567,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR031")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -12711,7 +12711,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7548ef03-1c51-44cf-baa4-182008f895dc")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR0105"
 			(at 190.5 92.71 0)
 			(effects
 				(font
@@ -12768,7 +12768,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR027")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -14895,7 +14895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c610f01f-009b-49e2-97e5-db0e99611cee")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR0108"
 			(at 234.95 91.44 0)
 			(effects
 				(font
@@ -14951,7 +14951,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR067")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -14968,7 +14968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7989dae-b807-4620-bb23-26ac865b7c57")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR0106"
 			(at 168.91 127 0)
 			(effects
 				(font
@@ -15024,7 +15024,7 @@
 			)
 			(project "PCM1808_Sound_Card"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
-					(reference "#PWR030")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)

@@ -419,7 +419,7 @@
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -430,8 +430,8 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -458,7 +458,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -469,10 +469,36 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.127,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.127,
+        "name": "1V1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 249, 87)",
+        "track_width": 0.3
+      },
+      {
+        "clearance": 0.127,
+        "name": "5V0",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 36, 61)",
+        "track_width": 0.6
+      },
+      {
+        "clearance": 0.127,
+        "diff_pair_gap": 0.1,
+        "diff_pair_width": 0.17,
+        "name": "USB",
+        "pcb_color": "rgb(126, 255, 137)",
+        "priority": 2,
+        "schematic_color": "rgb(140, 255, 77)",
+        "track_width": 0.17
       }
     ],
     "meta": {
@@ -505,7 +531,20 @@
         "5V"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "5V0",
+        "pattern": "+5*"
+      },
+      {
+        "netclass": "1V1",
+        "pattern": "+1V1"
+      },
+      {
+        "netclass": "1V1",
+        "pattern": "+3*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -1077,7 +1116,7 @@
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,

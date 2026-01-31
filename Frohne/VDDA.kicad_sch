@@ -4560,6 +4560,26 @@
 		)
 		(uuid "17d565a5-b73a-47e2-9481-036c49a0ccc2")
 	)
+	(text "We are running VDDA\nat 4.5V (minimum allowed)."
+		(exclude_from_sim no)
+		(at 215.9 86.614 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "37a28e0f-d2c4-4670-b3bb-5d748cd5b428")
+	)
+	(text "This powers the Pico\nwhen we are not \nusing USB."
+		(exclude_from_sim no)
+		(at 167.894 58.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "83380725-b540-4c25-8e17-9db92517b77b")
+	)
 	(text "+12V Clean \nAnalog Supply\noption which\nalso provides\na way to power\nthe Pico if it\nhas no USB \nconnection."
 		(exclude_from_sim no)
 		(at 76.2 26.162 0)
@@ -4635,6 +4655,12 @@
 		(uuid "42e4d82f-da8e-4363-9e40-0ba5dbd604fb")
 	)
 	(junction
+		(at 152.4 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fbab754-453f-4160-a9af-d7d417b84739")
+	)
+	(junction
 		(at 130.81 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4681,12 +4707,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d610c2d3-b525-486b-971a-bcf5c3d01fb8")
-	)
-	(junction
-		(at 152.4 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb83d24d-f767-48d2-bf44-1909b7c9d884")
 	)
 	(junction
 		(at 203.2 92.71)
@@ -4745,6 +4765,16 @@
 			(type default)
 		)
 		(uuid "0fefc5a6-d80f-4c55-89db-74f830ae3a0f")
+	)
+	(wire
+		(pts
+			(xy 163.83 53.34) (xy 171.45 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10505778-b1b0-4c77-b904-4b8e42c5ef55")
 	)
 	(wire
 		(pts
@@ -4908,6 +4938,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 53.34) (xy 156.21 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76e3678e-b2dd-490b-b7ce-2f89872f84e8")
+	)
+	(wire
+		(pts
 			(xy 187.96 92.71) (xy 193.04 92.71)
 		)
 		(stroke
@@ -5018,16 +5058,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 53.34) (xy 171.45 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc906da0-9fc9-4e46-adb8-f65f9dc3db3f")
-	)
-	(wire
-		(pts
 			(xy 162.56 92.71) (xy 167.64 92.71)
 		)
 		(stroke
@@ -5075,16 +5105,6 @@
 			(type default)
 		)
 		(uuid "e4953dac-80bd-4b0f-bcc8-2197f685b2ec")
-	)
-	(wire
-		(pts
-			(xy 152.4 53.34) (xy 158.75 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb65e342-db05-4ac3-a007-35b24ad3ecb6")
 	)
 	(wire
 		(pts
@@ -5253,7 +5273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 46.99 87.63 0)
 			(effects
 				(font
@@ -7927,7 +7947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 218.44 97.79 0)
 			(effects
 				(font
@@ -9882,7 +9902,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS14")
-		(at 162.56 53.34 90)
+		(at 160.02 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9891,7 +9911,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4ed1d1c-e154-4c1f-8842-910e0db5d2d9")
 		(property "Reference" "D3"
-			(at 162.8775 46.99 90)
+			(at 160.3375 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9899,7 +9919,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 162.8775 49.53 90)
+			(at 160.3375 49.53 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9907,7 +9927,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_SMA"
-			(at 162.56 55.118 90)
+			(at 160.02 55.118 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9916,7 +9936,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9925,7 +9945,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 1A 550mV@1A SMA(DO-214AC) Schottky Diodes ROHS"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9934,7 +9954,7 @@
 			)
 		)
 		(property "LCSC" "C2480"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9943,7 +9963,7 @@
 			)
 		)
 		(property "Stock" "1115112"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9952,7 +9972,7 @@
 			)
 		)
 		(property "Price" "0.018USD"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9961,7 +9981,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9970,7 +9990,7 @@
 			)
 		)
 		(property "Minimum Qty" "5"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9979,7 +9999,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9988,7 +10008,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9997,7 +10017,7 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10006,7 +10026,7 @@
 			)
 		)
 		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10015,7 +10035,7 @@
 			)
 		)
 		(property "Part" "SS14"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10024,7 +10044,7 @@
 			)
 		)
 		(property "Rectified Current" "1A"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10033,7 +10053,7 @@
 			)
 		)
 		(property "Forward Voltage (Vf@If)" "550mV@1A"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10042,7 +10062,7 @@
 			)
 		)
 		(property "Reverse Voltage (Vr)" "40V"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10051,7 +10071,7 @@
 			)
 		)
 		(property "Diode Configuration" "Independent Type"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10060,7 +10080,7 @@
 			)
 		)
 		(property "Reverse Leakage Current (Ir)" "300uA@40V"
-			(at 162.56 53.34 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10085,7 +10105,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Inductors:Ferrite,0805,(2)")
-		(at 90.17 78.74 180)
+		(at 90.17 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10094,7 +10114,7 @@
 		(fields_autoplaced yes)
 		(uuid "b51d7aa0-117f-457b-b752-aa62f1373cad")
 		(property "Reference" "FB2"
-			(at 93.98 76.2507 0)
+			(at 93.98 83.8707 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10103,7 +10123,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 93.98 78.7908 0)
+			(at 93.98 86.4108 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -10112,7 +10132,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:FB_0805"
-			(at 91.948 78.74 90)
+			(at 91.948 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10121,7 +10141,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301640_Sunlord-GZ2012D601TF_C1017.pdf"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10130,7 +10150,7 @@
 			)
 		)
 		(property "Description" "300mΩ ±25% 600Ω@100MHz 0805 Ferrite Beads ROHS"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10139,7 +10159,7 @@
 			)
 		)
 		(property "LCSC" "C1017"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10148,7 +10168,7 @@
 			)
 		)
 		(property "Stock" "519189"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10157,7 +10177,7 @@
 			)
 		)
 		(property "Price" "0.016USD"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10166,7 +10186,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10175,7 +10195,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10184,7 +10204,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10193,7 +10213,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10202,7 +10222,7 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10211,7 +10231,7 @@
 			)
 		)
 		(property "Manufacturer" "Sunlord"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10220,7 +10240,7 @@
 			)
 		)
 		(property "Part" "GZ2012D601TF"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10229,7 +10249,7 @@
 			)
 		)
 		(property "DC Resistance" "300mΩ"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10238,7 +10258,7 @@
 			)
 		)
 		(property "Impedance @ Frequency" "600Ω@100MHz"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10247,7 +10267,7 @@
 			)
 		)
 		(property "Circuits" "1"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10256,7 +10276,7 @@
 			)
 		)
 		(property "Current Rating" "500mA"
-			(at 93.98 81.3308 0)
+			(at 93.98 88.9508 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -10265,7 +10285,7 @@
 			)
 		)
 		(property "Tolerance" "±25%"
-			(at 90.17 78.74 0)
+			(at 90.17 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11026,7 +11046,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS14")
-		(at 90.17 86.36 0)
+		(at 90.17 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11035,7 +11055,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9e953b2-210e-46ba-b3a3-b872004c3e2a")
 		(property "Reference" "D1"
-			(at 92.71 85.4074 0)
+			(at 92.71 77.7874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11044,7 +11064,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 92.71 87.9475 0)
+			(at 92.71 80.3275 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11053,7 +11073,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_SMA"
-			(at 88.392 86.36 90)
+			(at 88.392 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11062,7 +11082,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11071,7 +11091,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 1A 550mV@1A SMA(DO-214AC) Schottky Diodes ROHS"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11080,7 +11100,7 @@
 			)
 		)
 		(property "LCSC" "C2480"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11089,7 +11109,7 @@
 			)
 		)
 		(property "Stock" "1115112"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11098,7 +11118,7 @@
 			)
 		)
 		(property "Price" "0.018USD"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11107,7 +11127,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11116,7 +11136,7 @@
 			)
 		)
 		(property "Minimum Qty" "5"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11125,7 +11145,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11134,7 +11154,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11143,7 +11163,7 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11152,7 +11172,7 @@
 			)
 		)
 		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11161,7 +11181,7 @@
 			)
 		)
 		(property "Part" "SS14"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11170,7 +11190,7 @@
 			)
 		)
 		(property "Rectified Current" "1A"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11179,7 +11199,7 @@
 			)
 		)
 		(property "Forward Voltage (Vf@If)" "550mV@1A"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11188,7 +11208,7 @@
 			)
 		)
 		(property "Reverse Voltage (Vr)" "40V"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11197,7 +11217,7 @@
 			)
 		)
 		(property "Diode Configuration" "Independent Type"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11206,7 +11226,7 @@
 			)
 		)
 		(property "Reverse Leakage Current (Ir)" "300uA@40V"
-			(at 90.17 86.36 0)
+			(at 90.17 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
