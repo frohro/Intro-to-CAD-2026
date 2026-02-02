@@ -5835,7 +5835,7 @@
 				(justify left)
 			)
 		)
-		(pin "CLK_P" output
+		(pin "CLK_0" output
 			(at 82.55 158.75 0)
 			(uuid "8aa7f652-b70b-41d0-a08a-412040940aae")
 			(effects
@@ -5845,7 +5845,7 @@
 				(justify right)
 			)
 		)
-		(pin "CLK_N" output
+		(pin "CLK_1" output
 			(at 82.55 160.655 0)
 			(uuid "b92c7f24-78d3-4089-8b1a-80bb655d61f9")
 			(effects
