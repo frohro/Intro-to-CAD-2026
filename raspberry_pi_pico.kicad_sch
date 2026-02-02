@@ -10685,6 +10685,39 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 185.42 77.47 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05fd36ec-edc9-419f-a376-13ea9a41d45e")
+		(property "Netclass" "1V1"
+			(at 182.88 76.7715 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -29.21 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 185.42 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10776,6 +10809,39 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 171.45 77.47 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5f3ebd3-3ec0-4760-af3f-a006a8545b9e")
+		(property "Netclass" "1V1"
+			(at 168.91 76.7715 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -43.18 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
 			)
 		)
 	)

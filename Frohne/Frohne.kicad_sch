@@ -5609,9 +5609,9 @@
 				(justify right)
 			)
 		)
-		(pin "LO_CLK" input
+		(pin "SKCI" input
 			(at 62.23 176.53 180)
-			(uuid "ea3a7723-1ce3-4178-9aa4-d8fd2ffbe52e")
+			(uuid "433b301e-9f28-4e3e-ad49-d2158e7dfed6")
 			(effects
 				(font
 					(size 1.27 1.27)

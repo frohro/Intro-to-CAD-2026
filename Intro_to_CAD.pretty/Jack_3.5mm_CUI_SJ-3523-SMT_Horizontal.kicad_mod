@@ -1,7 +1,7 @@
 (footprint "Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "3.5 mm, Stereo, Right Angle, Surface Mount (SMT), Audio Jack Connector (https://www.cui.com/product/resource/sj-352x-smt-series.pdf)")
 	(tags "3.5mm audio cui horizontal jack stereo")
@@ -23,19 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "7d5e031b-20b7-4908-8a5f-e78af498cbd9")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -339,27 +326,28 @@
 		(at 0 3.5)
 		(size 1.7 1.7)
 		(drill 1.7)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "15d26a6f-5e66-4189-897d-724a26ca9d24")
 	)
 	(pad "R" smd rect
-		(at 3.7 -0.5)
-		(size 2.8 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(at 3.9 -0.5)
+		(size 3.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b6170539-80ec-41b0-aeb2-b2754045d67f")
 	)
 	(pad "S" smd rect
-		(at -3.7 -2.5)
-		(size 2.8 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(at -3.9 -2.5)
+		(size 3.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "daf6db40-1ba3-4d16-ad84-3a5c270fe3dc")
 	)
 	(pad "T" smd rect
-		(at -3.7 4.5)
-		(size 2.8 2.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(at -3.9 4.5)
+		(size 3.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "d36e3749-cdea-4206-9623-05f075f912eb")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/pj-326-1.snapshot.7/SJ-3523.step"
 		(offset
 			(xyz 0 6 0)

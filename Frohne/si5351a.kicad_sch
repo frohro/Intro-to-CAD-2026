@@ -1613,6 +1613,72 @@
 		)
 		(uuid "f4afa2ff-f842-45c9-839c-889db1013e27")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 137.16 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40023fff-a32b-4122-883e-1f24c2b44f81")
+		(property "Netclass" "1V1"
+			(at 134.62 94.5515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -88.9 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 142.24 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd64d335-4bf3-48d4-a559-132f3b55954c")
+		(property "Netclass" "1V1"
+			(at 139.7 94.5515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -83.82 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 181.61 118.11 0)

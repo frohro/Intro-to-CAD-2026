@@ -5067,6 +5067,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 100.33) (xy 102.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b8c23ee-0f90-4752-a27c-a0d724c63adf")
+	)
+	(wire
+		(pts
 			(xy 102.87 73.66) (xy 102.87 80.01)
 		)
 		(stroke
@@ -5197,7 +5207,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 88.9) (xy 102.87 95.25)
+			(xy 102.87 88.9) (xy 102.87 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5340,6 +5350,171 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 187.96 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c1dc534-fe28-4175-a0b5-618269c12585")
+		(property "Netclass" "5V"
+			(at 188.6585 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at 73.66 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 95.25 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17965549-e661-44e9-8e96-fdcd73b5ffaf")
+		(property "Netclass" "5V"
+			(at 95.9485 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -19.05 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 181.61 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34327b72-0d12-41ab-ad36-2c3a6331ecf5")
+		(property "Netclass" "5V"
+			(at 182.3085 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 76.2 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "761bca37-c5d5-46a9-b76a-18c018c147be")
+		(property "Netclass" "5V"
+			(at 76.8985 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -38.1 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 102.87 102.87 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "860ec501-9772-44b5-bb6b-3cfac8384e53")
+		(property "Netclass" "5V"
+			(at 100.33 102.1715 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -11.43 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 102.87 76.2 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5366,6 +5541,39 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 102.87 54.61 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa9380e2-492c-4078-ad5a-8d43b2706918")
+		(property "Netclass" "5V"
+			(at 100.33 53.9115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -11.43 -49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -5430,6 +5638,39 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 160.02 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de7f64ee-38ab-452e-b531-be1df434d89d")
+		(property "Netclass" "5V"
+			(at 160.7185 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -45.72 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -11313,7 +11554,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS14")
-		(at 102.87 99.06 0)
+		(at 102.87 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11322,7 +11563,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9e953b2-210e-46ba-b3a3-b872004c3e2a")
 		(property "Reference" "D1"
-			(at 105.41 98.1074 0)
+			(at 105.41 95.5674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11331,7 +11572,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 105.41 100.6475 0)
+			(at 105.41 98.1075 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -11340,7 +11581,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_SMA"
-			(at 101.092 99.06 90)
+			(at 101.092 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11349,7 +11590,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11358,7 +11599,7 @@
 			)
 		)
 		(property "Description" "40V Independent Type 1A 550mV@1A SMA(DO-214AC) Schottky Diodes ROHS"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11367,7 +11608,7 @@
 			)
 		)
 		(property "LCSC" "C2480"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,7 +11617,7 @@
 			)
 		)
 		(property "Stock" "1115112"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11385,7 +11626,7 @@
 			)
 		)
 		(property "Price" "0.018USD"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11394,7 +11635,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11403,7 +11644,7 @@
 			)
 		)
 		(property "Minimum Qty" "5"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11412,7 +11653,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11421,7 +11662,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11430,7 +11671,7 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11439,7 +11680,7 @@
 			)
 		)
 		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11448,7 +11689,7 @@
 			)
 		)
 		(property "Part" "SS14"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11457,7 +11698,7 @@
 			)
 		)
 		(property "Rectified Current" "1A"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11466,7 +11707,7 @@
 			)
 		)
 		(property "Forward Voltage (Vf@If)" "550mV@1A"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11475,7 +11716,7 @@
 			)
 		)
 		(property "Reverse Voltage (Vr)" "40V"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11484,7 +11725,7 @@
 			)
 		)
 		(property "Diode Configuration" "Independent Type"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11493,7 +11734,7 @@
 			)
 		)
 		(property "Reverse Leakage Current (Ir)" "300uA@40V"
-			(at 102.87 99.06 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
