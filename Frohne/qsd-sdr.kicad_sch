@@ -7582,7 +7582,7 @@
 			(justify left bottom)
 		)
 		(uuid "6afc52bb-f72d-4a2a-95ab-00e75c3eecb2")
-		(property "Netclass" "5V"
+		(property "Netclass" "5V0"
 			(at 131.5085 69.85 0)
 			(effects
 				(font
