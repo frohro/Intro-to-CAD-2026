@@ -7352,9 +7352,9 @@
 		)
 		(uuid "4ec71828-a109-4502-a464-2be2fb739d61")
 	)
-	(text "If you are using a real\nPico, his jumper bridges\na Schottky diode\nfrom USB in to Vsys\n(4.7v with it open,\n5.0v with it soldered)"
+	(text "If you are using a real\nPico, his jumper bridges\na Schottky diode\nfrom USB in to Vsys\n(4.7v with it open,\n5.0v from USB port\nwith it soldered)"
 		(exclude_from_sim no)
-		(at 151.384 48.006 0)
+		(at 150.622 45.212 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10792,7 +10792,7 @@
 			(justify left bottom)
 		)
 		(uuid "6c424b8d-26b2-4280-8ea8-ecbd1e938c6d")
-		(property "Netclass" "5V"
+		(property "Netclass" "5V0"
 			(at 201.3585 64.77 0)
 			(effects
 				(font
@@ -10842,6 +10842,38 @@
 					(italic yes)
 				)
 				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 158.75 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eee876ee-17eb-4a65-9ccc-17a965d5cc9c")
+		(property "Netclass" "5V0"
+			(at 159.4485 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -91.44 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)

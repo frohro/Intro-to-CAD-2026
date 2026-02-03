@@ -51,8 +51,27 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|116455000|75555000|a9a5e8ae-e362-46e9-9135-0379b63a6421|ecdc715a-bfe1-4a8c-9cb8-1ae98a45ef19",
+          ""
+        ],
+        [
+          "courtyards_overlap|118545000|77925000|a9a5e8ae-e362-46e9-9135-0379b63a6421|fd47fe96-5e4e-421a-9d22-3d0e971cb01f",
+          ""
+        ],
+        [
+          "courtyards_overlap|157545000|30995000|81824e7d-8560-4101-9b81-30d6da7562e4|c3558d38-6c3a-4796-963d-fae9ab0c80db",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -133,7 +152,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -180,7 +199,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.127,
+        0.6
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +230,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -226,32 +254,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "label_dangling|393700|723900|b62d4e49-8702-453d-8829-d0f8200d29c6|00000000-0000-0000-0000-000000000000|/c12dc015-e6cb-468c-8de4-269c3106de0e||",
-        ""
-      ],
-      [
-        "label_dangling|419100|723900|069c9d80-ec7e-49c9-8d61-9d3b2b811859|00000000-0000-0000-0000-000000000000|/c12dc015-e6cb-468c-8de4-269c3106de0e||",
-        ""
-      ],
-      [
-        "multiple_net_names|1612900|596900|3729676b-151e-4f78-acd0-8361404be9cd|b6fd74ed-500f-45d8-aaa3-e9b4bde3f533|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429",
-        ""
-      ],
-      [
-        "multiple_net_names|1993900|850900|02a874d7-7801-4d0e-8ac6-e68f0119d523|c7206482-0e84-4936-a8cf-80bdede17b12|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0",
-        ""
-      ],
-      [
-        "multiple_net_names|1993900|977900|02a874d7-7801-4d0e-8ac6-e68f0119d523|f6a4374e-ca80-4377-afeb-2171c9494c49|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0|/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0",
-        ""
-      ],
-      [
-        "multiple_net_names|635000|914400|dc457e45-4d17-4efb-bc69-356b8481c9b7|d148eabf-45b4-4ed9-acf9-82e8264797b7|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429|/c12dc015-e6cb-468c-8de4-269c3106de0e/0755f67c-fee2-4bb1-bfe0-4dfb08c04429",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -444,7 +447,7 @@
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "ignore",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -455,8 +458,8 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "ignore",
-      "power_pin_not_driven": "ignore",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -503,23 +506,15 @@
         "clearance": 0.127,
         "name": "1V1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 1,
         "schematic_color": "rgb(255, 249, 87)",
         "track_width": 0.3
       },
       {
         "clearance": 0.127,
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgb(255, 47, 103)",
-        "track_width": 0.6
-      },
-      {
-        "clearance": 0.127,
         "name": "5V0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgb(255, 36, 61)",
         "track_width": 0.6
       },
@@ -529,7 +524,7 @@
         "diff_pair_width": 0.17,
         "name": "USB",
         "pcb_color": "rgb(126, 255, 137)",
-        "priority": 3,
+        "priority": 2,
         "schematic_color": "rgb(140, 255, 77)",
         "track_width": 0.17
       }
@@ -540,22 +535,25 @@
     "net_colors": null,
     "netclass_assignments": {
       "+4.7": [
-        "5V"
+        "5V0"
       ],
       "+4.7V": [
         "5V"
       ],
       "Net-(C35-Pad1)": [
-        "5V"
+        "5V0"
       ],
       "Net-(C42-Pad1)": [
-        "5V"
+        "5V0"
       ],
       "Net-(D1-Pad1)": [
-        "5V"
+        "5V0"
       ],
       "Net-(FB5-Pad1)": [
-        "5V"
+        "5V0"
+      ],
+      "Net-(J10-Pin_1)": [
+        "5V0"
       ],
       "Net-(J10-Pin_2)": [
         "5V"
@@ -564,7 +562,8 @@
         "1V1"
       ],
       "Net-(J3-Pin_1)": [
-        "5V"
+        "5V",
+        "5V0"
       ],
       "Net-(J3-Pin_2)": [
         "5V"
@@ -573,22 +572,19 @@
         "1V1"
       ],
       "Net-(J5-Pin_2)": [
-        "5V"
-      ],
-      "Net-(J6-Pin_2)": [
-        "5V"
+        "5V0"
       ],
       "Net-(JP2-A)": [
-        "5V"
+        "5V0"
       ],
       "Net-(JP36-B)": [
         "5V"
       ],
       "Net-(Q1-D)": [
-        "5V"
+        "5V0"
       ],
       "Net-(Q1-G)": [
-        "5V"
+        "5V0"
       ],
       "Net-(U1-VDD)": [
         "1V1"
@@ -603,7 +599,7 @@
         "5V"
       ],
       "Net-(e1-EN)": [
-        "5V"
+        "5V0"
       ]
     },
     "netclass_patterns": [
@@ -620,8 +616,12 @@
         "pattern": "+3*"
       },
       {
-        "netclass": "5V",
+        "netclass": "5V0",
         "pattern": "VDDA"
+      },
+      {
+        "netclass": "5V0",
+        "pattern": "+4.7V"
       }
     ]
   },
@@ -630,7 +630,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -703,488 +703,14 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Actuator/Cap Color",
-          "name": "Actuator/Cap Color",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Attrition Qty",
-          "name": "Attrition Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Capacitance",
-          "name": "Capacitance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Category",
-          "name": "Category",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Circuit",
-          "name": "Circuit",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Circuits",
-          "name": "Circuits",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Class",
-          "name": "Class",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Contact Current",
-          "name": "Contact Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Continuous Drain Current (Id)",
-          "name": "Continuous Drain Current (Id)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Current Rating",
-          "name": "Current Rating",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DC Resistance",
-          "name": "DC Resistance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Diode Configuration",
-          "name": "Diode Configuration",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Drain Source On Resistance (RDS(on)@Vgs,Id)",
-          "name": "Drain Source On Resistance (RDS(on)@Vgs,Id)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Drain Source Voltage (Vdss)",
-          "name": "Drain Source Voltage (Vdss)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Equivalent Series Resistance(ESR)",
-          "name": "Equivalent Series Resistance(ESR)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Feature",
-          "name": "Feature",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Forward Voltage (Vf@If)",
-          "name": "Forward Voltage (Vf@If)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Gate Threshold Voltage (Vgs(th)@Id)",
-          "name": "Gate Threshold Voltage (Vgs(th)@Id)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Impedance @ Frequency",
-          "name": "Impedance @ Frequency",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Input Capacitance (Ciss@Vds)",
-          "name": "Input Capacitance (Ciss@Vds)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Insulation Resistance",
-          "name": "Insulation Resistance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "JLC",
-          "name": "JLC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "JLCPCB #",
-          "name": "JLCPCB #",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "JLCPCB Rotation Offset",
-          "name": "JLCPCB Rotation Offset",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Maximum Input Voltage",
-          "name": "Maximum Input Voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mechanical Life",
-          "name": "Mechanical Life",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Minimum Qty",
-          "name": "Minimum Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mounting Style",
-          "name": "Mounting Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Number Of Outputs",
-          "name": "Number Of Outputs",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Force",
-          "name": "Operating Force",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature",
-          "name": "Operating Temperature",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature Range",
-          "name": "Operating Temperature Range",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Output Current",
-          "name": "Output Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Output Polarity",
-          "name": "Output Polarity",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Output Type",
-          "name": "Output Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Output Voltage",
-          "name": "Output Voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Overload Voltage (Max)",
-          "name": "Overload Voltage (Max)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part",
-          "name": "Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Pin Style",
-          "name": "Pin Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power Dissipation (Pd)",
-          "name": "Power Dissipation (Pd)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power Supply Rejection Ratio (Psrr)",
-          "name": "Power Supply Rejection Ratio (Psrr)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power(Watts)",
-          "name": "Power(Watts)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Process",
-          "name": "Process",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Purchase-URL",
-          "name": "Purchase-URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Quiescent Current (Ground Current)",
-          "name": "Quiescent Current (Ground Current)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Rated Voltage",
-          "name": "Rated Voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Rectified Current",
-          "name": "Rectified Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Resistance",
-          "name": "Resistance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Reverse Leakage Current (Ir)",
-          "name": "Reverse Leakage Current (Ir)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Reverse Voltage (Vr)",
-          "name": "Reverse Voltage (Vr)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Standby Current",
-          "name": "Standby Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Stock",
-          "name": "Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Strike Gundam",
-          "name": "Strike Gundam",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Height",
-          "name": "Switch Height",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Length",
-          "name": "Switch Length",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Width",
-          "name": "Switch Width",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Temperature Coefficient",
-          "name": "Temperature Coefficient",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Total Gate Charge (Qg@Vgs)",
-          "name": "Total Gate Charge (Qg@Vgs)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Type",
-          "name": "Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage Rated",
-          "name": "Voltage Rated",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage Rating (Dc)",
-          "name": "Voltage Rating (Dc)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "With Lamp",
-          "name": "With Lamp",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Actuator Style",
-          "name": "Actuator Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
