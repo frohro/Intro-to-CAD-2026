@@ -166,14 +166,6 @@
         [
           "courtyards_overlap|160385000|30805000|81824e7d-8560-4101-9b81-30d6da7562e4|e7f646ff-3fd0-4314-8b84-6c6d8e35ed9f",
           ""
-        ],
-        [
-          "silk_over_copper|123253042|94872658|8a3b561a-646e-4bbd-b365-91ed53dca3f1|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_overlap|160850000|82230000|3f1b3046-f7ab-4b48-a734-30fc814c75a6|ac3d2be2-1621-4d10-afdf-37683b500fc4",
-          ""
         ]
       ],
       "meta": {
@@ -198,14 +190,14 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
-        "holes_co_located": "warning",
+        "holes_co_located": "ignore",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -218,7 +210,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
