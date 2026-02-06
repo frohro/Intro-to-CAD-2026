@@ -12332,7 +12332,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "808636b7-0ca7-4a60-894f-5b5a6af159f0")
 		(property "Reference" "Je3"
