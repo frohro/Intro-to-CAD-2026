@@ -578,60 +578,7 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(C35-Pad1)": [
-        "5V"
-      ],
-      "Net-(C42-Pad1)": [
-        "5V"
-      ],
-      "Net-(J3-Pin_1)": [
-        "5V",
-        "5V0"
-      ],
-      "Net-(J3-Pin_2)": [
-        "5V"
-      ],
-      "Net-(J3-Pin_36)": [
-        "1V1"
-      ],
-      "Net-(J4-Pin_2)": [
-        "5V"
-      ],
-      "Net-(J5-Pin_2)": [
-        "5V"
-      ],
-      "Net-(J7-Pin_1)": [
-        "5V0"
-      ],
-      "Net-(JP2-A)": [
-        "5V"
-      ],
-      "Net-(JP36-B)": [
-        "5V"
-      ],
-      "Net-(JP38-B)": [
-        "1V1"
-      ],
-      "Net-(Q1-D)": [
-        "5V"
-      ],
-      "Net-(Q1-G)": [
-        "5V"
-      ],
-      "Net-(U1-EN)": [
-        "3V3"
-      ],
-      "Net-(U1-VOUT)": [
-        "3V3"
-      ],
-      "Net-(U7-VCC)": [
-        "5V"
-      ],
-      "Net-(e1-EN)": [
-        "5V"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "5V0",
