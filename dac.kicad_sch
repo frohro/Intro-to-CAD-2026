@@ -5641,7 +5641,7 @@
 		)
 		(uuid "48967e7c-a4ad-46b8-84e1-0724c49390bf")
 	)
-	(text "I suggest on the third layer down, run a 0.6 mm trace over to the area \nunder your module and make an area there on that layer VDDA.  You can look\nhow I did it on my part of the board.  You will need to move the audio out \njack (J9) to your part of the board from mine."
+	(text "I suggest on the third layer down, run a 0.6 mm trace over to the area \nunder your module and make an area there on that layer VDDA.  You can look\nhow I did it on my part of the board.  You will need to move the audio out \njack (J9) and the components below it to your part of the board from mine."
 		(exclude_from_sim no)
 		(at 111.506 27.686 0)
 		(effects
