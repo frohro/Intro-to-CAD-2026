@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026.asc
-Start Time: Fri Feb 13 05:12:32 2026
+Start Time: Fri Feb 13 07:40:43 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -35,5 +35,5 @@ Gmin = 2.70769e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 16.005 seconds.
+Total elapsed time: 567.946 seconds.
 
