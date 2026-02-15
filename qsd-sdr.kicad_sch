@@ -4799,23 +4799,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "TR"
-				(at 0 10.795 0)
+			(property "Reference" "TR1"
+				(at -0.254 0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "PT61017PEL"
-				(at 0 -10.795 0)
+			(property "Value" "H1102NLT"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Transformer_SMD:Transformer_Ethernet_Bourns_PT61017PEL"
+			(property "Footprint" "Intro_to_CAD:XFMR_H1102NLT"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -4824,7 +4824,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PT61017PEL.pdf"
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590909348199538688"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -4834,6 +4834,15 @@
 				)
 			)
 			(property "Description" "Ethernet LAN 10/100 Base-Tx Transformer with Center Taps"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C20623173"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5687,6 +5696,78 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -3.81 -12.7 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -1.27 -12.7 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 1.27 -12.7 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 3.81 -12.7 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9696,6 +9777,18 @@
 		)
 		(pin "9"
 			(uuid "de13baed-e848-448c-89f5-a52b9d0d9387")
+		)
+		(pin "5"
+			(uuid "329c0563-20b2-4a5e-bcf4-2873c0b12468")
+		)
+		(pin "13"
+			(uuid "a8e46b9a-0608-47eb-b7fb-35396f20a9a5")
+		)
+		(pin "12"
+			(uuid "7ff5ef4b-debb-43a2-a6fc-d9747d78b426")
+		)
+		(pin "4"
+			(uuid "bf31c32f-82ff-4638-ae94-d8e78889bc0b")
 		)
 		(instances
 			(project "Frohne"
