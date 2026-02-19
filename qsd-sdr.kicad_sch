@@ -8429,7 +8429,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "1055273c-caae-4baa-ae85-c96072aea866")
 		(property "Reference" "C27"
 			(at 167.386 121.412 0)
@@ -12733,24 +12733,25 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7f55b6cd-01af-4973-9169-334bc9b71910")
 		(property "Reference" "C24"
-			(at 144.526 121.412 0)
+			(at 146.05 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "10nF"
-			(at 144.526 122.936 0)
+			(at 146.05 123.19 0)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
@@ -12881,11 +12882,12 @@
 			)
 		)
 		(property "Tolerance" "±5%"
-			(at 146.05 128.27 0)
+			(at 146.05 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Capacitance" "10nF"
@@ -12898,11 +12900,12 @@
 			)
 		)
 		(property "Temperature Coefficient" "C0G"
-			(at 145.796 126.492 0)
+			(at 146.05 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(pin "2"
@@ -12927,7 +12930,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "802974f5-5830-4af8-a38c-0c64d72d4978")
 		(property "Reference" "C26"
 			(at 159.766 121.412 0)
@@ -15130,7 +15133,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "b9518145-58d5-4a29-ab67-dffbec5610d1")
 		(property "Reference" "C25"
 			(at 152.146 121.412 0)
