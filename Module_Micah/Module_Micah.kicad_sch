@@ -979,7 +979,7 @@
 		(uuid "c3d9d460-4b0f-4bf5-87a3-1071626ff014")
 	)
 	(hierarchical_label "Upcounter"
-		(shape input)
+		(shape output)
 		(at 165.1 114.3 0)
 		(effects
 			(font

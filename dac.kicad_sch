@@ -7548,7 +7548,7 @@
 		(uuid "a2b4179e-dc32-474a-b6e6-b40a591b5c75")
 	)
 	(hierarchical_label "MCLK"
-		(shape input)
+		(shape output)
 		(at 57.15 90.17 180)
 		(effects
 			(font
@@ -7559,7 +7559,7 @@
 		(uuid "1eb9649f-0c3c-4e04-bdf7-abf23cf29b11")
 	)
 	(hierarchical_label "LRCK"
-		(shape input)
+		(shape output)
 		(at 57.15 87.63 180)
 		(effects
 			(font

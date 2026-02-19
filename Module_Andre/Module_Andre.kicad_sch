@@ -1763,7 +1763,7 @@
 		(uuid "ff4b5b55-6dd8-4e0b-8486-be2f8c392b38")
 	)
 	(hierarchical_label "GPIO_B"
-		(shape input)
+		(shape output)
 		(at 69.85 77.47 0)
 		(effects
 			(font
@@ -1774,7 +1774,7 @@
 		(uuid "0845f934-3f58-41e5-b84a-c1f1410faee7")
 	)
 	(hierarchical_label "GPIO_C"
-		(shape input)
+		(shape output)
 		(at 29.21 36.83 180)
 		(effects
 			(font
@@ -1785,7 +1785,7 @@
 		(uuid "8e82dd69-768c-4db0-b603-5bac8561e42a")
 	)
 	(hierarchical_label "GPIO_A"
-		(shape input)
+		(shape output)
 		(at 44.45 77.47 180)
 		(effects
 			(font

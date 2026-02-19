@@ -1175,7 +1175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c5bf844-56b4-4070-a0b7-37263b5e5d85")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR?"
 			(at 177.8 115.57 0)
 			(effects
 				(font
@@ -1231,7 +1231,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR099")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -1247,7 +1247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2da5cd55-304b-484a-965c-1c4ff285aaaf")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR?"
 			(at 57.15 97.79 0)
 			(effects
 				(font
@@ -1303,7 +1303,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0118")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -1319,7 +1319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31067f80-8466-44a9-82ce-031eb376c0d0")
-		(property "Reference" "#PWR0139"
+		(property "Reference" "#PWR?"
 			(at 195.58 114.3 0)
 			(effects
 				(font
@@ -1373,6 +1373,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1385,7 +1391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47f71e51-1ab9-4a14-8e7c-df3fdf95d7a8")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR?"
 			(at 71.12 95.25 0)
 			(effects
 				(font
@@ -1439,6 +1445,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1451,7 +1463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "501f2c51-8ba0-4fb4-8d11-db3cb6fa9410")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR?"
 			(at 142.24 115.57 0)
 			(effects
 				(font
@@ -1507,7 +1519,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0114")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -1523,7 +1535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6def5b3b-bf0d-444e-881a-618e35975d4a")
-		(property "Reference" "#PWR0137"
+		(property "Reference" "#PWR?"
 			(at 177.8 95.25 0)
 			(effects
 				(font
@@ -1577,6 +1589,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1589,7 +1607,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7710bb09-4ec2-495d-a296-3c75ea403a90")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR?"
 			(at 92.71 97.79 0)
 			(effects
 				(font
@@ -1645,7 +1663,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0115")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -1661,7 +1679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "775e7f93-387b-4576-b399-ce0ea50030a7")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR?"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -1717,7 +1735,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0112")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -1733,7 +1751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "958ac0c0-28b7-4bd2-b387-db04c070a195")
-		(property "Reference" "C70"
+		(property "Reference" "C?"
 			(at 134.62 82.55 90)
 			(effects
 				(font
@@ -1916,7 +1934,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "C65")
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -1932,7 +1950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a04e2609-d75e-4c69-86c9-43fe16fcc4c4")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR?"
 			(at 210.82 107.95 0)
 			(effects
 				(font
@@ -1988,7 +2006,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0110")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2004,7 +2022,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a779e3d1-bfe7-47aa-9c49-d5b0ddc0b72b")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR?"
 			(at 71.12 115.57 0)
 			(effects
 				(font
@@ -2060,7 +2078,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0123")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2076,7 +2094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a886e5d6-0e88-4a01-a63a-5f21ee5ce7cf")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR?"
 			(at 163.83 97.79 0)
 			(effects
 				(font
@@ -2132,7 +2150,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0111")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2148,7 +2166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba4457df-07c1-4d7c-a2d0-30872af5c924")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR?"
 			(at 106.68 115.57 0)
 			(effects
 				(font
@@ -2204,7 +2222,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "#PWR0117")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2220,7 +2238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9ccd35e-11fe-4d5c-80f8-a5af420edcd4")
-		(property "Reference" "D11"
+		(property "Reference" "D?"
 			(at 189.23 95.1798 0)
 			(effects
 				(font
@@ -2293,6 +2311,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2305,7 +2329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d45ed9c0-648a-4235-b1ab-bc7f269df583")
-		(property "Reference" "C71"
+		(property "Reference" "C?"
 			(at 170.18 82.55 90)
 			(effects
 				(font
@@ -2488,7 +2512,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "C67")
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2504,7 +2528,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5947439-b66d-4ddc-845d-9b4759d756e1")
-		(property "Reference" "C69"
+		(property "Reference" "C?"
 			(at 99.06 82.55 90)
 			(effects
 				(font
@@ -2687,7 +2711,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "C64")
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2703,7 +2727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6c46ede-7497-4163-b99c-38e6531903d5")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR?"
 			(at 106.68 95.25 0)
 			(effects
 				(font
@@ -2757,6 +2781,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2769,7 +2799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd667352-229c-479c-91d4-9b80b07826e4")
-		(property "Reference" "D10"
+		(property "Reference" "D?"
 			(at 153.67 95.1798 0)
 			(effects
 				(font
@@ -2842,6 +2872,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2854,7 +2890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e02843dc-4a6a-4ff7-ba87-633e1cf53edd")
-		(property "Reference" "D9"
+		(property "Reference" "D?"
 			(at 118.11 95.1798 0)
 			(effects
 				(font
@@ -2927,6 +2963,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2939,7 +2981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e05f2558-e25f-4229-b60b-c7117d66c587")
-		(property "Reference" "J14"
+		(property "Reference" "J?"
 			(at 223.52 106.6799 0)
 			(effects
 				(font
@@ -3011,7 +3053,7 @@
 			)
 			(project ""
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "J1")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -3027,7 +3069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eceaf100-932a-4442-80ee-68197ab88e65")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR?"
 			(at 142.24 95.25 0)
 			(effects
 				(font
@@ -3081,6 +3123,12 @@
 					(unit 1)
 				)
 			)
+			(project "Module_JaronGarbi"
+				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3093,7 +3141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcd540bf-069f-4b99-8299-a70a6e378c68")
-		(property "Reference" "D8"
+		(property "Reference" "D?"
 			(at 82.55 95.1798 0)
 			(effects
 				(font
@@ -3168,7 +3216,7 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "D11")
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -3184,7 +3232,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff89be87-c653-4923-b045-48837a3f2d3a")
-		(property "Reference" "C68"
+		(property "Reference" "C?"
 			(at 63.5 82.55 90)
 			(effects
 				(font
@@ -3367,10 +3415,16 @@
 			)
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "C62")
+					(reference "C?")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

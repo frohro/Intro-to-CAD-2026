@@ -1,9 +1,10 @@
-Plugin v0.0.1 running on KiCad 9.0.7-unknown-202601191513~a6c3d7900c~ubuntu25.10.1 and Python 3.13.7 (main, Jan 22 2026, 20:15:57) [GCC 15.2.0] on linux.
+Plugin v0.0.1 running on KiCad 9.0.7-9.0.7~ubuntu24.04.1 and Python 3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0] on linux.
 Valid Board found for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
-12 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
+13 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/pcm1808.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/cmos_oscillator.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/dac.kicad_sch
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/oled.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_sch
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/VDDA.kicad_sch
@@ -18,7 +19,7 @@ Enabled leaf: 1d172d86-7589-4f73-960e-a08dc80ef343
 Enabled leaf: 360bd6cb-8515-415a-b1e1-cedd8caa152c
 Enabled leaf: 3aa3dec0-5ad1-4c27-a945-0a713a163b16
 Enabled leaf: 81e179b3-10f3-4413-89ac-746efb52a96a
-Root item: <wx._dataview.TreeListItem object at 0x7035490d5d00>
+Root item: <wx._dataview.TreeListItem object at 0x7901dcb6ef90>
 No Valid Child board for 0755f67c-fee2-4bb1-bfe0-4dfb08c04429
 Valid board for 1314eab6-d054-48f7-88b3-f0d5cb35f00b
 Valid child board for 
@@ -37,6 +38,8 @@ Valid board for 3aa3dec0-5ad1-4c27-a945-0a713a163b16
 Instance is a leaf: /3aa3dec0-5ad1-4c27-a945-0a713a163b16
 No Valid Child board for 483699fc-423f-4ea3-8184-654c25c5d0a3
 Instance is a dead branch: /483699fc-423f-4ea3-8184-654c25c5d0a3
+No Valid Child board for 77c9a60d-65a0-419f-902e-4b4a89f0d425
+Instance is a dead branch: /77c9a60d-65a0-419f-902e-4b4a89f0d425
 Valid board for 81e179b3-10f3-4413-89ac-746efb52a96a
 Instance is a leaf: /81e179b3-10f3-4413-89ac-746efb52a96a
 No Valid Child board for b449cbea-6ac3-4d49-9a88-53bfdbd18b5c
@@ -47,7 +50,6 @@ No Valid Child board for ed314b6d-b133-4548-ae58-2db461511a12
 Instance is a dead branch: /ed314b6d-b133-4548-ae58-2db461511a12
 No Valid Child board for ed44bed7-549c-4a19-9507-4d924c35e7b0
 Instance is a dead branch: /ed44bed7-549c-4a19-9507-4d924c35e7b0
-subPcb selected Push Button with 2 anchors
 Saving info for 1314eab6-d054-48f7-88b3-f0d5cb35f00b
 Saving info for 1d172d86-7589-4f73-960e-a08dc80ef343
 Saving info for 360bd6cb-8515-415a-b1e1-cedd8caa152c
@@ -60,6 +62,7 @@ Saving anchor R5 for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD
 Saving anchor J1 for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Module_Joshua/Module_Joshua.kicad_sch
 Saving anchor C64 for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Module_JaronGarbi/Module_JaronGarbi.kicad_sch
 Saving anchor None for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/dac.kicad_sch
+Saving anchor None for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/oled.kicad_sch
 Saving anchor S1 for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Module_Micah/Module_Micah.kicad_sch
 Saving anchor None for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_sch
 Saving anchor None for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_sch

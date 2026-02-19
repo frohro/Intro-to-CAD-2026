@@ -481,7 +481,7 @@
 		(uuid "b96feb29-14fb-4a00-a5af-a3d7495811a3")
 	)
 	(hierarchical_label "ECHO"
-		(shape input)
+		(shape output)
 		(at 184.15 99.06 0)
 		(effects
 			(font
@@ -558,6 +558,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 168.91 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43f8fd9c-232a-46a4-aeca-e5b71f8d194e")
+		(property "Reference" "J6"
+			(at 168.91 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HC-SR04 connector"
+			(at 169.164 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 168.91 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.makerguides.com/hc-sr04-arduino-tutorial/"
+			(at 168.91 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 168.91 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "700a4f18-aecb-4064-b64b-1f9c0ed65592")
+		)
+		(pin "1"
+			(uuid "696ebcb8-5a10-407d-b259-ed0c6aa720e1")
+		)
+		(pin "2"
+			(uuid "d15a2dfd-0899-4ed7-9a77-e35a32fae42b")
+		)
+		(pin "3"
+			(uuid "67b1a16e-1ec2-4708-bb08-9e594418f6d2")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 184.15 93.98 0)
 		(unit 1)
@@ -618,86 +692,6 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
 					(reference "#PWR0115")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 168.91 96.52 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d17a2f4-da19-4781-87ba-8848e4b81bbe")
-		(property "Reference" "J6"
-			(at 168.91 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HC-SR04 connector"
-			(at 169.164 90.678 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "1264560a-e69f-4070-bd17-a5d0efc798fe")
-		)
-		(pin "1"
-			(uuid "c686de90-6dc6-4554-ba29-c68f03b70212")
-		)
-		(pin "2"
-			(uuid "40474738-c9fd-4960-8b77-c6e086b85b29")
-		)
-		(pin "3"
-			(uuid "5e33c30f-3fe1-4cf3-af22-c96a5a98f54f")
-		)
-		(instances
-			(project ""
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "J1")
 					(unit 1)
 				)
 			)
