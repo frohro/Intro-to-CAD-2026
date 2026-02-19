@@ -5628,6 +5628,78 @@
 		)
 	)
 	(sheet
+		(at 124.46 39.37)
+		(size 16.51 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1314eab6-d054-48f7-88b3-f0d5cb35f00b")
+		(property "Sheetname" "Angle_Encoder"
+			(at 124.46 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Module_Andre/Module_Andre.kicad_sch"
+			(at 124.46 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO_A" input
+			(at 124.46 43.18 180)
+			(uuid "eeaabeb2-5706-47aa-810d-f3a7e19d0d30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO_B" input
+			(at 124.46 45.72 180)
+			(uuid "4823cb7f-b8a0-44f3-9795-9cf9f874de40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO_C" input
+			(at 124.46 45.72 180)
+			(uuid "7f586c65-630e-439e-b436-a49234b2c0cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 17.78 154.94)
 		(size 19.05 7.62)
 		(exclude_from_sim no)
@@ -5695,6 +5767,160 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
 					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 87.63)
+		(size 21.59 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1d172d86-7589-4f73-960e-a08dc80ef343")
+		(property "Sheetname" "SPI_MicroSD"
+			(at 124.46 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Module_KyleS/Module_KyleS.kicad_sch"
+			(at 124.46 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CS" input
+			(at 146.05 90.17 0)
+			(uuid "a18db4a4-3fca-4151-8696-157944a11063")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO" output
+			(at 124.46 90.17 180)
+			(uuid "bda0ed15-34e0-4d47-83fa-cc23ce06cc68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" input
+			(at 124.46 92.71 180)
+			(uuid "08337545-20c0-4f53-971c-f203e1d79daa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_CD" output
+			(at 124.46 95.25 180)
+			(uuid "0c5a1157-9816-4302-b54b-e40ea086325c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_CK" input
+			(at 124.46 97.79 180)
+			(uuid "1217f925-a90d-4f15-983e-9ca31a97fa8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 62.23)
+		(size 17.78 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "360bd6cb-8515-415a-b1e1-cedd8caa152c")
+		(property "Sheetname" "Ultrasound_Distance"
+			(at 124.46 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Module_Joshua/Module_Joshua.kicad_sch"
+			(at 124.46 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ECHO" input
+			(at 124.46 64.77 180)
+			(uuid "b43450a8-1a3f-4a39-b07f-54354a9bc3fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TRIG" input
+			(at 142.24 64.77 0)
+			(uuid "bcd88f50-a082-408d-9fd5-399dffada633")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "10")
 				)
 			)
 		)
@@ -5777,6 +6003,58 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 114.3)
+		(size 21.59 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "81e179b3-10f3-4413-89ac-746efb52a96a")
+		(property "Sheetname" "Multicolor LED String"
+			(at 124.46 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Module_Micah/Module_Micah.kicad_sch"
+			(at 124.46 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Upcounter" input
+			(at 124.46 116.84 180)
+			(uuid "8c6e14b6-59f9-4433-93f2-f25baf137279")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "12")
 				)
 			)
 		)

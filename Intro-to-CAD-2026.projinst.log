@@ -1,22 +1,27 @@
-Plugin v0.0.1 running on KiCad 9.0.7-9.0.7~ubuntu24.04.1 and Python 3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0] on linux.
-Config file /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.projinst.json not found. Creating new one.
+Plugin v0.0.1 running on KiCad 9.0.7-9.0.7~ubuntu24.04.1 and Python 3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0] on linux.
 Valid Board found for /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
-5 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
-/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_pcb doesn't exist
-0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_sch
+7 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro-to-CAD-2026.kicad_sch
 /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/pcm1808.kicad_pcb doesn't exist
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/pcm1808.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/cmos_oscillator.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/cmos_oscillator.kicad_sch
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/dac.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/dac.kicad_sch
 /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_pcb doesn't exist
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/si5351a.kicad_sch
 /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_pcb doesn't exist
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/qsd-sdr.kicad_sch
 /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/VDDA.kicad_pcb doesn't exist
 0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/VDDA.kicad_sch
-Root item: <wx._dataview.TreeListItem object at 0x7e5f74edfad0>
-No Valid Child board for 06516c79-bfe4-40ed-9cd2-382c74eaa2ba
-No Valid Child board for 58bffccf-78a9-420a-b783-106f2192f85c
-No Valid Child board for 67b06689-3919-4df5-b91a-49763b999930
-No Valid Child board for 92dd9c1d-6abe-4fcc-9674-073b26b9f8e4
-No Valid Child board for a84c0954-e6fc-41e6-ac67-288f95c58801
+/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_pcb doesn't exist
+0 sheet instances entries in /home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/raspberry_pi_pico.kicad_sch
+Root item: <wx._dataview.TreeListItem object at 0x7e18c5589910>
+No Valid Child board for 0755f67c-fee2-4bb1-bfe0-4dfb08c04429
+No Valid Child board for 1bf8039c-3ec8-4592-8d3c-78300c63b601
+No Valid Child board for 483699fc-423f-4ea3-8184-654c25c5d0a3
+No Valid Child board for b449cbea-6ac3-4d49-9a88-53bfdbd18b5c
+No Valid Child board for c5519ce3-55b4-441f-abb2-2c2467967554
+No Valid Child board for ed314b6d-b133-4548-ae58-2db461511a12
+No Valid Child board for ed44bed7-549c-4a19-9507-4d924c35e7b0
 No Valid Child board for 
 Instance is a dead branch: 
