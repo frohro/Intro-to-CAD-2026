@@ -1240,6 +1240,10 @@
     [
       "3aa3dec0-5ad1-4c27-a945-0a713a163b16",
       "LED String"
+    ],
+    [
+      "77c9a60d-65a0-419f-902e-4b4a89f0d425",
+      "OLED"
     ]
   ],
   "text_variables": {}
