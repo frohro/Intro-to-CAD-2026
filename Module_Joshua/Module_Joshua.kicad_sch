@@ -501,7 +501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3595fb07-7736-4e34-a59d-a629ffbfae91")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR?"
 			(at 184.15 107.95 0)
 			(effects
 				(font
@@ -551,7 +551,7 @@
 		(instances
 			(project ""
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
-					(reference "#PWR098")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -567,7 +567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dc1ccc6-86ec-41f3-8ad6-cd4889b7455f")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR?"
 			(at 184.15 97.79 0)
 			(effects
 				(font
@@ -617,7 +617,7 @@
 		(instances
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
-					(reference "#PWR099")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -633,7 +633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d17a2f4-da19-4781-87ba-8848e4b81bbe")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 168.91 107.95 0)
 			(effects
 				(font
@@ -692,7 +692,7 @@
 		(instances
 			(project ""
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/360bd6cb-8515-415a-b1e1-cedd8caa152c"
-					(reference "J1")
+					(reference "J?")
 					(unit 1)
 				)
 			)

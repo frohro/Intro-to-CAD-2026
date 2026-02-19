@@ -5926,6 +5926,58 @@
 		)
 	)
 	(sheet
+		(at 125.73 138.43)
+		(size 19.05 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3aa3dec0-5ad1-4c27-a945-0a713a163b16")
+		(property "Sheetname" "LED String"
+			(at 125.73 137.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Module_JaronGarbi/Module_JaronGarbi.kicad_sch"
+			(at 125.73 149.1746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RGB_DIN" input
+			(at 125.73 143.51 180)
+			(uuid "8568abb5-10ee-495d-859b-37054adf61d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 62.23 135.89)
 		(size 19.05 12.7)
 		(exclude_from_sim no)
@@ -6023,7 +6075,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "81e179b3-10f3-4413-89ac-746efb52a96a")
-		(property "Sheetname" "Multicolor LED String"
+		(property "Sheetname" "Push Button"
 			(at 124.46 113.5884 0)
 			(effects
 				(font

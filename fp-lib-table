@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Intro_to_CAD")(type "KiCad")(uri "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/Intro_to_CAD.pretty")(options "")(descr ""))
   (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "0_Personal")(type "KiCad")(uri "${KIPRJMOD}/Module_KyleS/Sd-card/easyeda2kicad.pretty/0_Personal.pretty")(options "")(descr ""))
 )

@@ -671,13 +671,22 @@
       "Net-(C35-Pad1)": [
         "5V0"
       ],
+      "Net-(C37-Pad1)": [
+        "5V0"
+      ],
       "Net-(C42-Pad1)": [
         "5V0"
       ],
       "Net-(D1-Pad1)": [
         "5V0"
       ],
+      "Net-(D3-Pad1)": [
+        "5V0"
+      ],
       "Net-(FB5-Pad1)": [
+        "5V0"
+      ],
+      "Net-(FB7-Pad1)": [
         "5V0"
       ],
       "Net-(J10-Pin_1)": [
@@ -687,6 +696,16 @@
         "5V"
       ],
       "Net-(J10-Pin_5)": [
+        "1V1"
+      ],
+      "Net-(J11-Pin_1)": [
+        "5V",
+        "5V0"
+      ],
+      "Net-(J11-Pin_2)": [
+        "5V"
+      ],
+      "Net-(J11-Pin_36)": [
         "1V1"
       ],
       "Net-(J3-Pin_1)": [
@@ -702,13 +721,22 @@
       "Net-(J5-Pin_2)": [
         "5V0"
       ],
+      "Net-(J6-Pin_2)": [
+        "5V0"
+      ],
       "Net-(JP2-A)": [
+        "5V0"
+      ],
+      "Net-(JP7-A)": [
         "5V0"
       ],
       "Net-(Q1-D)": [
         "5V0"
       ],
       "Net-(Q1-G)": [
+        "5V0"
+      ],
+      "Net-(Q2-D)": [
         "5V0"
       ],
       "Net-(Q2-E)": [
@@ -723,8 +751,14 @@
       "Net-(Q5-E)": [
         "5V0"
       ],
+      "Net-(Q6-E)": [
+        "5V0"
+      ],
       "Net-(U1-VDD)": [
         "1V1"
+      ],
+      "Net-(U3-VCC)": [
+        "5V0"
       ],
       "Net-(U4-VDD)": [
         "1V1"
@@ -732,10 +766,22 @@
       "Net-(U4-VDDO)": [
         "1V1"
       ],
+      "Net-(U6-VDD)": [
+        "1V1"
+      ],
+      "Net-(U6-VDDO)": [
+        "1V1"
+      ],
       "Net-(U7-VCC)": [
         "5V0"
       ],
+      "Net-(U9-VDD)": [
+        "1V1"
+      ],
       "Net-(e1-EN)": [
+        "5V0"
+      ],
+      "Net-(e4-EN)": [
         "5V0"
       ],
       "VAH": [
@@ -1189,7 +1235,11 @@
     ],
     [
       "81e179b3-10f3-4413-89ac-746efb52a96a",
-      "Multicolor LED String"
+      "Push Button"
+    ],
+    [
+      "3aa3dec0-5ad1-4c27-a945-0a713a163b16",
+      "LED String"
     ]
   ],
   "text_variables": {}
