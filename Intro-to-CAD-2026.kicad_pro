@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,20 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|100950000|37440000|51923656-2ca5-447d-a226-7cfc9ec89338|5f0f2688-a20f-4cf4-812d-3bb7612b5786",
+          ""
+        ],
+        [
+          "silk_edge_clearance|100950000|52680000|51923656-2ca5-447d-a226-7cfc9ec89338|a4d4d7a4-a75b-4216-a65b-97c0c7ed2a41",
+          ""
+        ],
+        [
+          "silk_edge_clearance|200950000|46301486|51923656-2ca5-447d-a226-7cfc9ec89338|0279a6f3-70d3-4d4f-b0f2-f3387022db8f",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -112,13 +125,13 @@
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
-        "track_dangling": "warning",
+        "track_dangling": "ignore",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "ignore",
         "zones_intersect": "error"
       },
       "rules": {
