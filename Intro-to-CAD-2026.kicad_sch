@@ -6272,6 +6272,48 @@
 		)
 	)
 	(sheet
+		(at 189.23 62.23)
+		(size 19.05 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5c29e8b3-2445-41f2-90b3-f3e400c1872d")
+		(property "Sheetname" "H-Bridge"
+			(at 189.23 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "h_bridge.kicad_sch"
+			(at 189.23 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 124.46 157.48)
 		(size 24.13 13.97)
 		(exclude_from_sim no)
