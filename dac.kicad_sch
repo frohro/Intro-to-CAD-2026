@@ -9690,13 +9690,14 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DAC OUT"
+		(property "Value" "3.5mm_Jack"
 			(at 223.52 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Intro_to_CAD:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
@@ -9717,13 +9718,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DAC OUT"
 			(at 228.6 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C18594"
@@ -11247,13 +11247,14 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DAC LL"
+		(property "Value" "3.5mm_Jack"
 			(at 144.018 83.312 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Intro_to_CAD:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal"
@@ -11274,13 +11275,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DAC_LL"
 			(at 146.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C18594"

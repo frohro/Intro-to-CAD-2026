@@ -1166,6 +1166,178 @@
 		(uuid "d94e61d1-9822-45ba-ad01-db65d4b05fa9")
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
+		(at 106.68 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "089aa73c-432e-4534-bf92-d324b766c391")
+		(property "Reference" "D9"
+			(at 118.11 95.1798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-0807RGBC-2812B"
+			(at 118.11 97.7198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Intro_to_CAD:C3646929e"
+			(at 107.95 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589835209639432192"
+			(at 109.22 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3646929"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f967b08d-a6d4-4ed3-b276-72aa54ba2b27")
+		)
+		(pin "3"
+			(uuid "06198758-f7b4-4d44-aee0-9f2cd826ca16")
+		)
+		(pin "4"
+			(uuid "afca717b-043e-490e-b342-315af10c5d8a")
+		)
+		(pin "1"
+			(uuid "ba45aa54-6634-4c8f-82f7-381e6a758985")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
+		(at 177.8 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2600b7ad-76aa-4417-b553-3428f186f662")
+		(property "Reference" "D11"
+			(at 189.23 95.1798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-0807RGBC-2812B"
+			(at 189.23 97.7198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Intro_to_CAD:C3646929e"
+			(at 179.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589835209639432192"
+			(at 180.34 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 177.8 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3646929"
+			(at 177.8 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "36ba5390-975b-461d-bebc-8c38d267024a")
+		)
+		(pin "3"
+			(uuid "71542f7b-7993-4a38-9e04-fe57de2f76bd")
+		)
+		(pin "4"
+			(uuid "6bc3452f-6708-4df5-bdee-f2de9f5f3592")
+		)
+		(pin "1"
+			(uuid "4da086d6-c4ac-44e5-8aa2-ee1ea1030f00")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 177.8 109.22 0)
 		(unit 1)
@@ -1436,6 +1608,92 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
 					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
+		(at 142.24 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c32dd1d-6073-4d41-aec6-2f2ab0a45927")
+		(property "Reference" "D10"
+			(at 153.67 95.1798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-0807RGBC-2812B"
+			(at 153.67 97.7198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Intro_to_CAD:C3646929e"
+			(at 143.51 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589835209639432192"
+			(at 144.78 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 142.24 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3646929"
+			(at 142.24 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f37e82c-a663-4c14-9994-ea1184e3854d")
+		)
+		(pin "3"
+			(uuid "bc94358d-5f24-4992-b26c-1ef952ba484c")
+		)
+		(pin "4"
+			(uuid "170aa527-ad03-4e71-b68c-3be113b7a493")
+		)
+		(pin "1"
+			(uuid "d9b15edf-5e12-4120-8769-8db1b32d00ae")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -1718,6 +1976,92 @@
 			(project "Module_Template"
 				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
 					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
+		(at 71.12 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cb18d8d-0b6d-4387-ba43-07756c3e9d81")
+		(property "Reference" "D8"
+			(at 82.55 95.1798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-0807RGBC-2812B"
+			(at 82.55 97.7198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Intro_to_CAD:C3646929e"
+			(at 72.39 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589835209639432192"
+			(at 73.66 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 71.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3646929"
+			(at 71.12 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e6a9d0a-3e55-4278-85a6-839b8497a260")
+		)
+		(pin "3"
+			(uuid "fcf33aba-cd54-48fa-a899-8af1fca58c19")
+		)
+		(pin "4"
+			(uuid "623a739a-290d-4565-805e-feae030131f7")
+		)
+		(pin "1"
+			(uuid "5025b956-8444-4bda-aa29-268c43909225")
+		)
+		(instances
+			(project ""
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2211,91 +2555,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
-		(at 177.8 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9ccd35e-11fe-4d5c-80f8-a5af420edcd4")
-		(property "Reference" "D11"
-			(at 189.23 95.1798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 189.23 97.7198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 179.07 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 180.34 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 177.8 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22461793"
-			(at 177.8 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4c4cf4ca-af62-4ddd-a541-fc495cdbf8bb")
-		)
-		(pin "4"
-			(uuid "adddca5b-baf6-4727-a3fc-a3a6c8046c52")
-		)
-		(pin "1"
-			(uuid "715d31fb-4e2c-4172-8d4b-f56cfd15670c")
-		)
-		(pin "3"
-			(uuid "5eb1c9a3-cb6b-4d39-a583-07d83fe94765")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,100nF")
 		(at 170.18 91.44 90)
 		(unit 1)
@@ -2760,176 +3019,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
-		(at 142.24 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd667352-229c-479c-91d4-9b80b07826e4")
-		(property "Reference" "D10"
-			(at 153.67 95.1798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 153.67 97.7198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 144.78 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 142.24 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22461793"
-			(at 142.24 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f4bd8d46-842e-4b17-aa43-7016cbc5430b")
-		)
-		(pin "4"
-			(uuid "63838df8-8c9e-4a93-86d5-64ea0b6d2bac")
-		)
-		(pin "1"
-			(uuid "d465f240-0fda-401c-be95-479e7d192887")
-		)
-		(pin "3"
-			(uuid "8d479f64-2dc1-4d1a-bd31-b89bbcc12745")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
-		(at 106.68 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e02843dc-4a6a-4ff7-ba87-633e1cf53edd")
-		(property "Reference" "D9"
-			(at 118.11 95.1798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 118.11 97.7198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 107.95 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 109.22 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 106.68 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22461793"
-			(at 106.68 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9f8af85e-3b68-468c-a2ad-ceae03e16c1f")
-		)
-		(pin "4"
-			(uuid "403c1e5c-2421-431a-a53e-42d6ec01cdf2")
-		)
-		(pin "1"
-			(uuid "2af940fa-2028-4573-867f-6f85831d1d8e")
-		)
-		(pin "3"
-			(uuid "3f1a822d-0554-429d-a058-be8d60f5f6d3")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 220.98 107.95 0)
 		(unit 1)
@@ -2955,6 +3044,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
@@ -3078,97 +3168,6 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
 					(reference "#PWR0134")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 5050")
-		(at 71.12 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcd540bf-069f-4b99-8299-a70a6e378c68")
-		(property "Reference" "D8"
-			(at 82.55 95.1798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 82.55 97.7198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 72.39 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 73.66 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 71.12 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22461793"
-			(at 71.12 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "37edf929-d284-4789-a050-37f14ad834a7")
-		)
-		(pin "4"
-			(uuid "f5c8c818-62ba-4bed-a6ce-f5d4822abb25")
-		)
-		(pin "1"
-			(uuid "312e250e-2c86-446f-85f4-b9b696587329")
-		)
-		(pin "3"
-			(uuid "5e47faf2-405b-45dc-8f0c-484f46e80675")
-		)
-		(instances
-			(project "Module_Template"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/3aa3dec0-5ad1-4c27-a945-0a713a163b16"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-			(project "Module_Template"
-				(path "/ea0c559e-3bae-46d5-a508-0445335e2a4b"
-					(reference "D11")
 					(unit 1)
 				)
 			)

@@ -10927,13 +10927,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RST"
+		(property "Value" "Tactile Button, 160gf"
 			(at 183.134 148.59 0)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:SW_TS-1088-AR02016"
@@ -11197,6 +11198,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "RST"
+			(at 173.482 145.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -12541,7 +12550,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "334657b8-f98b-4073-a64e-f53f4a7d6861")
 		(property "Reference" "U3"
 			(at 138.176 67.564 0)

@@ -997,7 +997,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "18f07235-969f-42d8-905c-937fc602850f")
 		(property "Reference" "S2"
 			(at 146.05 106.68 0)
@@ -1013,6 +1012,7 @@
 				(font
 					(size 0.8 0.8)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:SW_TS-1088-AR02016"
@@ -1276,6 +1276,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "USR"
+			(at 152.146 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
