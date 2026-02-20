@@ -10917,7 +10917,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "00d88276-c58f-43ef-a922-d1933a9f5246")
 		(property "Reference" "S1"
 			(at 182.88 146.0499 0)
@@ -10928,14 +10927,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Tactile Button, 160gf"
-			(at 182.88 147.32 0)
+		(property "Value" "RST"
+			(at 183.134 148.59 0)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:SW_TS-1088-AR02016"
@@ -15566,7 +15564,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "8025a46c-3e9f-4bfa-8538-e0def287a318")
 		(property "Reference" "J4"
 			(at 120.65 90.1699 0)
@@ -16965,7 +16963,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5c191c0-4bac-47c7-b795-e52173e976c5")
 		(property "Reference" "J2"
@@ -17345,7 +17343,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be8229b8-bd53-4620-8c38-2ead04aa8262")
 		(property "Reference" "J3"
@@ -18101,7 +18099,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "ca0e3615-993f-42c7-9e17-93cc0fa7031f")
 		(property "Reference" "J10"
 			(at 156.21 90.1699 0)

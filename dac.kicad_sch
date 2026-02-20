@@ -11247,7 +11247,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DAC OUT LL"
+		(property "Value" "DAC LL"
 			(at 144.018 83.312 0)
 			(effects
 				(font

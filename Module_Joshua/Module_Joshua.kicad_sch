@@ -575,7 +575,7 @@
 				)
 			)
 		)
-		(property "Value" "HC-SR04 connector"
+		(property "Value" "HC-SR04"
 			(at 169.164 90.678 0)
 			(effects
 				(font
@@ -602,6 +602,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 168.91 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2718488"
 			(at 168.91 96.52 0)
 			(effects
 				(font

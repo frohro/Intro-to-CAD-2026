@@ -1986,7 +1986,7 @@
 				)
 			)
 		)
-		(property "Value" "BNC"
+		(property "Value" "CLK2"
 			(at 181.2926 114.3 0)
 			(effects
 				(font
