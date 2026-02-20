@@ -2090,8 +2090,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,33Ω")
-		(at 154.94 107.95 0)
-		(mirror x)
+		(at 154.94 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2099,7 +2098,7 @@
 		(dnp no)
 		(uuid "fa2266eb-400d-4edb-a49e-f920ce328809")
 		(property "Reference" "R34"
-			(at 152.4 111.76 0)
+			(at 157.48 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,7 +2115,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 153.162 107.95 90)
+			(at 156.718 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)

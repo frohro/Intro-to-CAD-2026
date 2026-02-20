@@ -3072,8 +3072,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,33Ω")
-		(at 163.83 113.03 270)
-		(mirror x)
+		(at 163.83 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3081,7 +3080,7 @@
 		(dnp no)
 		(uuid "480d2382-3e53-4004-a4a3-87404d1b6973")
 		(property "Reference" "R38"
-			(at 167.64 115.57 90)
+			(at 160.02 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)

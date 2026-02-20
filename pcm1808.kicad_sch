@@ -6109,7 +6109,8 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,33Ω")
-		(at 227.33 95.25 90)
+		(at 227.33 95.25 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6117,7 +6118,7 @@
 		(dnp no)
 		(uuid "7424439f-d978-4173-bca0-241726a6534e")
 		(property "Reference" "R17"
-			(at 232.156 94.234 90)
+			(at 222.504 94.234 90)
 			(effects
 				(font
 					(size 1.27 1.27)
