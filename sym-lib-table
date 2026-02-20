@@ -4,4 +4,5 @@
   (lib (name "PCM1808PWR")(type "KiCad")(uri "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/PCM1808PWR.kicad_sym")(options "")(descr ""))
   (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
   (lib (name "CJC4334H")(type "KiCad")(uri "${KIPRJMOD}/CJC4334H.kicad_sym")(options "")(descr ""))
+  (lib (name "TC118S_H-Bridge")(type "KiCad")(uri "${KIPRJMOD}/Frohne/TC118S_H-Bridge.kicad_sym")(options "")(descr ""))
 )
