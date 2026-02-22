@@ -3297,6 +3297,7 @@
 		(property "Value" "Tactile Button, 160gf"
 			(at 1.895 -3.45 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "708bff7f-c3ac-4580-8f24-153fabbe68cd")
 			(effects
 				(font
@@ -3668,10 +3669,9 @@
 			)
 		)
 		(property "Label" "RST"
-			(at 0 0 90)
+			(at 2.025 -3.83 0)
 			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
+			(layer "F.SilkS")
 			(uuid "081f6058-d14f-477a-b30d-73bb84cee0a5")
 			(effects
 				(font
