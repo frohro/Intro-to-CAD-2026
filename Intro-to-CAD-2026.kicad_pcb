@@ -70801,7 +70801,7 @@
 		(property "Reference" "J12"
 			(at 0 -9.9 90)
 			(layer "F.Fab")
-			(uuid "ed1f36b7-6921-4b3a-affd-dab685375f19")
+			(uuid "40d4ee0f-258c-4909-9945-684fbf5511a3")
 			(effects
 				(font
 					(size 1 1)
@@ -70809,11 +70809,11 @@
 				)
 			)
 		)
-		(property "Value" "SDR Out"
+		(property "Value" "3.5mm_Jack"
 			(at 3.9 -6.33 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "21cd820c-c846-400f-9d0e-6f18019f079c")
+			(uuid "0a6f85cf-12fd-4040-b046-6db76090ece5")
 			(effects
 				(font
 					(size 1 1)
@@ -70826,7 +70826,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f4da3015-7126-471d-9abf-0ab9a1a4bee9")
+			(uuid "a4fa6ffd-9bd5-420d-b285-1eda9fa7f10c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70834,11 +70834,11 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SDR_OUT"
 			(at 4.07 -6.15 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "ad060a9a-eb7c-44be-a2fb-40e64311c2b2")
+			(uuid "a953302c-ee12-4e60-86d4-ac95bbd05232")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -76551,7 +76551,7 @@
 				)
 			)
 		)
-		(property "Value" "ADC IN"
+		(property "Value" "3.5mm_Jack"
 			(at 3.95 -6.26 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -76576,7 +76576,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ADC_IN"
 			(at 3.88 -6.53 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -88720,7 +88720,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP4"
-			(at 0 1.8 90)
+			(at -0.08 -2.61 180)
 			(layer "B.SilkS")
 			(uuid "80c99400-3a78-48e1-9c94-6c91c371008e")
 			(effects
@@ -92888,7 +92888,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "e5"
-			(at 0 1.8 90)
+			(at -2.58 0.02 180)
 			(layer "B.SilkS")
 			(uuid "7cffe78d-c39c-4682-8a7b-d6c5c13236ef")
 			(effects
@@ -94986,7 +94986,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP18"
-			(at 0 1.8 90)
+			(at -0.28 2.98 180)
 			(layer "B.SilkS")
 			(uuid "9789b2ff-46a0-462a-9790-e2012ee2e727")
 			(effects
@@ -110543,7 +110543,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP19"
-			(at 0 1.8 90)
+			(at -0.88 3.15 180)
 			(layer "B.SilkS")
 			(uuid "e814ae3e-97b2-4c9f-b4f4-c2b190a67617")
 			(effects
