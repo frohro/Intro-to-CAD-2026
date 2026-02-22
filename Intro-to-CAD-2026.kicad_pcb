@@ -10678,6 +10678,7 @@
 		(property "Reference" "Je3"
 			(at 0.09 -3.57 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "784d1709-e0bb-4b0b-a94a-63c4e9b5d158")
 			(effects
 				(font
@@ -23043,7 +23044,7 @@
 		(uuid "3eee386b-b5eb-4805-8dc7-6fe0f729c768")
 		(at 110.42 44.68 -90)
 		(property "Reference" "J13"
-			(at 0 -9.3 90)
+			(at 5.27 -7.03 180)
 			(layer "F.SilkS")
 			(uuid "f717899b-7412-44dc-85ea-261f39372a24")
 			(effects
