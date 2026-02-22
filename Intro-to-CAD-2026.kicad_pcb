@@ -111764,7 +111764,7 @@
 		)
 	)
 	(gr_text "GND-VCC-SCL-SDA"
-		(at 109.95 36.95 0)
+		(at 109.45 32.45 0)
 		(layer "F.SilkS")
 		(uuid "42d875dc-9326-4e88-b27f-3d8b5ed11c08")
 		(effects
