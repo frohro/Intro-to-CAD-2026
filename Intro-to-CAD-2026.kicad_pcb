@@ -68291,7 +68291,7 @@
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
 		(property "Reference" "SW1"
-			(at 2.8 -4.7 90)
+			(at 0.3 -4.29 180)
 			(layer "F.SilkS")
 			(uuid "640694de-aacf-4a07-808f-c3e94ad3f12b")
 			(effects
@@ -111785,6 +111785,18 @@
 				(size 1.5 1.5)
 				(thickness 0.3)
 				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "USR"
+		(at 183.19 69.45 0)
+		(layer "F.SilkS")
+		(uuid "c210b6ae-c0fa-4efc-be6e-57d61fde7313")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
