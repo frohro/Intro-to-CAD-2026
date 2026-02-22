@@ -426,6 +426,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Be careful!  Some OLEDs have Vcc and GND swapped!\nThese are in the order GND-Vcc-SCL-SDA."
+		(exclude_from_sim no)
+		(at 132.842 101.092 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ae5be202-38ee-4255-824f-6380249cdd57")
+	)
 	(wire
 		(pts
 			(xy 134.62 80.01) (xy 134.62 86.36)
@@ -567,7 +577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.robotshop.com/products/adeept-096in-oled-module-128x64-ssd1306-i2c-serial-self-luminous-display-4x?srsltid=AfmBOopotbcFOdiYSAv3nbip_y2fRyMvjxpTrSpnZLL8r5jh1ATbT-r4"
+		(property "Datasheet" "https://www.elecrow.com/i2c-096-oled-128x64-blueyellow-p-1086.html?gad_source=1&gad_campaignid=23136944328&gbraid=0AAAAADph4po9jWu37EuBxe1xvGVNjYozO&gclid=CjwKCAiAzOXMBhASEiwAe14SaQYG3nrkmjn4OBLnkGYVkErPP2mKp2PoozwaMVSEEWoUpiUMhQ8BHRoClo0QAvD_BwE"
 			(at 129.54 77.47 0)
 			(effects
 				(font
