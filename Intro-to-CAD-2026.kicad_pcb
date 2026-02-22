@@ -106085,8 +106085,8 @@
 		(at 130.89 89.62 90)
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
-		(property "Reference" "JP5"
-			(at 0 1.8 90)
+		(property "Reference" "MCLK"
+			(at -0.99 2.93 180)
 			(layer "B.SilkS")
 			(uuid "c636c33b-60a7-4714-8745-7db5a9f77de5")
 			(effects
