@@ -5,6 +5,300 @@
 	(uuid "c12dc015-e6cb-468c-8de4-269c3106de0e")
 	(paper "USLetter")
 	(lib_symbols
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper_2_Bridged_1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Resistors:0805,100Ω"
 			(pin_numbers
 				(hide yes)
@@ -827,6 +1121,12 @@
 		(uuid "083b6bef-6ec1-4df3-8748-8dd11738d840")
 	)
 	(junction
+		(at 46.99 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52cdfe38-9b17-4039-8a27-df98e4eaafea")
+	)
+	(junction
 		(at 40.64 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -837,10 +1137,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da7072b3-45d2-479f-a956-b95730505d9c")
-	)
-	(no_connect
-		(at 57.15 40.64)
-		(uuid "1d1fc0b0-bdf6-4b48-a8b2-ec2279831638")
 	)
 	(no_connect
 		(at 86.36 44.45)
@@ -1000,6 +1296,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 38.1) (xy 46.99 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84d31261-72d5-4cbb-b405-24a21eb64ab3")
+	)
+	(wire
+		(pts
+			(xy 22.86 38.1) (xy 46.99 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "886f3ec0-a800-4f11-be92-93871ddf7805")
+	)
+	(wire
+		(pts
 			(xy 36.83 58.42) (xy 39.37 58.42)
 		)
 		(stroke
@@ -1007,6 +1323,16 @@
 			(type default)
 		)
 		(uuid "88c4f755-9107-415b-8df3-c6be77d3476f")
+	)
+	(wire
+		(pts
+			(xy 46.99 133.35) (xy 46.99 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968ac7a5-5681-4866-8e10-706cf2a5b303")
 	)
 	(polyline
 		(pts
@@ -1030,13 +1356,23 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 156.21) (xy 48.26 156.21)
+			(xy 62.23 140.97) (xy 46.99 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c998f0b9-6fcd-4b63-a65e-2961f0134dcd")
+		(uuid "bb395e79-af6f-402a-8271-b0b6d98924de")
+	)
+	(wire
+		(pts
+			(xy 46.99 45.72) (xy 57.15 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb8a8f0a-2c19-4950-886a-4925d7526101")
 	)
 	(polyline
 		(pts
@@ -1050,16 +1386,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 143.51) (xy 62.23 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0f4b7ef-e31c-4afb-9c25-e72426cfeb6c")
-	)
-	(wire
-		(pts
 			(xy 25.4 55.88) (xy 29.21 55.88)
 		)
 		(stroke
@@ -1067,16 +1393,6 @@
 			(type default)
 		)
 		(uuid "d7ab34cb-3be4-4429-880f-bac16c2050b8")
-	)
-	(wire
-		(pts
-			(xy 48.26 156.21) (xy 48.26 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e05821be-686f-467f-b87e-6f5845e94a44")
 	)
 	(wire
 		(pts
@@ -3698,7 +4014,7 @@
 		(uuid "02a35231-4507-471f-9b94-83eb9339903e")
 	)
 	(label "MCLK"
-		(at 62.23 140.97 180)
+		(at 36.83 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3756,6 +4072,16 @@
 			(justify right bottom)
 		)
 		(uuid "2184ed1c-a036-44f2-bece-4405a9d51cb3")
+	)
+	(label "EX_CLK"
+		(at 36.83 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21f1b5d1-41d4-4653-b6f3-09fd351bdb5d")
 	)
 	(label "INB"
 		(at 189.23 69.85 180)
@@ -3867,6 +4193,16 @@
 		)
 		(uuid "55f3b782-f853-491d-abb8-4fa4b9422851")
 	)
+	(label "EX_CLK"
+		(at 36.83 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e162b0f-51c6-4c38-a559-36a257e02b18")
+	)
 	(label "Q_CLK"
 		(at 62.23 120.65 180)
 		(effects
@@ -3897,8 +4233,18 @@
 		)
 		(uuid "6bdaca51-0650-4d10-a85a-77a3b0192d41")
 	)
+	(label "SCLK"
+		(at 62.23 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6cda2d33-e2b7-482c-b425-db0b2faa0139")
+	)
 	(label "MCLK"
-		(at 57.15 45.72 180)
+		(at 22.86 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3956,6 +4302,16 @@
 			(justify right bottom)
 		)
 		(uuid "8e4a87e2-a594-4112-a96d-5414397e3ce6")
+	)
+	(label "SCLK"
+		(at 57.15 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e9e1481-4af2-4c8c-b982-285900e09b77")
 	)
 	(label "Q"
 		(at 62.23 125.73 180)
@@ -4068,7 +4424,7 @@
 		(uuid "c16c61c3-6b87-4c47-bef7-3bf1ce376d20")
 	)
 	(label "SDIN"
-		(at 57.15 43.18 180)
+		(at 57.15 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4088,7 +4444,7 @@
 		(uuid "c542a6d4-58ab-4460-a330-ca743fa9a645")
 	)
 	(label "LRCK"
-		(at 57.15 48.26 180)
+		(at 57.15 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5018,6 +5374,77 @@
 		)
 	)
 	(symbol
+		(lib_name "Jumper_2_Bridged_1")
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 41.91 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7055799a-f550-4430-a809-efef7d4a1404")
+		(property "Reference" "e9"
+			(at 43.1801 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "MCLK"
+			(at 44.958 131.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 41.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a78b6671-84f5-47c4-8306-61b84c1e8bb6")
+		)
+		(pin "2"
+			(uuid "3937b6f3-6d7a-46ca-b58e-c6f0e8851fc3")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(reference "e9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 91.44 29.21 270)
 		(mirror x)
@@ -5528,6 +5955,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 41.91 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb0696cb-8956-4fcd-b2aa-ef8fe0f9795f")
+		(property "Reference" "JP6"
+			(at 41.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EX_CLK"
+			(at 41.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 41.91 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" ""
+			(at 41.91 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6f3d572-a01e-457c-82d5-3b1aef340ff5")
+		)
+		(pin "2"
+			(uuid "036d3628-faf7-4cc2-9f7b-ae7f1987b429")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
+					(reference "JP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,4.7kΩ")
 		(at 41.91 48.26 0)
 		(unit 1)
@@ -5997,9 +6502,9 @@
 				(justify right)
 			)
 		)
-		(pin "SCLK" output
+		(pin "MCLK" output
 			(at 36.83 156.21 0)
-			(uuid "0d75d095-c09e-496b-9684-1f72ecf420ca")
+			(uuid "3f4201e0-d409-4e92-afab-fb078eb65b17")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6265,7 +6770,7 @@
 				(justify left)
 			)
 		)
-		(pin "LRCK" output
+		(pin "LRCK" input
 			(at 62.23 138.43 180)
 			(uuid "90c9ebd2-becd-47d8-aa3c-6e5d1c573711")
 			(effects
@@ -6275,7 +6780,7 @@
 				(justify left)
 			)
 		)
-		(pin "MCLK" output
+		(pin "MCLK" input
 			(at 62.23 140.97 180)
 			(uuid "a724050e-0582-4bfe-9893-6dbce4306d98")
 			(effects

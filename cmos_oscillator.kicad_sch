@@ -185,6 +185,153 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Capacitors:0805,100nF"
 			(pin_numbers
 				(hide yes)
@@ -932,6 +1079,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "24.576 MHz osc.\n(allows 48 kHz \nor 96 kHz)"
+		(exclude_from_sim no)
+		(at 139.192 112.522 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "db2746a9-a08b-40e8-b76f-ec341bdc1fbb")
+	)
 	(junction
 		(at 160.02 99.06)
 		(diameter 0)
@@ -949,12 +1106,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b396a4c-cad1-4de6-b807-09528580e7f1")
-	)
-	(junction
-		(at 154.94 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2521ed80-7660-4763-8a0f-6351702dd202")
 	)
 	(wire
 		(pts
@@ -978,6 +1129,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 99.06) (xy 167.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219ce351-4562-45b8-82d1-46138b282f25")
+	)
+	(wire
+		(pts
 			(xy 160.02 120.65) (xy 160.02 111.76)
 		)
 		(stroke
@@ -985,16 +1146,6 @@
 			(type default)
 		)
 		(uuid "222ea307-22a4-4f9d-894d-b1524141c7eb")
-	)
-	(wire
-		(pts
-			(xy 148.59 99.06) (xy 154.94 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26b87111-7d53-49c0-89c0-89f6ea941e29")
 	)
 	(wire
 		(pts
@@ -1008,17 +1159,17 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 120.65) (xy 154.94 111.76)
+			(xy 177.8 99.06) (xy 181.61 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "352a9a33-d9e3-42ca-b595-627db4aca28c")
+		(uuid "391fa023-d988-439f-8514-b98ad2b43523")
 	)
 	(wire
 		(pts
-			(xy 154.94 99.06) (xy 160.02 99.06)
+			(xy 148.59 99.06) (xy 160.02 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1078,13 +1229,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 120.65) (xy 154.94 120.65)
+			(xy 189.23 99.06) (xy 194.31 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac709930-1722-44ee-bce4-8eced9783956")
+		(uuid "a7debc49-24de-4e41-ab83-1e57c0318bfe")
 	)
 	(wire
 		(pts
@@ -1118,16 +1269,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 99.06) (xy 154.94 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0609f4f-66aa-485f-a9e2-276b1f7b4fd2")
-	)
-	(wire
-		(pts
 			(xy 160.02 93.98) (xy 160.02 99.06)
 		)
 		(stroke
@@ -1158,16 +1299,16 @@
 		)
 		(uuid "b5571f78-d117-4771-9269-d8cbbdcb1ed1")
 	)
-	(hierarchical_label "SCLK"
+	(hierarchical_label "MCLK"
 		(shape output)
-		(at 152.4 120.65 180)
+		(at 194.31 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "bfb1f781-c96d-4f45-8b1b-193e418130a8")
+		(uuid "fae12e00-3e3c-4f9b-b0cb-f9ac131946bc")
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,33Ω")
@@ -1536,6 +1677,84 @@
 			(project "Frohne"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/1bf8039c-3ec8-4592-8d3c-78300c63b601"
 					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 172.72 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8081628-1051-42a0-8e16-2e86d1af3814")
+		(property "Reference" "JP5"
+			(at 172.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "MCLK"
+			(at 172.72 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" ""
+			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "716a7e5d-d5df-4cf7-ba00-9071c65598b0")
+		)
+		(pin "2"
+			(uuid "c634fada-15f1-4eef-8787-8dc0e716ae3a")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/1bf8039c-3ec8-4592-8d3c-78300c63b601"
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -2090,7 +2309,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0805,33Ω")
-		(at 154.94 107.95 0)
+		(at 185.42 99.06 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2099,7 +2318,7 @@
 		(dnp no)
 		(uuid "fa2266eb-400d-4edb-a49e-f920ce328809")
 		(property "Reference" "R34"
-			(at 152.4 111.76 0)
+			(at 189.23 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2107,7 +2326,7 @@
 			)
 		)
 		(property "Value" "33Ω"
-			(at 154.94 107.95 90)
+			(at 185.42 99.06 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -2116,7 +2335,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 153.162 107.95 90)
+			(at 185.42 100.838 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2125,7 +2344,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311830_UNI-ROYAL-Uniroyal-Elec-0805W8F330JT5E_C17634.pdf"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2134,7 +2353,7 @@
 			)
 		)
 		(property "Description" "125mW Thick Film Resistors 150V ±1% ±200ppm/°C 33Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2143,7 +2362,7 @@
 			)
 		)
 		(property "LCSC" "C17634"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2152,7 +2371,7 @@
 			)
 		)
 		(property "Stock" "335994"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2161,7 +2380,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2170,7 +2389,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2179,7 +2398,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2188,7 +2407,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2197,7 +2416,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2206,7 +2425,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2215,7 +2434,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2224,7 +2443,7 @@
 			)
 		)
 		(property "Part" "0805W8F330JT5E"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2233,7 +2452,7 @@
 			)
 		)
 		(property "Resistance" "33Ω"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2242,7 +2461,7 @@
 			)
 		)
 		(property "Power(Watts)" "125mW"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2251,7 +2470,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,7 +2479,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "150V"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2269,7 +2488,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2278,7 +2497,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2287,7 +2506,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 154.94 107.95 0)
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2302,7 +2521,7 @@
 			(uuid "a851b911-f370-49a7-a498-3b567245929e")
 		)
 		(instances
-			(project "Frohne"
+			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/1bf8039c-3ec8-4592-8d3c-78300c63b601"
 					(reference "R34")
 					(unit 1)
