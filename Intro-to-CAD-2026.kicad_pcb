@@ -13739,7 +13739,8 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -43050,7 +43051,7 @@
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U1"
-			(at 0 -3.4 0)
+			(at -1.44 -3.44 0)
 			(layer "F.SilkS")
 			(uuid "8b065131-d682-4abb-a91d-7e8aceda9158")
 			(effects
@@ -111760,6 +111761,19 @@
 					(xy 179.918435 88.468426)
 				)
 			)
+		)
+	)
+	(gr_text "GND-VCC-SCL-SDA"
+		(at 109.95 36.95 0)
+		(layer "F.SilkS")
+		(uuid "42d875dc-9326-4e88-b27f-3d8b5ed11c08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "USB\nHere"
