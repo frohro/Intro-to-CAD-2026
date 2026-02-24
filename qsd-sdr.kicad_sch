@@ -11699,7 +11699,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74CBT3253"
+		(property "Value" "SN74CBT3253CDBR"
 			(at 138.684 79.756 0)
 			(effects
 				(font
@@ -11716,7 +11716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588924046305714177"
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74cbt3253c"
 			(at 130.81 93.98 0)
 			(effects
 				(font
