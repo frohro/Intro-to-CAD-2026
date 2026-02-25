@@ -32,3 +32,4 @@ production
 # Simulation Files
 *.raw
 .log
+*.lck
