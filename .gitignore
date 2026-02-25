@@ -33,3 +33,4 @@ production
 *.raw
 .log
 *.lck
+*.gbr
