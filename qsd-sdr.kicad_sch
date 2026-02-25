@@ -11699,7 +11699,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74CBT3253CDBR"
+		(property "Value" "SN74CBT3253DBQR"
 			(at 138.684 79.756 0)
 			(effects
 				(font
@@ -11707,7 +11707,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm"
+		(property "Footprint" "Package_SO:SSOP-16_4.4x5.2mm_P0.65mm"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -11716,7 +11716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74cbt3253c"
+		(property "Datasheet" ""
 			(at 130.81 93.98 0)
 			(effects
 				(font
