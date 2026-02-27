@@ -11707,7 +11707,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-16_4.4x5.2mm_P0.65mm"
+		(property "Footprint" "Intro_to_CAD:DBQ0016A-IPC_A"
 			(at 130.81 93.98 0)
 			(effects
 				(font
@@ -11716,7 +11716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74cbt3253c.pdf?ts=1772124766474&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FSN74CBT3253C%252Fpart-details%252FSN74CBT3253CDBQR"
 			(at 130.81 93.98 0)
 			(effects
 				(font
