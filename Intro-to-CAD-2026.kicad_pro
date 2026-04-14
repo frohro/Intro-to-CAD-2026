@@ -1244,7 +1244,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "#PWR98,#PWR100,#PWR112,#PWR144",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

@@ -7381,6 +7381,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Disconnect this if you want to use more than +5V\nfdr the analog voltage input."
+		(exclude_from_sim no)
+		(at 221.742 22.098 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "06edae10-5514-46a9-9c65-f1cc181f3292")
+	)
 	(text "D6 needs to be close to Q4\nand D7 needs to be close to Q5.  \nSimilarly, Q3 by D4 and Q2 by D5."
 		(exclude_from_sim no)
 		(at 156.718 157.48 0)
@@ -7478,6 +7488,12 @@
 		(uuid "5385b479-04b2-41fa-b701-701c9698918d")
 	)
 	(junction
+		(at 204.47 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "583eb80e-423a-4b70-bc25-c9f6adff029c")
+	)
+	(junction
 		(at 157.48 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7508,16 +7524,16 @@
 		(uuid "682d46b9-cad4-45ae-9d96-6183875e3eda")
 	)
 	(junction
-		(at 203.2 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b5fccbd-f482-4cac-b5a8-4ae524d85bc0")
-	)
-	(junction
 		(at 82.55 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fe3ec81-31c6-4010-9c7a-0f6a95cbc0b0")
+	)
+	(junction
+		(at 204.47 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7efc929a-5dd2-42ca-bdd9-7849c6d07d6a")
 	)
 	(junction
 		(at 184.15 58.42)
@@ -7572,12 +7588,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5b786ea-8453-465e-afec-a6d7255a2350")
-	)
-	(junction
-		(at 203.2 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad201a28-e49a-44c0-92dd-18a95ef9ba72")
 	)
 	(junction
 		(at 184.15 43.18)
@@ -7829,7 +7839,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 85.09) (xy 203.2 62.23)
+			(xy 204.47 85.09) (xy 208.28 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a0a41e2-3819-451e-bcf4-e2bc1e162ca2")
+	)
+	(wire
+		(pts
+			(xy 204.47 85.09) (xy 204.47 62.23)
 		)
 		(stroke
 			(width 0)
@@ -8139,7 +8159,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 85.09) (xy 203.2 85.09)
+			(xy 165.1 85.09) (xy 204.47 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8199,7 +8219,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 62.23) (xy 199.39 62.23)
+			(xy 199.39 62.23) (xy 204.47 62.23)
 		)
 		(stroke
 			(width 0)
@@ -8306,16 +8326,6 @@
 			(type default)
 		)
 		(uuid "b51f6eed-7767-43cf-9382-8407dee45dad")
-	)
-	(wire
-		(pts
-			(xy 203.2 85.09) (xy 208.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b888fd37-3b95-4022-b355-16efe5b23798")
 	)
 	(wire
 		(pts
@@ -25623,7 +25633,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 203.2 62.23 270)
+		(at 204.47 62.23 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25633,7 +25643,7 @@
 		(dnp no)
 		(uuid "f963f18f-8b5b-4a6a-85b1-76a5bc6c85df")
 		(property "Reference" "TP8"
-			(at 209.55 62.23 90)
+			(at 210.82 62.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25645,7 +25655,7 @@
 			)
 		)
 		(property "Value" "V_R"
-			(at 205.74 59.69 90)
+			(at 207.01 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25656,7 +25666,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 203.2 67.31 0)
+			(at 204.47 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25667,7 +25677,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 67.31 0)
+			(at 204.47 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25678,7 +25688,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 62.23 0)
+			(at 204.47 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25689,7 +25699,7 @@
 			)
 		)
 		(property "JLCPCB #" ""
-			(at 203.2 62.23 0)
+			(at 204.47 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

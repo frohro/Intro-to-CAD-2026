@@ -1,4 +1,4 @@
-# Project Documentation: Parallel Summation QSD SDR
+# Project Documentation: Parallel Summation QSD SDR 
 
 ## 1. System Architecture
 This receiver is a high-performance Direct Conversion SDR utilizing a **Quadrature Sampling Detector (QSD)** architecture. The design is optimized for high conversion gain and low noise by prioritizing signal symmetry and high-impedance buffering.
@@ -6,7 +6,7 @@ This receiver is a high-performance Direct Conversion SDR utilizing a **Quadratu
 ## 2. RF Front-End & Mixer
 *   **Parallel Summation Mixer:** A modified Tayloe mixer design using a center-tapped 1:1+1 transformer and a dual 1:4 bus switch (**SN74CBT3253**). 
 *   **Sampling Logic:** Each I/Q channel samples the transformer secondary twice per LO cycle (I samples at 0° and 180°; Q samples at 90° and 270°). This architecture increases sampling efficiency compared to standard single-sample designs.
-*   **Sampling Capacitors:** Utilizes **C0G/NP0** dielectrics (330pF–1nF) to ensure linear tracking of the RF signal and to minimize parasitic effects from the CMOS switches.
+*   **Sampling Capacitors:** Utilizes **C0G/NP0** dielectrics (10nF) to ensure linear tracking of the RF signal and to minimize parasitic effects from the CMOS switches.
 
 ## 3. Analog Baseband (Instrumentation Amplifier)
 *   **Topology:** Each channel (I and Q) utilizes one **OPA1612** dual op-amp package configured as a **2-Op-Amp Instrumentation Amplifier**.
@@ -27,6 +27,5 @@ This receiver is a high-performance Direct Conversion SDR utilizing a **Quadratu
 ## 6. Digital Interface
 *   **ADC:** **PCM1808** 24-bit Sigma-Delta converter operating in **Master Mode**.
 *   **MCU:** **Raspberry Pi Pico** operating as an **I2S Slave**. Data is captured via PIO state machines and streamed over USB or WiFi (UDP) for processing.
-*   **DAC:**  **CJC4334H** a 24 bit DAC with a line level output.
-*   
+*   **DAC:**  **CJC4334H** a 24 bit DAC with a line level output, and an amplified (suitable for headphones) output.
 

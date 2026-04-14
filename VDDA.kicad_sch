@@ -5397,6 +5397,17 @@
 		)
 		(uuid "17d565a5-b73a-47e2-9481-036c49a0ccc2")
 	)
+	(text "We need to reverse the drain and source on Q1."
+		(exclude_from_sim no)
+		(at 89.916 131.064 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 41 1)
+			)
+		)
+		(uuid "2857ea3b-45b6-4445-92bd-af715c3f3b85")
+	)
 	(text "We are running VDDA\nat 4.5V (minimum allowed)."
 		(exclude_from_sim no)
 		(at 228.6 106.934 0)
@@ -5417,13 +5428,15 @@
 		)
 		(uuid "83380725-b540-4c25-8e17-9db92517b77b")
 	)
-	(text "+12V Clean \nAnalog Supply\noption which\nalso provides\na way to power\nthe Pico if it\nhas no USB \nconnection."
+	(text "+5V Clean \nAnalog Supply\noption which\nalso provides\na way to power\nthe Pico if it\nhas no USB \nconnection.\nBeware!  Do not\nuse this until you\nhave fixed Q1's \nwiring problem or \nuse only 5V for the\nexternal DC input.\nOnce the Q1 is fixed\nyou can disconnect\nthe VAH jumper to\nthe push-pull DAC\namp and then connect\n+12V here if you like."
 		(exclude_from_sim no)
-		(at 88.9 46.482 0)
+		(at 76.708 48.514 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 255 2 79 1)
 			)
+			(justify left)
 		)
 		(uuid "9b1b4a25-bca2-4bd7-b337-06a91ebc2de3")
 	)
