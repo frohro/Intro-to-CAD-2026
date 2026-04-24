@@ -7381,16 +7381,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Disconnect this if you want to use more than +5V\nfdr the analog voltage input."
-		(exclude_from_sim no)
-		(at 221.742 22.098 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "06edae10-5514-46a9-9c65-f1cc181f3292")
-	)
 	(text "D6 needs to be close to Q4\nand D7 needs to be close to Q5.  \nSimilarly, Q3 by D4 and Q2 by D5."
 		(exclude_from_sim no)
 		(at 156.718 157.48 0)
@@ -7533,7 +7523,7 @@
 		(at 204.47 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7efc929a-5dd2-42ca-bdd9-7849c6d07d6a")
+		(uuid "7b3e225a-2fdd-427e-82b3-21de41212b32")
 	)
 	(junction
 		(at 184.15 58.42)
@@ -7630,6 +7620,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd4110da-a315-46c6-a29f-542068df52ed")
+	)
+	(junction
+		(at 204.47 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9003d30-69ec-4e11-bb3f-9fdfe9256b5a")
 	)
 	(junction
 		(at 187.96 29.21)
@@ -9281,7 +9277,7 @@
 		(dnp no)
 		(uuid "063ef752-3370-4ab9-83c9-52a807791a9c")
 		(property "Reference" "R49"
-			(at 197.104 138.684 90)
+			(at 197.104 132.334 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12408,10 +12404,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "43e024f9-7bb7-470c-b74c-6c0626a676c3")
 		(property "Reference" "R43"
-			(at 186.69 77.4699 0)
+			(at 178.816 77.724 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13064,7 +13059,7 @@
 			)
 		)
 		(property "Description" "DAC LL"
-			(at 146.05 88.9 0)
+			(at 146.558 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14096,7 +14091,7 @@
 		(dnp no)
 		(uuid "5a2f4298-47b8-45a1-a14f-b871c6cd0ffc")
 		(property "Reference" "D7"
-			(at 187.96 138.4299 0)
+			(at 180.848 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14961,6 +14956,96 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/483699fc-423f-4ea3-8184-654c25c5d0a3"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 204.47 128.27 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5e6d6857-eb94-40a6-9713-2ea9bd96872e")
+		(property "Reference" "TP9"
+			(at 210.82 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "V_L"
+			(at 207.01 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 204.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB #" ""
+			(at 204.47 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90e239d3-7a4c-4de7-a86e-ad864c8cfe08")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/483699fc-423f-4ea3-8184-654c25c5d0a3"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -15866,10 +15951,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "810e5d41-e6f2-478f-b063-184ab3d0ed2b")
 		(property "Reference" "R62"
-			(at 186.69 62.2299 0)
+			(at 178.562 62.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16390,10 +16474,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8a527a6f-80f8-4826-ac39-122a38b4a6d5")
 		(property "Reference" "R47"
-			(at 187.96 149.8599 0)
+			(at 180.086 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18341,10 +18424,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9b91113b-258c-4418-a476-8f33d2e0cd0f")
 		(property "Reference" "R56"
-			(at 187.96 132.0799 0)
+			(at 186.944 132.842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20528,7 +20610,7 @@
 		(dnp no)
 		(uuid "b1ae10fc-fd96-44ba-b93a-f4a95605f93a")
 		(property "Reference" "R48"
-			(at 196.85 114.3 90)
+			(at 196.596 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21047,10 +21129,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b576f02e-b84e-4494-9f5a-d30a23fc283a")
 		(property "Reference" "R42"
-			(at 186.69 38.0999 0)
+			(at 178.562 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24205,7 +24286,7 @@
 		(dnp no)
 		(uuid "d9a4c920-769c-4add-bf09-732c6eb52118")
 		(property "Reference" "D4"
-			(at 186.69 45.7199 0)
+			(at 180.086 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

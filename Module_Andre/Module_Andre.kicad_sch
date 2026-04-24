@@ -1595,17 +1595,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "The +3.3V had the wrong label.  This means they need to be jumped to +3.3V."
-		(exclude_from_sim no)
-		(at 54.356 16.764 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 52 1)
-			)
-		)
-		(uuid "8c0d7a06-8841-42ab-9e50-4ef6c4250941")
-	)
 	(junction
 		(at 31.75 39.37)
 		(diameter 0)

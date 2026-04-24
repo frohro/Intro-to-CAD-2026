@@ -1254,6 +1254,16 @@
 		)
 		(uuid "12aa14e5-b722-4353-b7e9-fd2d40c12dcf")
 	)
+	(text "Should I delete these 100 Ohm resistors?"
+		(exclude_from_sim no)
+		(at 35.306 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7111c621-2504-4bc5-8302-08fd341193c7")
+	)
 	(text "I2C"
 		(exclude_from_sim no)
 		(at 47.498 57.404 0)
@@ -1263,17 +1273,6 @@
 			)
 		)
 		(uuid "8326fcbc-f766-40a3-956b-f7a9c4490df8")
-	)
-	(text "SDA and SCL were swapped\nhere, making I2C not \nwork in v 0.1.  I fixed\nthe schematic here."
-		(exclude_from_sim no)
-		(at 40.386 76.454 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 1 69 1)
-			)
-		)
-		(uuid "91294d77-8e4d-43e6-9cf2-c874d6296a1f")
 	)
 	(text "USB"
 		(exclude_from_sim no)
@@ -1292,16 +1291,16 @@
 		(uuid "083b6bef-6ec1-4df3-8748-8dd11738d840")
 	)
 	(junction
-		(at 46.99 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "52cdfe38-9b17-4039-8a27-df98e4eaafea")
-	)
-	(junction
 		(at 40.64 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f3117a7-1f84-4c04-83ac-ccdca37d7180")
+	)
+	(junction
+		(at 46.99 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d901ec81-8b54-4420-b9f9-23fc175561be")
 	)
 	(junction
 		(at 41.91 55.88)
@@ -1324,16 +1323,6 @@
 	(no_connect
 		(at 86.36 31.75)
 		(uuid "eec794f2-fbdc-44a6-978e-d51e1b8c6a0b")
-	)
-	(wire
-		(pts
-			(xy 36.83 55.88) (xy 41.91 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ec02f65-2626-4f50-bc63-fbd5778098c3")
 	)
 	(wire
 		(pts
@@ -1417,7 +1406,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 58.42) (xy 29.21 58.42)
+			(xy 25.4 58.42) (xy 39.37 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1487,16 +1476,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 58.42) (xy 39.37 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88c4f755-9107-415b-8df3-c6be77d3476f")
-	)
-	(wire
-		(pts
 			(xy 46.99 133.35) (xy 46.99 140.97)
 		)
 		(stroke
@@ -1557,7 +1536,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 55.88) (xy 29.21 55.88)
+			(xy 25.4 55.88) (xy 41.91 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5694,7 +5673,7 @@
 	(symbol
 		(lib_name "Jumper_2_Bridged_1")
 		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 41.91 133.35 0)
+		(at 41.91 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5704,7 +5683,7 @@
 		(dnp no)
 		(uuid "7055799a-f550-4430-a809-efef7d4a1404")
 		(property "Reference" "e9"
-			(at 43.1801 134.62 90)
+			(at 43.1801 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5715,8 +5694,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MCLK"
-			(at 44.958 131.064 0)
+		(property "Value" "EX_CLK"
+			(at 44.958 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5727,7 +5706,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
-			(at 41.91 133.35 0)
+			(at 41.91 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5738,7 +5717,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 133.35 0)
+			(at 41.91 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5749,7 +5728,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 41.91 133.35 0)
+			(at 41.91 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5855,540 +5834,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 33.02 55.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9246faa7-0b38-406d-8584-716f2f0d0a60")
-		(property "Reference" "R24"
-			(at 33.02 53.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100Ω"
-			(at 33.02 55.88 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 33.02 57.658 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17408"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "3356429"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.005USD"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0805W8F1000T5E"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "100Ω"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "125mW"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 33.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "29428180-fc8f-48ae-84da-cd8e898564ad")
-		)
-		(pin "1"
-			(uuid "70fd0526-a010-41d7-a96a-2379164c665a")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 33.02 58.42 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e40d2ac5-f12c-471a-9466-976db591e039")
-		(property "Reference" "R25"
-			(at 33.274 61.468 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100Ω"
-			(at 33.02 58.42 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 33.02 60.198 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17408"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "3356429"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.005USD"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0805W8F1000T5E"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "100Ω"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "125mW"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5128e65c-fc0c-406a-804b-d0d1ad3c61fa")
-		)
-		(pin "1"
-			(uuid "57b55ad5-1b70-4179-8e51-0f9a21ecd210")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 41.91 140.97 0)
+		(at 41.91 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6399,7 +5846,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb0696cb-8956-4fcd-b2aa-ef8fe0f9795f")
 		(property "Reference" "JP6"
-			(at 41.91 134.62 0)
+			(at 41.91 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6409,8 +5856,8 @@
 				)
 			)
 		)
-		(property "Value" "EX_CLK"
-			(at 41.91 137.16 0)
+		(property "Value" "MCLK"
+			(at 41.91 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6420,7 +5867,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 41.91 140.97 0)
+			(at 41.91 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6431,7 +5878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 140.97 0)
+			(at 41.91 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6442,7 +5889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 140.97 0)
+			(at 41.91 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6453,7 +5900,7 @@
 			)
 		)
 		(property "JLCPCB #" ""
-			(at 41.91 140.97 0)
+			(at 41.91 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

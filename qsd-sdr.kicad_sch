@@ -5,8 +5,8 @@
 	(uuid "6db11ccd-33d5-4822-8884-df40c86a3221")
 	(paper "USLetter")
 	(title_block
-		(date "2026-01-11")
-		(rev "0.1")
+		(date "2026-03-31")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:OPA1612AxD"
@@ -7009,16 +7009,16 @@
 		(uuid "026d9762-1a4c-47d7-8845-a99f6d76576f")
 	)
 	(junction
-		(at 168.91 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "07e7e48c-63d6-4cea-96e5-82dc46f8ddc4")
-	)
-	(junction
 		(at 43.18 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a8c0cae-dc4a-4446-b25b-ec72176344ea")
+	)
+	(junction
+		(at 66.04 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ad72b15-8c44-45e9-842e-6aa47045d45e")
 	)
 	(junction
 		(at 142.24 72.39)
@@ -7075,6 +7075,12 @@
 		(uuid "3224b18d-07fd-45df-8bd5-1012a271e110")
 	)
 	(junction
+		(at 157.48 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "396247a4-0d94-40af-9778-9c604aaa1189")
+	)
+	(junction
 		(at 146.05 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7115,12 +7121,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78c1b4e5-0e23-4985-a758-cea00decc5cb")
-	)
-	(junction
-		(at 161.29 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c3dcd30-5027-4fa9-ab31-a20f9453e4bb")
 	)
 	(junction
 		(at 146.05 83.82)
@@ -7165,6 +7165,18 @@
 		(uuid "b2b61f83-e3b0-4c2a-8222-a76585557dcd")
 	)
 	(junction
+		(at 161.29 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8ed617d-5b86-46a9-92fd-0fd8ae1e7fb3")
+	)
+	(junction
+		(at 22.86 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba33e50a-9493-4957-b766-2338d01a7500")
+	)
+	(junction
 		(at 163.83 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7205,6 +7217,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9233e81-51c0-439d-9115-a5987ab76f01")
+	)
+	(junction
+		(at 49.53 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f03e9d45-e98d-4062-a573-c1f291ba0bfb")
 	)
 	(junction
 		(at 166.37 83.82)
@@ -7402,6 +7420,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 88.9) (xy 157.48 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e8363c6-0192-4f6f-9ded-219615b9ab4c")
+	)
+	(wire
+		(pts
 			(xy 251.46 101.6) (xy 257.81 101.6)
 		)
 		(stroke
@@ -7419,6 +7447,16 @@
 			(type default)
 		)
 		(uuid "241f7c93-c786-4ada-bfc5-29c70f735e4e")
+	)
+	(wire
+		(pts
+			(xy 22.86 77.47) (xy 22.86 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2858f210-fcbf-40f9-8d52-d0854317ec5e")
 	)
 	(wire
 		(pts
@@ -7442,7 +7480,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 91.44) (xy 168.91 91.44)
+			(xy 140.97 91.44) (xy 161.29 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7592,7 +7630,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 88.9) (xy 161.29 72.39)
+			(xy 161.29 72.39) (xy 161.29 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7689,6 +7727,16 @@
 			(type default)
 		)
 		(uuid "64083384-4ead-4d0e-8ed6-94304322712d")
+	)
+	(wire
+		(pts
+			(xy 22.86 87.63) (xy 49.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65eddf69-0aa4-4ba8-a67a-7e10cafcfe56")
 	)
 	(wire
 		(pts
@@ -7822,6 +7870,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 74.93) (xy 66.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87adf473-731c-4dd7-be98-edc75af28d9f")
+	)
+	(wire
+		(pts
 			(xy 55.88 72.39) (xy 80.01 72.39)
 		)
 		(stroke
@@ -7932,6 +7990,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 87.63) (xy 68.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d70fd17-e97a-4206-aea6-e95919e7ea86")
+	)
+	(wire
+		(pts
 			(xy 41.91 99.06) (xy 44.45 99.06)
 		)
 		(stroke
@@ -7962,13 +8030,13 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 91.44) (xy 168.91 99.06)
+			(xy 49.53 87.63) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4196de7-c77e-488d-88f2-9c452457a41c")
+		(uuid "a4c1ea5a-23fd-47ef-9805-215426fc5dd1")
 	)
 	(wire
 		(pts
@@ -8262,16 +8330,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 161.29 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d61889db-005f-4339-90a9-91d210e60e05")
-	)
-	(wire
-		(pts
 			(xy 43.18 72.39) (xy 44.45 72.39)
 		)
 		(stroke
@@ -8312,7 +8370,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 82.55) (xy 49.53 83.82)
+			(xy 49.53 82.55) (xy 49.53 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8352,7 +8410,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 96.52) (xy 161.29 88.9)
+			(xy 161.29 96.52) (xy 161.29 91.44)
 		)
 		(stroke
 			(width 0)
@@ -8382,7 +8440,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 99.06) (xy 163.83 99.06)
+			(xy 140.97 99.06) (xy 157.48 99.06)
 		)
 		(stroke
 			(width 0)
@@ -8399,6 +8457,26 @@
 			(type default)
 		)
 		(uuid "efc91cd4-5148-463f-a9b9-0e8bb874cf80")
+	)
+	(wire
+		(pts
+			(xy 157.48 88.9) (xy 157.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f36eec2d-c443-4709-8a2a-10016bb2b19d")
+	)
+	(wire
+		(pts
+			(xy 157.48 99.06) (xy 163.83 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4bd00b1-560e-4415-948c-f437fcd550a9")
 	)
 	(wire
 		(pts
@@ -8551,83 +8629,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 68.58 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "03391f6f-01ba-4e5a-aaec-70eb573e0bd2")
-		(property "Reference" "#PWR021"
-			(at 68.58 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 65.405 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "30f232cb-3d1c-4ddb-8e16-31f77e895306")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDDA")
 		(at 142.24 64.77 0)
 		(unit 1)
@@ -8700,6 +8701,84 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 22.86 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "088aa3f3-6075-4ed4-ac30-2098dfea1636")
+		(property "Reference" "#PWR019"
+			(at 22.86 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 22.86 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb29101d-e630-4bd9-bda9-d1dd41d29cdf")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -15127,84 +15206,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 49.53 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95564c8b-73cf-4a28-8a01-30a785a75e87")
-		(property "Reference" "#PWR019"
-			(at 49.53 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 49.53 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "50bd36fa-4e9e-4144-ad70-cbf45039d47e")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:OPA1612AxD")
 		(at 184.15 74.93 0)
 		(unit 1)
@@ -15346,84 +15347,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 22.86 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ccb7f4b-0a98-4dba-ab07-b1cfb4b3de85")
-		(property "Reference" "#PWR017"
-			(at 22.86 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 22.86 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 22.86 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "683c5991-d0e4-44a0-9a51-fd472eb71a20")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 243.84 127 270)
 		(unit 1)
@@ -15497,6 +15420,101 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 22.86 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a234254f-ce44-4881-a188-31e112b034c4")
+		(property "Reference" "JP89"
+			(at 24.13 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GND_LP_SND"
+			(at 24.13 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 22.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB #" ""
+			(at 22.86 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65486cc4-63e9-43aa-b7f7-000eb3b5884f")
+		)
+		(pin "2"
+			(uuid "3ba07446-ff3d-4e9b-add2-5c45de58524b")
+		)
+		(instances
+			(project "Intro-to-CAD-2026"
+				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
+					(reference "JP89")
 					(unit 1)
 				)
 			)
@@ -16725,83 +16743,6 @@
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
 					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 66.04 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cbfcec75-9e8e-418a-b43f-bef312c64396")
-		(property "Reference" "#PWR020"
-			(at 66.04 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 62.865 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9a818909-5d7d-4ffa-a1d4-29da616280f3")
-		)
-		(instances
-			(project "Intro-to-CAD-2026"
-				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/c5519ce3-55b4-441f-abb2-2c2467967554"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)

@@ -6,7 +6,7 @@
 	(paper "A")
 	(title_block
 		(date "2026-04-14")
-		(rev "v 0.1 errrors noted")
+		(rev "v 0.2")
 	)
 	(lib_symbols
 		(symbol "ADP7142AUJZ_1"
@@ -5401,17 +5401,6 @@
 		)
 		(uuid "17d565a5-b73a-47e2-9481-036c49a0ccc2")
 	)
-	(text "We need to reverse the drain and source on Q1."
-		(exclude_from_sim no)
-		(at 89.916 131.064 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 41 1)
-			)
-		)
-		(uuid "2857ea3b-45b6-4445-92bd-af715c3f3b85")
-	)
 	(text "We are running VDDA\nat 4.5V (minimum allowed)."
 		(exclude_from_sim no)
 		(at 228.6 106.934 0)
@@ -5422,6 +5411,16 @@
 		)
 		(uuid "37a28e0f-d2c4-4670-b3bb-5d748cd5b428")
 	)
+	(text "Clean analog\nsupply"
+		(exclude_from_sim no)
+		(at 86.614 40.894 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6d010418-2772-411e-a2c4-0062ed49e9ff")
+	)
 	(text "This powers the Pico\nwhen we are not \nusing USB."
 		(exclude_from_sim no)
 		(at 180.594 79.248 0)
@@ -5431,18 +5430,6 @@
 			)
 		)
 		(uuid "83380725-b540-4c25-8e17-9db92517b77b")
-	)
-	(text "+5V Clean \nAnalog Supply\noption which\nalso provides\na way to power\nthe Pico if it\nhas no USB \nconnection.\nBeware!  Do not\nuse this until you\nhave fixed Q1's \nwiring problem or \nuse only 5V for the\nexternal DC input.\nOnce the Q1 is fixed\nyou can disconnect\nthe VAH jumper to\nthe push-pull DAC\namp and then connect\n+12V here if you like."
-		(exclude_from_sim no)
-		(at 76.708 48.514 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 2 79 1)
-			)
-			(justify left)
-		)
-		(uuid "9b1b4a25-bca2-4bd7-b337-06a91ebc2de3")
 	)
 	(text "This connection goes \nto VSYS (pico) or\nVin (YD-RP2040)."
 		(exclude_from_sim no)
@@ -5471,6 +5458,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "136b8006-e6b2-4490-a5cb-34f84ab4795a")
+	)
+	(junction
+		(at 168.91 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14c44276-2126-474f-a924-3418b425d84a")
 	)
 	(junction
 		(at 175.26 113.03)
@@ -5555,12 +5548,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "978145f9-626c-4caa-b996-5e7f632567a7")
-	)
-	(junction
-		(at 102.87 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9cef8bf3-34c5-4a4d-a50b-a8748253714e")
 	)
 	(junction
 		(at 161.29 115.57)
@@ -5680,7 +5667,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 64.77) (xy 102.87 67.31)
+			(xy 102.87 64.77) (xy 102.87 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5807,6 +5794,16 @@
 			(type default)
 		)
 		(uuid "594436e9-ccc7-4455-b79c-6af039a431ac")
+	)
+	(wire
+		(pts
+			(xy 168.91 57.15) (xy 168.91 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eef50bd-7e5e-4f35-aa73-4f72ba507376")
 	)
 	(wire
 		(pts
@@ -5937,16 +5934,6 @@
 			(type default)
 		)
 		(uuid "b46dd50b-7b17-48ae-a849-53787c8afb13")
-	)
-	(wire
-		(pts
-			(xy 102.87 67.31) (xy 102.87 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b980b071-943a-40fb-a844-95bec38a1591")
 	)
 	(wire
 		(pts
@@ -10063,7 +10050,8 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:PMOS,AO3401A")
-		(at 87.63 110.49 270)
+		(at 87.63 110.49 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13120,7 +13108,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 102.87 67.31 270)
+		(at 168.91 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13131,7 +13119,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbf75cd8-6cc6-4480-80fd-90b7a23f389b")
 		(property "Reference" "#PWR093"
-			(at 99.06 67.31 0)
+			(at 168.91 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13142,7 +13130,7 @@
 			)
 		)
 		(property "Value" "VAH"
-			(at 106.68 67.3099 90)
+			(at 171.45 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13153,7 +13141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 67.31 0)
+			(at 168.91 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13164,7 +13152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 67.31 0)
+			(at 168.91 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13175,7 +13163,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 67.31 0)
+			(at 168.91 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
