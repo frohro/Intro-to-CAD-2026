@@ -68,6 +68,30 @@
         [
           "silk_edge_clearance|100950000|52680000|51923656-2ca5-447d-a226-7cfc9ec89338|a4d4d7a4-a75b-4216-a65b-97c0c7ed2a41",
           ""
+        ],
+        [
+          "starved_thermal|144400000|50380000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|663c62a1-0409-4a18-a004-a64e574e26a1|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|144400000|50380000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|946af552-5345-4090-9425-f0fc3a7a3c1f|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|144400000|50380000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|98383eb8-ae74-45b1-b4a9-40eb621ca875|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|144400000|63080000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|34532094-f575-4112-9d56-4e00beea3792|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|144400000|63080000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|72e17b50-862f-482a-9d23-7c38339ba5ff|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|144400000|63080000|aa0dfc64-f9bf-480b-bbcf-219f838cf3f8|85b2ba03-0a76-495b-af0c-39fda4675650|F.Cu",
+          ""
         ]
       ],
       "meta": {
