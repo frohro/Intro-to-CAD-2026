@@ -59,7 +59,7 @@ class Hardware(BaseHardware):
         try:
             self._crystal_freq = float(xtal_raw)
         except (ValueError, TypeError):
-            self._crystal_freq = 24_576_000.0   # safe default
+            self._crystal_freq = 25_000_700.02  # Cadyn board fallback
         print("Crystal freq: %.3f Hz" % self._crystal_freq)
 
         # Tell the Pico the soundcard sample rate (still used for NeoPixel
