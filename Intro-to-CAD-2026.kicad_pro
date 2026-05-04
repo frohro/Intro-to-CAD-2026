@@ -744,6 +744,9 @@
       "Net-(C42-Pad1)": [
         "5V0"
       ],
+      "Net-(C87-Pad1)": [
+        "1V1"
+      ],
       "Net-(D1-Pad1)": [
         "5V0"
       ],
@@ -827,6 +830,9 @@
       "Net-(U1-VDD)": [
         "1V1"
       ],
+      "Net-(U11A-~{R})": [
+        "1V1"
+      ],
       "Net-(U3-VCC)": [
         "5V0"
       ],
@@ -849,6 +855,9 @@
         "1V1"
       ],
       "Net-(e1-EN)": [
+        "5V0"
+      ],
+      "Net-(e10-EN)": [
         "5V0"
       ],
       "Net-(e4-EN)": [
@@ -1271,7 +1280,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U12,C91-92,FB10,#PWR151,#PWR154,R12-13,R74",
     "variants": []
   },
   "sheets": [
