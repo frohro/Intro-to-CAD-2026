@@ -1283,7 +1283,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "C95-98",
+    "used_designators": "#PWR156-157,#PWR160,#PWR162,#PWR165,#PWR167-168,#PWR177,JP6,JP11-14",
     "variants": []
   },
   "sheets": [
@@ -1346,6 +1346,10 @@
     [
       "5c29e8b3-2445-41f2-90b3-f3e400c1872d",
       "H-Bridge"
+    ],
+    [
+      "a7291a31-7a06-4189-9d8b-aeb3c6ba17dd",
+      "CJC5340"
     ]
   ],
   "text_variables": {},

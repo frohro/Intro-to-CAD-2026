@@ -4503,6 +4503,17 @@
 		)
 		(uuid "264c40b7-fdb6-4f3d-907f-2ced2226e4a7")
 	)
+	(hierarchical_label "OUT_R"
+		(shape output)
+		(at 130.81 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "346247cd-6e62-4b65-96e1-24f27d42c7d2")
+	)
 	(hierarchical_label "SD"
 		(shape output)
 		(at 234.95 92.71 0)
@@ -4513,6 +4524,17 @@
 			(justify left)
 		)
 		(uuid "3481dde1-493c-425b-bda0-0d3778f05799")
+	)
+	(hierarchical_label "OUT_L"
+		(shape output)
+		(at 130.81 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d6b012e-3995-4505-b132-772830bc0857")
 	)
 	(hierarchical_label "Q_IN"
 		(shape input)
@@ -4638,7 +4660,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b0ccfdf1-0c8d-4ca6-ad53-452fb7891179")
+			(uuid "3d04703c-5b8d-4bc0-a434-dfc06374e99f")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -4716,7 +4738,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9589b8d7-203a-4f92-8a18-392f70029605")
+			(uuid "1565e8b6-7052-4cdc-8166-2ca3c2b376b2")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -4816,13 +4838,13 @@
 			)
 		)
 		(pin "R"
-			(uuid "14330fa2-0a15-4f24-96c5-3d1b21d01ea2")
+			(uuid "cfd3a51c-9c3c-4352-b3bf-1d48ae51cb60")
 		)
 		(pin "S"
-			(uuid "0a5c48bf-c914-4bb0-8d53-29bd6c84b1e6")
+			(uuid "7a920629-5dee-4e42-aed1-7ad08f3289ff")
 		)
 		(pin "T"
-			(uuid "32f05d48-d882-40a4-ad81-256465f13ad3")
+			(uuid "2fd72832-5f5a-4fd3-a9ec-de9788aec26b")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -4900,7 +4922,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc457e45-4d17-4efb-bc69-356b8481c9b7")
+			(uuid "22f99685-93b9-4bd9-94c9-c2a5603cea34")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -4992,10 +5014,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5f2ae120-e908-4783-a111-7f20a0064030")
+			(uuid "179f5185-20a3-4162-bbaf-a62f33b2cc5f")
 		)
 		(pin "2"
-			(uuid "6530c416-654c-4636-818d-b8439b79c2a6")
+			(uuid "4a46fe20-4d4e-44c1-9941-49ad4df04875")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -5227,10 +5249,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "bfc4749b-29b2-46bb-877f-0ef834991f48")
+			(uuid "c6bc3952-e7a4-4e11-a5d1-24673a746ebf")
 		)
 		(pin "1"
-			(uuid "c83974bc-1ab5-45db-a56d-cc27b6c6a3bc")
+			(uuid "8f54630f-e5c6-49a3-983b-9bbc68819a78")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -5494,10 +5516,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "861f852b-c951-4f75-924b-7ceb07724b3e")
+			(uuid "02fd42e9-f018-44b3-8f84-735dee1f2b8d")
 		)
 		(pin "2"
-			(uuid "9445811d-9927-46ee-82a1-38a5463ba987")
+			(uuid "660f288b-ed9d-46a9-ad56-aeacf745670d")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -5760,10 +5782,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "9f6db908-284a-4179-95c3-6ee63a8ddfef")
+			(uuid "98aa862e-c61e-465e-ac9b-6c327cd4bbda")
 		)
 		(pin "1"
-			(uuid "76f08689-3e2e-4cbf-b995-75c9f45f0b34")
+			(uuid "dc8679b2-7540-42d7-97e0-2aa2605302ab")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6007,10 +6029,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "90a3b913-f7f4-4e05-acae-01a07cf40898")
+			(uuid "f67bba6d-1716-49d4-9e81-534c71caf9e5")
 		)
 		(pin "2"
-			(uuid "0ec5e4ee-bec3-4497-8949-3344b48fc110")
+			(uuid "716d626e-6353-4590-a180-8755a5cef492")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6243,10 +6265,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "13a159a5-8aff-470f-9362-3ed831a30d6e")
+			(uuid "d40d6325-209b-4f74-bd4d-3c277ca81ea3")
 		)
 		(pin "2"
-			(uuid "9e41ca4c-62a2-4b5b-aaac-573f7b9c3088")
+			(uuid "16ca3eff-f6b2-40b4-aa57-ef094373d4de")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6324,7 +6346,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c3674b77-9cf0-43ea-94bd-75a84ae17c71")
+			(uuid "d0e9cf8f-5ea2-4fcd-860b-9ce4489b4477")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6401,7 +6423,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "32c45ccb-dada-43e8-abb3-76dc413ec6e6")
+			(uuid "2f4fbd7e-9d9c-44f1-9205-c60d3380025c")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6479,7 +6501,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e1dfd9b-aeb4-44c1-9439-f827be35a962")
+			(uuid "7f7be4a9-5a10-48b0-8914-0bb61608b08d")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6723,10 +6745,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f47fa99f-2834-4129-bd66-eca03d303f7a")
+			(uuid "d66f7a8b-54e1-4270-92f7-92c227d8062f")
 		)
 		(pin "2"
-			(uuid "cfe976d8-4933-4c30-afe2-3d7637c48e67")
+			(uuid "26810e3c-4cde-45e4-b41a-9a84c1518543")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -6958,10 +6980,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "6fbfc317-360c-4b3e-a181-dface29f93dc")
+			(uuid "b677eed3-4d0f-4aa2-bd82-a87a18087a21")
 		)
 		(pin "1"
-			(uuid "cf233f7f-f6c3-4e99-80bf-e06aaf444ee8")
+			(uuid "e1703f90-ac01-4482-970e-f339e6b5496f")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7224,10 +7246,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "14cd40c4-03e8-4377-89f0-6d08fd595771")
+			(uuid "33c4c969-2f4b-4c42-b724-32fc0ab2b7b0")
 		)
 		(pin "1"
-			(uuid "99551a04-ef89-486a-97d2-aa9e2579c2e5")
+			(uuid "d6a890c5-7b2a-4abb-a7cf-dbae1657b369")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7471,10 +7493,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d26b33e0-c3f8-4ecb-a175-25a9ba7ed24c")
+			(uuid "6ced6ce4-09ac-4e41-9a91-e6ff37f7a2ca")
 		)
 		(pin "2"
-			(uuid "b2ecc79a-60c0-4f92-8b83-279d8f142b39")
+			(uuid "724a0d41-44d4-44ad-802f-78abc3afe2de")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7566,10 +7588,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "06d26723-1640-429a-b819-6c0462a137e2")
+			(uuid "9b23b6f8-74d6-473e-a4df-5d89392f9e5f")
 		)
 		(pin "2"
-			(uuid "db1b61e7-3d05-415d-a64d-71011a76e9ae")
+			(uuid "cc0115ae-ddc7-49ec-b34d-d9966378d6d7")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7649,10 +7671,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e14f38df-843d-4908-8a65-b3e8ea2a45e2")
+			(uuid "8b0065b5-0e73-427d-a5f3-775f36d28b9f")
 		)
 		(pin "2"
-			(uuid "c5f77e89-c972-4004-be9d-e83513882ff2")
+			(uuid "aed8962f-3dbf-4b58-bccc-c07650792fa9")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7730,7 +7752,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "7cfec2e2-9685-44a7-ade1-aa3efc1d267b")
+			(uuid "1b3997b4-0440-4cbc-a69e-0aa3859abe5f")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -7807,7 +7829,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d04066cd-bc15-4ee7-8703-c096cc02501b")
+			(uuid "d4504d73-b9de-4840-9103-76e03ec271bf")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8039,10 +8061,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "7a5aca8b-ace8-4c91-a315-5dca458e3cf8")
+			(uuid "4791db81-5bd1-4123-85cd-1b13f0c24ffe")
 		)
 		(pin "1"
-			(uuid "833b93f4-ace0-4dae-86ec-9628e47c1da3")
+			(uuid "89c07260-2413-4cc6-977e-82b17441a399")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8120,7 +8142,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6fd74ed-500f-45d8-aaa3-e9b4bde3f533")
+			(uuid "8c9f8dd0-53ad-4218-ae1a-f37250f4f57e")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8198,7 +8220,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "82941f0a-8e73-4da8-a2f1-7c98cf637fb3")
+			(uuid "3c451bca-c804-4fbb-8db4-f6b445ba12f8")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8427,10 +8449,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "a5ef3cb5-5a2b-4176-a4c2-f7291a921843")
+			(uuid "1f6aed3b-9efd-448d-8531-0238c5c084e5")
 		)
 		(pin "1"
-			(uuid "518707f7-c657-47ba-8242-54c0ee7e5a5b")
+			(uuid "db3d557d-3b68-4b77-9bab-8ada9de86c54")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8659,10 +8681,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "e69d23d4-8a9c-4401-9aaf-792cbce95158")
+			(uuid "e63bd870-ab2c-4bd1-9a58-3dc4ed2b05e7")
 		)
 		(pin "1"
-			(uuid "bde74615-3daf-4b46-874d-17e9ebb80bcd")
+			(uuid "aa50f766-ae8f-476c-830b-fc50ad59b9a3")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8741,7 +8763,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b394910a-9777-488b-93e2-c1b79cd0a465")
+			(uuid "e5bc51d8-5911-47cc-a715-9d693c102510")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -8974,10 +8996,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "a235d9f9-c7e5-4fec-b302-e53b7248fb96")
+			(uuid "0b7359a0-7b76-484c-8c72-2143b956a35f")
 		)
 		(pin "2"
-			(uuid "a7102daa-30c9-45b5-99f4-2f25110d8399")
+			(uuid "c88c7fcf-eb8a-4bb4-8721-cd085818a962")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9068,7 +9090,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "94e7e7d4-7c18-4d6e-b35e-062806bfef8e")
+			(uuid "be6113b6-7bd9-4fc2-aff6-fe898010cf04")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9332,10 +9354,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3ea3854c-3c61-476a-9261-923abd0b868c")
+			(uuid "fafdef8e-bf15-4c85-8465-1b9dc70d590a")
 		)
 		(pin "2"
-			(uuid "9d6cf74a-658f-404b-8f90-ac4e1f2585c7")
+			(uuid "2325716b-51b5-4905-9cbd-b45f3a262f6f")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9413,7 +9435,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fe77dfb-e977-4e4b-b08f-994d8a9e771e")
+			(uuid "0a671efa-c66c-4686-b13a-ea8af425fd64")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9492,7 +9514,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "140432e7-f90d-457d-9ce2-c1055259d333")
+			(uuid "93bcd501-89e3-458d-aa48-fba60f59fbd1")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9570,7 +9592,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e4e2df5-00e0-4af2-9511-19ebb5336039")
+			(uuid "6e6cadd6-5939-4c2e-b77b-c59de0424ba7")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -9833,10 +9855,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f2b9ee7d-c723-4a33-918e-eaf13e344857")
+			(uuid "2aff3345-69b3-4c58-a1d6-96163cbd1887")
 		)
 		(pin "1"
-			(uuid "9eaa3015-bd87-4517-8166-640914cadf90")
+			(uuid "fd67f182-f021-4db6-8af2-f6b07eced78f")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -10101,10 +10123,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "abf79a03-dc68-4fe4-9963-46366c431164")
+			(uuid "1cb4b2a1-5c30-4dee-bedd-d27dd9369482")
 		)
 		(pin "2"
-			(uuid "3eb60863-6a9d-4195-90c1-13984f6cfc5d")
+			(uuid "aad4cedb-8ca9-4843-9881-98870baef9c8")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -10182,7 +10204,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2e7dc014-bb9c-4722-997b-f6a01ddf6a42")
+			(uuid "340216b9-54bf-4e33-aeb3-2d97b5655025")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -10448,46 +10470,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "89492d6f-b98a-4490-8d57-f8d74e6644e2")
+			(uuid "c23d9ab5-c42b-4d45-9de4-3a2793b19633")
 		)
 		(pin "10"
-			(uuid "6757c785-1f8c-4250-ba86-a4f4c4e08b4d")
+			(uuid "d3903b1b-9b49-47b4-99e8-6221073a9432")
 		)
 		(pin "11"
-			(uuid "1ed30291-52ba-472b-9474-bb0a61e2d12e")
+			(uuid "013e691a-9309-48e4-8ff5-4a02cf0ce18e")
 		)
 		(pin "12"
-			(uuid "e4f0d0b5-6c42-4920-b176-ee3849aa7d8b")
+			(uuid "30cdb4c2-ac34-4c2e-9f2d-c56ba1ca4193")
 		)
 		(pin "13"
-			(uuid "783979e8-4ef8-4da5-8f61-92857204953c")
+			(uuid "e683c535-35d5-4b59-b9e8-dc7a109be559")
 		)
 		(pin "14"
-			(uuid "802ac971-754c-44fb-a384-4b2b626a8b40")
+			(uuid "92906d03-e6b2-45c8-a108-d19b4c9919b0")
 		)
 		(pin "2"
-			(uuid "7755f322-73b4-472c-b2e3-41f717ba3c67")
+			(uuid "3b6182dc-eaed-481f-88ad-2b4088a4842a")
 		)
 		(pin "3"
-			(uuid "102f3980-5654-446f-9391-d57fd7e8a93c")
+			(uuid "6ebcdeb6-b306-4af0-b259-e75beff3bbdf")
 		)
 		(pin "4"
-			(uuid "73521dcc-296c-4fe5-aef2-93673844e6dc")
+			(uuid "6adf8612-e017-446e-8899-2a81f2eac5b7")
 		)
 		(pin "5"
-			(uuid "5541a15b-7c30-4270-b900-8b69ec4562b2")
+			(uuid "b0dd71d0-3097-4df0-9e73-7a6727ea169b")
 		)
 		(pin "6"
-			(uuid "6d728afe-3d9e-434b-872b-033efef58c97")
+			(uuid "0d53eaa5-c60b-4e3d-b44b-febad78e2742")
 		)
 		(pin "7"
-			(uuid "095b9014-8003-4534-a884-36b064bf3445")
+			(uuid "30e5ffff-634a-4284-ba4c-6b77e34fa0c0")
 		)
 		(pin "8"
-			(uuid "a6508f30-1d10-42de-b311-7c917b9c69fb")
+			(uuid "97cbe661-e78d-460c-a784-8851fc3dc2db")
 		)
 		(pin "9"
-			(uuid "4c41d463-d16d-410b-b676-27a5874cc57c")
+			(uuid "0d61b10b-7fe9-43da-9fe0-4005e02aea41")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -10719,10 +10741,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "330a81a8-f340-423d-9d29-7700c00d0ef3")
+			(uuid "d74107dc-1179-437f-86c8-23ee00627244")
 		)
 		(pin "1"
-			(uuid "f2af3dd9-bce7-4b69-9d46-efdb37d1c688")
+			(uuid "9a6df05c-a12c-4ac2-84cc-a309082aa8df")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
