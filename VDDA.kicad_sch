@@ -6251,12 +6251,6 @@
 		(uuid "138bdcf3-c278-4cea-8a71-835c17aaa637")
 	)
 	(junction
-		(at 168.91 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14c44276-2126-474f-a924-3418b425d84a")
-	)
-	(junction
 		(at 175.26 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6417,6 +6411,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d43b36e-d1e4-4834-922d-c577546c29d2")
+	)
+	(junction
+		(at 179.07 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af6417ca-1dae-442f-93c0-9d7cc5a8fc72")
 	)
 	(junction
 		(at 129.54 113.03)
@@ -6746,7 +6746,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 57.15) (xy 168.91 63.5)
+			(xy 179.07 57.15) (xy 179.07 63.5)
 		)
 		(stroke
 			(width 0)
@@ -17289,7 +17289,7 @@
 	)
 	(symbol
 		(lib_id "power:VDDA")
-		(at 168.91 57.15 0)
+		(at 179.07 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17300,7 +17300,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbf75cd8-6cc6-4480-80fd-90b7a23f389b")
 		(property "Reference" "#PWR093"
-			(at 168.91 60.96 0)
+			(at 179.07 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17311,7 +17311,7 @@
 			)
 		)
 		(property "Value" "VAH"
-			(at 171.45 55.8799 0)
+			(at 181.61 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17322,7 +17322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 57.15 0)
+			(at 179.07 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17333,7 +17333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 57.15 0)
+			(at 179.07 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17344,7 +17344,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 57.15 0)
+			(at 179.07 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
