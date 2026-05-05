@@ -735,9 +735,6 @@
         "5V",
         "5V0"
       ],
-      "/Si5351a/3.3VAO": [
-        "1V1"
-      ],
       "Net-(C35-Pad1)": [
         "5V0"
       ],
@@ -1283,7 +1280,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "R12-13",
+    "used_designators": "U12,C18,C28,C91-94,FB10,#PWR151,#PWR154,JP9-10,R12-13,R74",
     "variants": []
   },
   "sheets": [
