@@ -9233,17 +9233,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 214.63 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GRM21BR61H106KE43L"
 			(at 214.63 33.02 0)
 			(hide yes)
@@ -9571,17 +9560,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 196.85 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F100KT5E"
 			(at 196.85 129.54 0)
 			(hide yes)
@@ -9835,17 +9813,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 143.51 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 143.51 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10174,17 +10141,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21B104KCFNNNE"
 			(at 96.52 128.27 0)
 			(hide yes)
@@ -10397,17 +10353,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 151.13 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 151.13 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -10670,17 +10615,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 212.09 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
 			(at 212.09 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -10994,17 +10928,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 184.15 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 184.15 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11352,17 +11275,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 224.79 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 224.79 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12030,17 +11942,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 138.43 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GRM21BR61H106KE43L"
 			(at 138.43 114.3 0)
 			(hide yes)
@@ -12605,17 +12506,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 137.16 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GRM21BR61H106KE43L"
 			(at 137.16 78.74 0)
 			(hide yes)
@@ -12934,17 +12824,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 184.15 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1501T5E"
 			(at 184.15 77.47 0)
 			(hide yes)
@@ -13197,17 +13076,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 90.17 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 90.17 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -13655,17 +13523,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 185.42 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "SM4007PL"
 			(at 185.42 113.03 0)
 			(hide yes)
@@ -13896,17 +13753,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 99.06 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 99.06 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -14168,17 +14014,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 106.68 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 106.68 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14620,17 +14455,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 185.42 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "SM4007PL"
 			(at 185.42 139.7 0)
 			(hide yes)
@@ -14861,17 +14685,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 99.06 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 99.06 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -15228,17 +15041,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 99.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1002T5E"
 			(at 99.06 100.33 0)
 			(hide yes)
@@ -15382,7 +15184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 204.47 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -15582,17 +15384,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 85.09 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 85.09 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -15839,17 +15630,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 114.3 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21C222JBFNNNE"
 			(at 114.3 100.33 0)
 			(hide yes)
@@ -16069,17 +15849,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 212.09 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
 			(at 212.09 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -16487,17 +16256,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 110.49 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21B104KCFNNNE"
 			(at 110.49 171.45 0)
 			(hide yes)
@@ -16717,17 +16475,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 184.15 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 184.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -17000,17 +16747,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 90.17 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJB107K006RNJ"
 			(at 90.17 78.74 0)
 			(hide yes)
@@ -17240,17 +16976,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 185.42 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 185.42 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -17607,17 +17332,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 161.29 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1002T5E"
 			(at 161.29 85.09 0)
 			(hide yes)
@@ -17960,17 +17674,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 147.32 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 147.32 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -18360,17 +18063,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 99.06 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL31A106KBHNNNE"
 			(at 99.06 179.07 0)
 			(hide yes)
@@ -18591,17 +18283,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 185.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 185.42 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -18960,17 +18641,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 71.12 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D101TF"
 			(at 71.12 55.88 0)
 			(hide yes)
@@ -19190,17 +18860,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 185.42 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 185.42 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -19709,17 +19368,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 189.23 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "FMMT591"
 			(at 189.23 73.66 0)
 			(hide yes)
@@ -19998,17 +19646,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 190.5 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "FMMT491"
 			(at 190.5 109.22 0)
 			(hide yes)
@@ -20276,17 +19913,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 96.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 96.52 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -20710,17 +20336,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 83.82 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21B104KCFNNNE"
 			(at 83.82 128.27 0)
 			(hide yes)
@@ -20933,17 +20548,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 161.29 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 161.29 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -21206,17 +20810,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 195.58 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 195.58 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -21575,17 +21168,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 190.5 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "FMMT591"
 			(at 190.5 144.78 0)
 			(hide yes)
@@ -21862,17 +21444,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 196.85 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F100KT5E"
 			(at 196.85 127 0)
 			(hide yes)
@@ -22134,17 +21705,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 91.44 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJA106K016RNJ"
 			(at 91.44 63.5 0)
 			(hide yes)
@@ -22374,17 +21934,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 184.15 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 184.15 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -22649,17 +22198,6 @@
 			)
 		)
 		(property "Category" "Transistors/Thyristors,Bipolar (BJT)"
-			(at 189.23 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "hongjiacheng"
 			(at 189.23 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -22946,17 +22484,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 138.43 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GRM21BR61H106KE43L"
 			(at 138.43 60.96 0)
 			(hide yes)
@@ -23175,17 +22702,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 83.82 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 83.82 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -23459,17 +22975,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 184.15 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "SM4007PL"
 			(at 184.15 69.85 0)
 			(hide yes)
@@ -23700,17 +23205,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 152.4 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 152.4 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -23974,17 +23468,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 185.42 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 185.42 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -24344,17 +23827,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 114.3 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21C222JBFNNNE"
 			(at 114.3 82.55 0)
 			(hide yes)
@@ -24573,17 +24045,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 106.68 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 106.68 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -24942,17 +24403,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 205.74 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL21B104KCFNNNE"
 			(at 205.74 33.02 0)
 			(hide yes)
@@ -25172,17 +24622,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 96.52 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 96.52 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -25540,17 +24979,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 184.15 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "SM4007PL"
 			(at 184.15 46.99 0)
 			(hide yes)
@@ -25781,17 +25209,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 228.6 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 228.6 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -26053,17 +25470,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 195.58 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -26654,17 +26060,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 137.16 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GRM21BR61H106KE43L"
 			(at 137.16 96.52 0)
 			(hide yes)
@@ -26858,7 +26253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 204.47 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -27065,17 +26460,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 82.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 82.55 63.5 0)
 			(hide yes)
 			(show_name no)

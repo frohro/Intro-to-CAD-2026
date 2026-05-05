@@ -7858,17 +7858,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 165.1 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F3302T5E"
 			(at 165.1 115.57 0)
 			(hide yes)
@@ -8115,17 +8104,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 184.15 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 184.15 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -8469,17 +8447,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 95.25 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F1003T5E"
 			(at 95.25 105.41 0)
 			(hide yes)
@@ -8737,17 +8704,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 102.87 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F100KT5E"
 			(at 102.87 83.82 0)
 			(hide yes)
@@ -8994,17 +8950,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 116.84 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 116.84 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9289,7 +9234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 231.14 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -9567,17 +9512,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 153.67 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 153.67 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -9949,17 +9883,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 62.23 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL31A106KBHNNNE"
 			(at 62.23 116.84 0)
 			(hide yes)
@@ -10174,17 +10097,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 175.26 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 175.26 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10496,17 +10408,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 110.49 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D101TF"
 			(at 110.49 113.03 0)
 			(hide yes)
@@ -10808,17 +10709,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 190.5 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F100KT5E"
 			(at 190.5 148.59 0)
 			(hide yes)
@@ -11068,17 +10958,6 @@
 			)
 		)
 		(property "Category" "Power Management ICs,Linear Voltage Regulators (LDO)"
-			(at 146.05 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "STMicroelectronics"
 			(at 146.05 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11470,17 +11349,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 184.15 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0805W8F100KT5E"
 			(at 184.15 113.03 0)
 			(hide yes)
@@ -11738,17 +11606,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 212.09 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJB107K006RNJ"
 			(at 212.09 152.4 0)
 			(hide yes)
@@ -11864,7 +11721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 231.14 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12143,17 +12000,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 160.02 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 160.02 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12691,17 +12537,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Alpha & Omega Semicon"
-			(at 87.63 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "AO3401A"
 			(at 87.63 110.49 0)
 			(hide yes)
@@ -12973,17 +12808,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 171.45 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 171.45 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -13344,17 +13168,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 190.5 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 190.5 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -13815,17 +13628,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 181.61 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL31A106KBHNNNE"
 			(at 181.61 152.4 0)
 			(hide yes)
@@ -14041,17 +13843,6 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 102.87 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
 			(at 102.87 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14374,17 +14165,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
-			(at 165.1 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0603CG4R7C500NT"
 			(at 165.1 119.38 0)
 			(hide yes)
@@ -14587,17 +14367,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 205.74 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 205.74 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -15362,17 +15131,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 226.06 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJB107K006RNJ"
 			(at 226.06 116.84 0)
 			(hide yes)
@@ -15686,17 +15444,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL31A106KBHNNNE"
 			(at 119.38 77.47 0)
 			(hide yes)
@@ -15910,17 +15657,6 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 172.72 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
 			(at 172.72 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -16157,17 +15893,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 102.87 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 102.87 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -16582,17 +16307,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
-			(at 171.45 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "0603CG4R7C500NT"
 			(at 171.45 154.94 0)
 			(hide yes)
@@ -16874,17 +16588,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 222.25 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -17197,17 +16900,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 196.85 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 196.85 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -17603,17 +17295,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 92.71 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CL31A106KBHNNNE"
 			(at 92.71 92.71 0)
 			(hide yes)
@@ -17918,17 +17599,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD（Microdiode Electronics）"
-			(at 102.87 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "SS14"
 			(at 102.87 96.52 0)
 			(hide yes)
@@ -18154,17 +17824,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 116.84 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 116.84 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -18546,17 +18205,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 123.19 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 123.19 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -18958,17 +18606,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Sunlord"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "GZ2012D101TF"
 			(at 203.2 148.59 0)
 			(hide yes)
@@ -19182,17 +18819,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Tantalum Capacitors"
-			(at 215.9 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "AVX"
 			(at 215.9 116.84 0)
 			(hide yes)
 			(show_name no)

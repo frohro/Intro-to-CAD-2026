@@ -1285,17 +1285,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XUNPU"
-			(at 146.05 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TS-1088-AR02016"
 			(at 146.05 119.38 0)
 			(hide yes)
@@ -1825,17 +1814,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 157.48 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 157.48 110.49 0)
 			(hide yes)
 			(show_name no)

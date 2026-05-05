@@ -11326,17 +11326,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XUNPU"
-			(at 179.07 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TS-1088-AR02016"
 			(at 179.07 144.78 0)
 			(hide yes)
@@ -15522,17 +15511,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "AVX"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "TAJA106K016RNJ"
 			(at 234.95 81.28 0)
 			(hide yes)
@@ -19263,17 +19241,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 173.99 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 173.99 137.16 0)
 			(hide yes)
 			(show_name no)

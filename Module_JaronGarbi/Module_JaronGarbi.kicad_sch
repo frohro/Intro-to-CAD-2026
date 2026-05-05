@@ -2277,17 +2277,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 134.62 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CC0603KRX7R9BB104"
 			(at 134.62 91.44 0)
 			(hide yes)
@@ -3054,17 +3043,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 170.18 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Part" "CC0603KRX7R9BB104"
 			(at 170.18 91.44 0)
 			(hide yes)
@@ -3283,17 +3261,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 99.06 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
 			(at 99.06 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -3781,17 +3748,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 63.5 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
 			(at 63.5 91.44 0)
 			(hide yes)
 			(show_name no)

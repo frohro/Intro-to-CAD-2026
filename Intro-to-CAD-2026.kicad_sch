@@ -4816,7 +4816,7 @@
 		)
 		(uuid "e8cb14ba-bc01-4814-9773-c85ce823204f")
 	)
-	(label "FMT{slash}M0"
+	(label "FMT"
 		(at 82.55 177.8 0)
 		(effects
 			(font
@@ -4886,7 +4886,7 @@
 		)
 		(uuid "f8bec42e-5525-4ef0-a1c4-af49297a5f42")
 	)
-	(label "MD1{slash}M1"
+	(label "MD1"
 		(at 62.23 179.07 180)
 		(effects
 			(font
@@ -5145,17 +5145,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 41.91 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 41.91 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5497,17 +5486,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 39.37 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 39.37 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5919,17 +5897,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 39.37 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 39.37 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -7081,17 +7048,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 41.91 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 41.91 48.26 0)
 			(hide yes)
 			(show_name no)
