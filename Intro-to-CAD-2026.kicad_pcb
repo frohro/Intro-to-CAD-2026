@@ -8207,7 +8207,7 @@
 		)
 		(property "Value" "~"
 			(at 0 1.9 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "33708540-de0c-4576-bddf-633ddee4fb6a")
 			(effects
 				(font
@@ -19768,6 +19768,12 @@
 		(path "/81e179b3-10f3-4413-89ac-746efb52a96a/18f07235-969f-42d8-905c-937fc602850f")
 		(sheetname "/Push Button/")
 		(sheetfile "Module_Micah/Module_Micah.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28123,7 +28129,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_18_23")
+			(pinfunction "Pin_23_23")
 			(pintype "passive")
 			(uuid "ac0b9ecd-6d32-49ec-bff6-5e1419b00d4a")
 		)
@@ -28134,7 +28140,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_18_23")
+			(pinfunction "Pin_23_23")
 			(pintype "passive")
 			(uuid "11669e92-95a0-405c-ae40-5b095d84e159")
 		)
@@ -63140,7 +63146,7 @@
 		(tags "solder jumper open")
 		(property "Reference" "JP3"
 			(at 0 -1.8 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "ed7a172d-91bb-46df-972e-25440b87d331")
 			(effects
 				(font
@@ -63151,7 +63157,7 @@
 		)
 		(property "Value" "~"
 			(at 0 1.9 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "0517a3a4-c006-4448-881f-a0668c63da74")
 			(effects
 				(font
@@ -84646,6 +84652,12 @@
 		(path "/c5519ce3-55b4-441f-abb2-2c2467967554/578b7fcb-7dc9-4109-9786-cb99e53505aa")
 		(sheetname "/QSD SDR/")
 		(sheetfile "qsd-sdr.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S" "R" "T")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -93895,6 +93907,12 @@
 		(path "/0755f67c-fee2-4bb1-bfe0-4dfb08c04429/17cb6f16-6ec0-453e-b970-fa823b9b71b4")
 		(sheetname "/PCM1808/")
 		(sheetfile "pcm1808.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S" "R" "T")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -103545,7 +103563,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_13_13")
+			(pinfunction "Pin_28_13")
 			(pintype "passive")
 			(uuid "f6309d03-f53c-4c65-91f8-d62bd9027cd5")
 		)
@@ -103556,7 +103574,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_13_13")
+			(pinfunction "Pin_28_13")
 			(pintype "passive")
 			(uuid "83eba3c5-2c29-4e66-ada3-c6671e349468")
 		)
@@ -103655,7 +103673,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_18_18")
+			(pinfunction "Pin_23_18")
 			(pintype "passive")
 			(uuid "41359edc-fb0a-41fb-828b-237f5a003ff8")
 		)
@@ -103666,7 +103684,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_18_18")
+			(pinfunction "Pin_23_18")
 			(pintype "passive")
 			(uuid "92916445-af6a-4474-8312-cc9e3ae11082")
 		)
@@ -107272,7 +107290,7 @@
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP1"
 			(at 0 1.8 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "2fc0dced-a0e6-44e0-a084-e23219d30194")
 			(effects
 				(font
@@ -107284,7 +107302,7 @@
 		)
 		(property "Value" "Jumper_2_Bridged"
 			(at 0 -1.9 0)
-			(layer "B.Fab")
+			(layer "B.SilkS")
 			(uuid "0470d1a0-e6ea-4b16-affc-fc620f4ff26d")
 			(effects
 				(font
@@ -107499,7 +107517,7 @@
 			(at -0.65 0 180)
 			(size 1 0.5)
 			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(JP1-A-Pad1)")
+			(net "Net-(J11-Ext)")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -107577,7 +107595,7 @@
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP8"
 			(at 0 1.8 90)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "9323c0f2-3b42-4e0b-82bd-3558703697f8")
 			(effects
 				(font
@@ -107587,9 +107605,9 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Jumper_3_Bridged12"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
+		(property "Value" "Johnson?"
+			(at 3.67 -2.71 180)
+			(layer "B.SilkS")
 			(uuid "b0b4cb5d-2f9d-4206-98dc-4adb81050e23")
 			(effects
 				(font
@@ -107909,7 +107927,7 @@
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "e3"
 			(at 0 1.8 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "93ddae16-0834-4423-ba07-e8e8b73334c4")
 			(effects
 				(font
@@ -107920,8 +107938,8 @@
 			)
 		)
 		(property "Value" "Groundloop_Insurance"
-			(at 0 -1.9 0)
-			(layer "B.Fab")
+			(at -3.432541 1.717961 0)
+			(layer "B.SilkS")
 			(uuid "6e3e1777-5d22-47be-a268-11f74c8dd645")
 			(effects
 				(font
@@ -110989,7 +111007,7 @@
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP86"
 			(at 0 1.8 0)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "d84591a1-7193-45c1-bcdf-ccf50647616e")
 			(effects
 				(font
@@ -111001,7 +111019,7 @@
 		)
 		(property "Value" "Jumper_2_Bridged"
 			(at 0 -1.9 0)
-			(layer "B.Fab")
+			(layer "B.SilkS")
 			(uuid "d6c02364-ac4c-48c8-842c-8150be0d2774")
 			(effects
 				(font
@@ -111910,9 +111928,9 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "e5"
-			(at -2.58 0.02 180)
-			(layer "B.SilkS")
-			(uuid "7cffe78d-c39c-4682-8a7b-d6c5c13236ef")
+			(at -2.58 0.02 0)
+			(layer "B.Fab")
+			(uuid "740cca86-fc90-41af-8db9-86c10bb6e595")
 			(effects
 				(font
 					(size 1 1)
@@ -111922,9 +111940,9 @@
 			)
 		)
 		(property "Value" "Groundloop_Insurance"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
-			(uuid "e1aff085-e249-41b6-b116-5fba12208634")
+			(at -2.33 -0.35 180)
+			(layer "B.SilkS")
+			(uuid "6d29ea24-3c32-45d8-8d5d-00e82b393903")
 			(effects
 				(font
 					(size 1 1)
@@ -111938,7 +111956,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "2172d768-b82a-4ec1-a1b0-da604d8dfa37")
+			(uuid "1d07a2ce-6437-40c4-9c08-6dbb895e6910")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -111952,7 +111970,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "fd3df85b-b4d5-4d3d-af8c-a03c6c161289")
+			(uuid "b2638184-7562-452b-ad92-d03eb317d35b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -114378,8 +114396,9 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP18"
-			(at -0.28 2.98 180)
+			(at -0.28 2.98 0)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "9789b2ff-46a0-462a-9790-e2012ee2e727")
 			(effects
 				(font
@@ -114390,8 +114409,8 @@
 			)
 		)
 		(property "Value" "GND_LP_SND"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
+			(at 0.07 -4.02 180)
+			(layer "B.SilkS")
 			(uuid "b687aff2-4f40-45ca-9480-e48794858265")
 			(effects
 				(font
@@ -114977,7 +114996,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Jumper_3_Bridged12"
+		(property "Value" "Johnson?"
 			(at 0 -1.9 90)
 			(layer "B.Fab")
 			(uuid "f461c384-2ef1-4b2f-9de8-fafa306338d3")
@@ -115179,7 +115198,7 @@
 			(uuid "8b5b4de0-2539-4b86-b236-cc0a39db9b1a")
 		)
 		(fp_text user "1"
-			(at -2.6 0 90)
+			(at -2.74 -0.01 180)
 			(layer "B.SilkS")
 			(uuid "937f149c-a53f-42c3-92a3-e2f325c8677b")
 			(effects
@@ -115191,7 +115210,7 @@
 			)
 		)
 		(fp_text user "3"
-			(at 2.6 0 90)
+			(at 2.86 -0.65 180)
 			(layer "B.SilkS")
 			(uuid "0599e135-e9b9-4f36-8ba2-247df3915710")
 			(effects
@@ -126081,7 +126100,7 @@
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
 			(at 0 1.8 90)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "3d8934c7-135a-4836-a4b6-1bca8b7975dd")
 			(effects
@@ -126092,9 +126111,9 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "~"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
+		(property "Value" "+0.3V"
+			(at -0.14 -3.21 180)
+			(layer "B.SilkS")
 			(uuid "49f2e54b-9850-4432-ab25-096850c0e2eb")
 			(effects
 				(font
@@ -131188,7 +131207,7 @@
 			(at -0.65 0 180)
 			(size 1 0.5)
 			(layers "B.Cu" "B.Mask")
-			(net "unconnected-(JP88-A-Pad1)")
+			(net "Net-(J11-Ext)")
 			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
@@ -131266,7 +131285,7 @@
 		(tags "solder jumper open")
 		(property "Reference" "JP19"
 			(at -0.88 3.15 180)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "e814ae3e-97b2-4c9f-b4f4-c2b190a67617")
 			(effects
 				(font
@@ -131276,9 +131295,9 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "GND_LP_SND"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
+		(property "Value" "Q->ADC"
+			(at -0.04 4.54 180)
+			(layer "B.SilkS")
 			(uuid "5cf89927-f2f8-4294-93db-cda45ebb97f5")
 			(effects
 				(font

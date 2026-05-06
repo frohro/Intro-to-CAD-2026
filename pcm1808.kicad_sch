@@ -4957,7 +4957,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "GND_LP_SND"
+		(property "Value" "Q->ADC"
 			(at 111.76 100.33 90)
 			(hide yes)
 			(show_name no)
