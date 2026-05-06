@@ -2873,7 +2873,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "H-Bridge on 4.7V"
 			(at 170.18 26.6699 90)
 			(show_name no)
 			(do_not_autoplace no)

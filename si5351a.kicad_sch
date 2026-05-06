@@ -6260,7 +6260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Jumper_3_Bridged12"
+		(property "Value" "Johnson?"
 			(at 226.06 116.8401 90)
 			(hide yes)
 			(show_name no)
@@ -7670,7 +7670,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Jumper_3_Bridged12"
+		(property "Value" "Johnson?"
 			(at 226.06 104.1399 90)
 			(hide yes)
 			(show_name no)
