@@ -15184,7 +15184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(property "Footprint" "TP_Label:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 204.47 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -26253,7 +26253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(property "Footprint" "TP_Label:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 			(at 204.47 67.31 0)
 			(hide yes)
 			(show_name no)
