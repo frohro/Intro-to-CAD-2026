@@ -25578,6 +25578,17 @@
 			(uuid "661d86be-dd69-4c02-842e-15930f6e0294")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/XL-0807RGBC-WS2812B_XLG.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.5 1.5 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "PCM_JLCPCB:R_0805"
 		(layer "F.Cu")
@@ -31890,6 +31901,17 @@
 			(uuid "380c07c8-6e95-46aa-8926-3ce352c6ec90")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/XL-0807RGBC-WS2812B_XLG.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.5 1.5 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "PCM_JLCPCB:D_SMA"
 		(layer "F.Cu")
@@ -42193,6 +42215,17 @@
 			(uuid "abf4ad0c-ce34-4e2a-bb6f-5d485ddd97a7")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/XL-0807RGBC-WS2812B_XLG.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.5 1.5 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "PCM_JLCPCB:C_1206"
 		(layer "F.Cu")
@@ -92979,6 +93012,17 @@
 			(uuid "d0ba03b6-7d4c-4f14-a76c-2be1645b4aa2")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/XL-0807RGBC-WS2812B_XLG.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.5 1.5 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "PCM_JLCPCB:C_CASE-B-3528-21(mm)"
 		(layer "F.Cu")
@@ -111017,7 +111061,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Jumper_2_Bridged"
+		(property "Value" "Filter"
 			(at 0 -1.9 0)
 			(layer "B.SilkS")
 			(uuid "d6c02364-ac4c-48c8-842c-8150be0d2774")
