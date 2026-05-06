@@ -108522,7 +108522,7 @@
 			)
 		)
 		(property "Value" "M1"
-			(at 0 -1.9 90)
+			(at 0 -2.08 180)
 			(layer "B.SilkS")
 			(uuid "1cb455ef-194c-4393-acee-e8ff0e3cfe98")
 			(effects
@@ -108723,7 +108723,7 @@
 			(uuid "47008d54-faa6-4897-a835-d41dec52d960")
 		)
 		(fp_text user "3"
-			(at 2.6 0 90)
+			(at 2.91 0 180)
 			(layer "B.SilkS")
 			(uuid "99bb5485-06e6-422e-85fb-4170498b6ac8")
 			(effects
@@ -108735,7 +108735,7 @@
 			)
 		)
 		(fp_text user "1"
-			(at -2.6 0 90)
+			(at -3.13 0 180)
 			(layer "B.SilkS")
 			(uuid "d70db1ab-c554-4627-b1d5-4d3c71b5e6aa")
 			(effects
@@ -113756,7 +113756,7 @@
 			)
 		)
 		(property "Value" "MD1"
-			(at 0 -1.9 90)
+			(at 0 -2.67 180)
 			(layer "B.SilkS")
 			(uuid "80364fbd-71ff-455f-86a2-4467e364672d")
 			(effects
@@ -126388,7 +126388,7 @@
 			)
 		)
 		(property "Value" "M0"
-			(at 0 -1.9 90)
+			(at 0.01 -2.06 180)
 			(layer "B.SilkS")
 			(uuid "719c5665-ad7c-4386-a3b3-2b3b1f842112")
 			(effects
@@ -126589,7 +126589,7 @@
 			(uuid "82e51d08-f4ef-462d-96b7-32851acf5096")
 		)
 		(fp_text user "1"
-			(at -2.6 0 90)
+			(at -3.02 0 180)
 			(layer "B.SilkS")
 			(uuid "d6a07998-694f-4888-b7d3-d541bf3a9150")
 			(effects
@@ -126601,7 +126601,7 @@
 			)
 		)
 		(fp_text user "3"
-			(at 2.6 0 90)
+			(at 3.45 0 180)
 			(layer "B.SilkS")
 			(uuid "ab4cb116-f43d-41c3-9e47-5dc5b65c4dc7")
 			(effects
