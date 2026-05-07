@@ -6184,7 +6184,7 @@
 		)
 		(uuid "37a28e0f-d2c4-4670-b3bb-5d748cd5b428")
 	)
-	(text "Clean analog\nsupply"
+	(text "Clean analog\nsupply \n(+5 to +15 V)"
 		(exclude_from_sim no)
 		(at 86.614 40.894 0)
 		(effects

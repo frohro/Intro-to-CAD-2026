@@ -2700,7 +2700,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "H-OUT"
 			(at 182.88 81.2799 0)
 			(hide yes)
 			(show_name no)
