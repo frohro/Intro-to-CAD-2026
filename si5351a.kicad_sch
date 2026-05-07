@@ -6260,9 +6260,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Johnson?"
-			(at 226.06 116.8401 90)
-			(hide yes)
+		(property "Value" "Johnson Counter?"
+			(at 247.396 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6272,7 +6271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 228.6 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -7670,7 +7669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Johnson?"
+		(property "Value" "Johnson Counter?"
 			(at 226.06 104.1399 90)
 			(hide yes)
 			(show_name no)
