@@ -9933,7 +9933,7 @@
 			)
 		)
 		(property "Value" "- H IN +"
-			(at 2.85 6.1 0)
+			(at 2.23 5.85 0)
 			(layer "F.SilkS")
 			(uuid "05c458e6-280c-4fcc-8a0f-d1eec6f28e6e")
 			(effects
@@ -112561,6 +112561,18 @@
 		(at 155.85 114.46 0)
 		(layer "F.SilkS")
 		(uuid "c53656fe-9192-475e-9a29-c3f956aafefc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "H IN < 7 V"
+		(at 185.81 32.86 0)
+		(layer "F.SilkS")
+		(uuid "7229e7e3-f5f8-4305-a310-8177f27c3867")
 		(effects
 			(font
 				(size 1 1)
