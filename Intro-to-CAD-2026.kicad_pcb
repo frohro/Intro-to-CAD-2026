@@ -90911,7 +90911,7 @@
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP50"
 			(at 0 1.8 90)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(uuid "52aa46db-b473-4817-bdc9-c8ac3f06891a")
 			(effects
 				(font
@@ -90922,8 +90922,8 @@
 			)
 		)
 		(property "Value" "USB_ONLY"
-			(at 0 -1.9 90)
-			(layer "B.Fab")
+			(at 4.64 2.17 180)
+			(layer "B.SilkS")
 			(uuid "88efe584-7189-4103-82fb-3916dd6e9f26")
 			(effects
 				(font
@@ -106952,7 +106952,7 @@
 			)
 		)
 		(property "Value" "+0.3V"
-			(at -0.14 -3.21 180)
+			(at -2.54 0.56 180)
 			(layer "B.SilkS")
 			(uuid "49f2e54b-9850-4432-ab25-096850c0e2eb")
 			(effects
