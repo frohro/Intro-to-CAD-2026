@@ -26442,7 +26442,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Bridged"
+		(property "Value" "330pf"
 			(at 227.33 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -28271,7 +28271,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Bridged"
+		(property "Value" "330pf"
 			(at 227.33 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -28431,7 +28431,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_2_Bridged"
+		(property "Value" "Turns"
 			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
