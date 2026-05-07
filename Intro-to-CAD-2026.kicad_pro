@@ -711,6 +711,9 @@
         "5V",
         "5V0"
       ],
+      "/DAC/VAA": [
+        "5V0"
+      ],
       "/Si5351a/3.3VAO": [
         "1V1"
       ],
@@ -1547,7 +1550,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "R75",
+    "used_designators": "C24-26,C57-59,#PWR30,#PWR87,#PWR89,#PWR95-96,#PWR178,#PWR180-181,U12,R75",
     "variants": []
   },
   "sheets": [
