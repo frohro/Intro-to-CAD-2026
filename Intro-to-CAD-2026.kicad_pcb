@@ -10403,6 +10403,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76022fbe-30c3-4f98-8f2f-97169bae013a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5c29e8b3-2445-41f2-90b3-f3e400c1872d/e22f80fb-2cca-4e44-8675-212cd431163b")
 		(sheetname "/H-Bridge/")
@@ -13167,6 +13180,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6132e0f7-9125-4ddc-82e2-736a92c958fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0961673-de41-4f68-ab21-306c99387fc7")
 			(effects
 				(font
 					(size 1 1)
@@ -19324,6 +19350,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93e0dc5d-0f6c-44a2-baf8-16699cd1ff4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm*")
 		(path "/c5519ce3-55b4-441f-abb2-2c2467967554/797e7122-bbc8-4c91-b9f4-3ac3ce035091")
 		(sheetname "/QSD SDR/")
@@ -22798,6 +22837,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0289b1bb-aa8c-4c4b-aa21-7358582e50d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/ed44bed7-549c-4a19-9507-4d924c35e7b0/be8229b8-bd53-4620-8c38-2ead04aa8262")
 		(sheetname "/Raspberry_Pi_Pico/")
@@ -23423,6 +23475,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Pin Header - RaspberryPi - Stacking - 2.54mm_V2.step"
+			(offset
+				(xyz -3.5 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
 			)
 		)
 	)
@@ -34050,6 +34113,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4c87782-0d64-4d6b-be12-c03bb30beff1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/3aa3dec0-5ad1-4c27-a945-0a713a163b16/e05f2558-e25f-4229-b60b-c7117d66c587")
 		(sheetname "/LED String/")
@@ -36179,6 +36255,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f6bd3224-147d-4256-8ea8-08c8cb052b50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bda8d6b-17e6-4638-b645-bc5c11603eb2")
 			(effects
 				(font
 					(size 1 1)
@@ -51246,6 +51335,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8be4bcf1-0458-4dbb-8e2a-c076d5ac8c71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5c29e8b3-2445-41f2-90b3-f3e400c1872d/28e2da3e-d97f-4105-87b8-c5da2cb1d6f2")
 		(sheetname "/H-Bridge/")
@@ -64653,6 +64755,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64dacbce-4ef7-43da-983e-387354992ec2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ed44bed7-549c-4a19-9507-4d924c35e7b0/8025a46c-3e9f-4bfa-8538-e0def287a318")
 		(sheetname "/Raspberry_Pi_Pico/")
@@ -68598,6 +68713,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "361a8d34-ee56-4059-9138-11d901a96899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Transformer*Ethernet*Bourns*PT61017PEL*")
 		(path "/c5519ce3-55b4-441f-abb2-2c2467967554/3b40f7fd-4c83-4319-a6ff-0cfe927d9c09")
 		(sheetname "/QSD SDR/")
@@ -69530,7 +69658,7 @@
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
 		(property "Reference" "SW1"
-			(at 0.3 -4.29 180)
+			(at 0.3 -4.29 0)
 			(layer "F.SilkS")
 			(uuid "640694de-aacf-4a07-808f-c3e94ad3f12b")
 			(effects
@@ -69583,6 +69711,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "da56582b-8267-4426-8284-2eb3c628e9be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8607015-8062-4731-a70a-fafdeb4b29de")
 			(effects
 				(font
 					(size 1 1)
@@ -79103,6 +79244,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76f6f6bf-7279-43d7-86d1-6b79729fb87b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/360bd6cb-8515-415a-b1e1-cedd8caa152c/43f8fd9c-232a-46a4-aeca-e5b71f8d194e")
 		(sheetname "/Ultrasound_Distance/")
@@ -81712,6 +81866,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1727f7a3-a1a7-4e79-8bd7-31eedf5b39f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31c53a8a-65bb-4ea5-be0f-894470890d47")
 			(effects
 				(font
 					(size 1 1)
@@ -87367,6 +87534,19 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8390e3a1-68d3-4dfe-bfd0-d655afd1a21c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/ed44bed7-549c-4a19-9507-4d924c35e7b0/b5c191c0-4bac-47c7-b795-e52173e976c5")
 		(sheetname "/Raspberry_Pi_Pico/")
@@ -88012,6 +88192,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Pin Header - RaspberryPi - Stacking - 2.54mm_V2.step"
+			(offset
+				(xyz -3.5 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
 			)
 		)
 	)
@@ -163661,22 +163852,6 @@
 				(xy 102.931747 67.159779) (xy 103.034994 67.127634) (xy 103.034996 67.127632) (xy 103.042402 67.125327)
 				(xy 103.04306 67.127441) (xy 103.101103 67.119179)
 			)
-		)
-	)
-	(group "/1314eab6-d054-48f7-88b3-f0d5cb35f00b"
-		(uuid "14533e98-f85b-4e73-8a50-e93075038902")
-		(members "1b6f8a19-f110-41f0-b6a5-d59a5280fd7b" "26e47244-3e96-41fd-b83f-ceb8853832dd"
-			"28879b8d-bd49-46a0-a52c-f0376f4f643a" "289858da-e46b-4f8c-a56a-39c74cb7a3a3"
-			"317d0288-2da3-404b-8b32-045d02b252be" "43397c39-2c15-47bb-a740-7b620dd547b4"
-			"4d9a917c-a242-4ed4-b71c-aebf82dad994" "5393350b-b0e0-438b-b53e-bf834c086c33"
-			"5bbeab04-6727-4241-aba3-00d158a1c6de" "6ee90d81-4d1a-4ffe-b904-ecb3e666a273"
-			"88e5dd3b-2686-4a29-94ce-868959344ce9" "9329b5fb-d535-4846-963c-845305505224"
-			"9ff8adda-5a29-4c04-b278-8429b8ba292b" "b2d83c77-94d2-496c-8f55-40b19b3a7793"
-			"b42aea6b-52eb-4d4c-bb01-b535148e4591" "b8f2b7c1-570d-4d78-9ad5-c0114756653d"
-			"c0636f07-f22c-4948-a5c8-cf7a94500458" "c296b653-4794-4023-9e34-d8e978606009"
-			"c38aaea2-9186-4d39-9ca6-6c7a013e2901" "c6e4e232-0614-4b49-9919-56b4a68d4d57"
-			"f7aea5da-19c9-4daf-a283-6377281275d6" "f7c65f7c-09f4-466d-b8f6-4bda31ad79b4"
-			"fe39aa64-dc41-4c47-b6cd-bf5ad272b621"
 		)
 	)
 	(group "/81e179b3-10f3-4413-89ac-746efb52a96a"
