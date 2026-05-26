@@ -5,4 +5,4 @@
 * See if it is less annoying where you use integer dividers
 * Do the oscillator test, where you cut the trace between FB4 and C15, and power that with a clean 3.3V.
 * If the spurs are unchanged, try 100 uF across the 3.3V line.
-* 
+* Disable the Si5351a and see if the spurs persist.  If so, it is from audio feedback.  If not, then it is probably from the Si5351a.

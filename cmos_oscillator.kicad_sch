@@ -1790,6 +1790,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Something here is funny.  SCKI1 and SCKI2 seem to be mixed up.\nIt doesn't matter, but it is funny.  See the PCB and compare."
+		(exclude_from_sim no)
+		(at 167.64 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "665a0235-655d-473e-bb91-9c1dfa396d8a")
+	)
 	(text "24.576 MHz osc.\n(allows 48 kHz \nor 96 kHz)"
 		(exclude_from_sim no)
 		(at 139.192 112.522 0)
