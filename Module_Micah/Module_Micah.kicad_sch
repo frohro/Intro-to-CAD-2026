@@ -3,7 +3,10 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "ea0c559e-3bae-46d5-a508-0445335e2a4b")
-	(paper "A4")
+	(paper "USLetter")
+	(title_block
+		(rev "0.2")
+	)
 	(lib_symbols
 		(symbol "PCM_JLCPCB-Connectors_Buttons:Tactile Button, 160gf, 12V, 50mA, 4.0mm"
 			(pin_names

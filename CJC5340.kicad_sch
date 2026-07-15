@@ -3520,6 +3520,16 @@
 		)
 		(uuid "9b3e39e1-067f-4692-ac31-d278c71cdcd1")
 	)
+	(text "Leave this out next time!"
+		(exclude_from_sim no)
+		(at 121.158 143.256 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e75a1d01-452a-4378-a298-a6c7009821cc")
+	)
 	(text "24 Bit ADC\nCDC5340"
 		(exclude_from_sim no)
 		(at 88.9 37.084 0)

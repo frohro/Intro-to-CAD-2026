@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(date "2026-01-11")
-		(rev "0.1")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
