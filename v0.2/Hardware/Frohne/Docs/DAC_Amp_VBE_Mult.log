@@ -1,0 +1,18 @@
+LTspice 26.0.1 for Windows
+Circuit: Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\DAC_Amp_VBE_Mult.net
+Start Time: Wed May  6 17:25:58 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 5.997 seconds.
+
+Files loaded:
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\DAC_Amp_VBE_Mult.net
+C:\users\frohro\AppData\Local\LTspice\lib\cmp\standard.bjt
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\OPA161x.LIB
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\FMMT491.spice.txt
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\FMMT591A.spice.txt
+

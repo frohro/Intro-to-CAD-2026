@@ -1,0 +1,25 @@
+LTspice 26.0.1 for Windows
+Circuit: Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026._OPA161x.net
+Start Time: Mon Apr 27 09:11:59 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Starting Gmin stepping level 2
+Gmin stepping level 2 failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=1, level 2
+Source stepping level 2 succeeded in finding the operating point.
+
+Total elapsed time: 56.766 seconds.
+
+Files loaded:
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026._OPA161x.net
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\OPA161x.LIB
+
