@@ -48905,7 +48905,7 @@
 			(uuid "7aeb9f79-3f55-4448-9e63-a92ca7ee70eb")
 		)
 		(embedded_fonts no)
-		(model "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/RP-Pico Libraries/Pico.wrl"
+		(model "${KIPRJMOD}/RP-Pico Libraries/Pico.wrl"
 			(offset
 				(xyz 0 0.1 9)
 			)
@@ -69304,7 +69304,7 @@
 			(uuid "29642e04-4b13-455c-8e8c-ddafffe61416")
 		)
 		(embedded_fonts no)
-		(model "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/H1102NLT.step"
+		(model "${KIPRJMOD}/H1102NLT.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -74338,7 +74338,7 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/audio_jack.step"
+		(model "${KIPRJMOD}/audio_jack.step"
 			(offset
 				(xyz 0 7.75 0)
 			)
@@ -80735,7 +80735,7 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/audio_jack.step"
+		(model "${KIPRJMOD}/audio_jack.step"
 			(offset
 				(xyz 0 7.75 0)
 			)
@@ -84604,7 +84604,7 @@
 			(uuid "40e3368d-6968-4671-8b8f-cf20007627ad")
 		)
 		(embedded_fonts no)
-		(model "/home/frohro/Classes/Intro to Engineering/2026/Intro-to-CAD-2026/audio_jack.step"
+		(model "${KIPRJMOD}/audio_jack.step"
 			(offset
 				(xyz 0 7.5 0)
 			)
