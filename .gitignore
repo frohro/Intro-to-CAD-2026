@@ -18,6 +18,7 @@ _autosave-*
 fp-info-cache
 *.zip
 Gerbers*
+
 # Netlist files (exported from Eeschema)
 *.net
 
@@ -31,7 +32,23 @@ Gerbers*
 
 # Simulation Files
 *.raw
-.log
+*.log
 *.lck
 *.gbr
 *.gbs
+
+# Editor / local history
+.history/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Pico / CMake firmware build trees
+build/
+**/build/
+build_*/
+**/build_*/
