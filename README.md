@@ -23,10 +23,11 @@ Pick the **root folder that matches the PCB silkscreen / board revision** you ha
 
 Duplication between `v0.1` and `v0.2` is intentional so each board is self-contained.
 
-## Firmware status
+## Firmware
 
-C firmwares from the old `Research/` tree still need to be restored into
-`*/Software/SDR/firmware/` if you have a backup. See [Docs/FIRMWARE_RESTORE.md](Docs/FIRMWARE_RESTORE.md).
+Native Pico UAC1 projects live under each version's `Software/SDR/firmware/`.
+Preferred v0.2 entry point: `v0.2/Software/SDR/firmware/2026_v0.2/`.
+Re-sync notes: [Docs/FIRMWARE_RESTORE.md](Docs/FIRMWARE_RESTORE.md).
 
 ## History
 

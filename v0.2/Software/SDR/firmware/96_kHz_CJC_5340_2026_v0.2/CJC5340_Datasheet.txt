@@ -1,0 +1,1907 @@
+武汉光华芯科技有限公司
+
+CJC5340
+100dB 192 kHz Multi-Bit Audio A/D Converter
+
+EDITION
+
+AUTHOR
+
+DATE
+
+DESCRIPTION
+
+V1.0
+
+By TF
+
+2011.12
+
+The first draft
+
+www.eshine-ic.com
+
+1 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+Contents
+
+1. Description .................................................................................................................................... 3
+
+2. Features ........................................................................................................................................ 4
+
+3. Characteristics and specifications ................................................................................................ 4
+
+3.1 Specified operating conditions ............................................................................................ 4
+
+3.2 Absolute maximum rations .................................................................................................. 5
+
+3.3 Analog characteristics-commercial grade ...........................................................................5
+
+3.4 Digital filter characteristics ...................................................................................................6
+
+3.5 DC electrical characteristics ................................................................................................7
+
+3.6 Digital characteristics ...........................................................................................................7
+
+3.7 Switching characteristics-serial audio port ..........................................................................8
+
+4. Pin description .............................................................................................................................10
+
+5. Typical connection diagram ........................................................................................................ 11
+
+6. Application ................................................................................................................................... 12
+
+6.1 Single-, double- and quad-speed modes ..........................................................................12
+
+6.2 Operation as either a clock master or slave ..................................................................... 12
+
+6.3 Operation as a clock master ............................................................................................. 13
+
+6.4 Operation as a clock slave with auto-detect ..................................................................... 13
+
+7. Master clock ................................................................................................................................ 14
+
+7.1 Serial audio interface .........................................................................................................15
+
+8.Power-up sequence ..................................................................................................................... 15
+
+9.Grounding and power supply decoupling ....................................................................................16
+
+10. Synchronization of multiple devices ......................................................................................... 16
+
+11. Parameter definitions ................................................................................................................ 17
+
+12.Package dimensions ..................................................................................................................18
+
+13.Thermal characteristics ..............................................................................................................19
+
+www.eshine-ic.com
+
+2 / 19
+
+2011.12
+
+武汉光华芯科技有限公司
+
+1. Description
+
+The CJC5340 is a complete analog-to-digital converter for digital audio systems. It performs
+
+sampling, analog-to-digital conversion, and anti-alias filtering, generating 24-bit values for both
+
+left and right inputs in serial format sample rates up to 200 kHz per channel.
+
+The CJC5340 uses a 5th-order, multi-bit Delta-Sigma modulator followed by digital filtering and
+
+decimation, which removes the need for an external anti-alias filter. The CJC5340 is available in a
+
+16-pin TSSOP package for grades (-40° to +85° C).
+
+The CJC5340 is ideal for audio systems requiring wide dynamic range, negligible distortion and
+
+low noise, such as set-top boxes, DVD-karaoke players, DVD recorders, A/V receivers, and
+
+automotive applications.
+
+www.eshine-ic.com
+
+3 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+2. Features
+
+ Advanced Multi-bit Delta-Sigma Architecture
+
+ 24-bit Conversion
+
+ Supports All Audio Sample Rates Including 192 kHz
+
+ -88 dB THD+N
+
+ 77 mW Power Consumption
+
+ High-Pass Filter to Remove DC Offsets
+
+ Analog/Digital Core Supplies from 3 V to 3.6V
+
+ Supports Logic Levels from 3 V to 3.6 V
+
+ Auto-detect Mode Selection in Slave Mode
+
+ Auto-Detect MCLK Divider
+
+3. Characteristics and specifications
+
+(All Min/Max characteristics and specifications are guaranteed over the Specified Operating
+
+Conditions. Typical performance characteristics and specifications are derived from
+
+measurements taken at typical supply voltages and TA = 25°C.)
+
+3.1 Specified operating conditions
+
+(GND = 0 V, All voltages with respect to 0 V.)
+
+PARAMETER
+
+SYMBOL
+
+MIN
+
+TYP
+
+MAX
+
+UNIT
+
+Power Supplies Analog Digital Logic
+
+VA
+
+VD
+
+VL
+
+3
+
+3
+
+3
+
+3.3
+
+3.3
+
+3.3
+
+Ambient Operating Temperature
+
+TAC
+
+-40
+
+Note 1:
+
+3.6
+
+3.6
+
+3.6
+
+85
+
+V
+
+V
+
+V
+
+℃
+
+1. This part is specified at typical analog voltages of 3 V and 3.6 V. See Analog Characteristics –
+
+Commercial Grade and Analog Characteristics - Automotive Grade, below, for details.
+
+www.eshine-ic.com
+
+4 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+3.2 Absolute maximum rations
+
+(GND = 0 V, All voltages with respect to ground.) (Note 2)
+
+PARAMETER
+
+DC Power Supplies: Analog Logic Digital
+
+Input Current (Note 3)
+
+Analog Input Voltage (Note 4)
+
+Digital Input Voltage(Note 4)
+
+Ambient Operating Temperature (Power Applied)
+
+Storage Temperature
+
+SYMBOL
+VA
+
+VL
+
+VD
+
+Iin
+
+VIN
+
+VIND
+
+TA
+
+Tstg
+
+MIN
+-0.3
+
+-0.3
+
+-0.3
+
+-10
+
+MAX
++3.6
+
++3.6
+
++3.6
+
++10
+
+GND-0.7
+
+VA+0.7
+
+-0.7
+
+-40
+
+-55
+
+VL+0.7
+
++85
+
++125
+
+UNIT
+V
+
+V
+
+V
+
+mA
+
+V
+
+V
+℃
+
+℃
+
+Note 2: Operation beyond these limits may result in permanent damage to the device. Normal
+
+operation is not guaranteed at these extremes.
+
+Note 3: Any pin except supplies. Transient currents of up to ±100 mA on the analog input pins will
+
+not cause SRC latch-up.
+
+Note 4: The maximum over/under voltage is limited by the input current.
+
+3.3 Analog characteristics-commercial grade
+
+Test Conditions (unless otherwise specified): Input test signal is a 1 kHz sine wave; measurement
+
+bandwidth is 10 Hz to 20 kHz.
+
+Dynamic Performance for Commercial Grade
+
+VA = 3.3 V
+
+Single-Speed Mode Fs = 48 kHz
+Dynamic Range A-weighted
+
+Total Harmonic Distortion + Noise (Note 5)
+-1 dB
+
+Double-Speed Mode Fs = 96 kHz
+Dynamic Range A-weighted
+
+SYMBOL
+
+MIN
+
+THD+N
+
+SYMBOL
+
+MIN
+
+Total Harmonic Distortion + Noise (Note 5)
+-1 dB
+
+THD+N
+
+Dynamic Performance All Modes
+Interchannel Isolation
+
+Analog Input Characteristics
+
+Full-Scale Input Voltage
+
+Note 5: Referred to the typical full-scale input voltage
+
+MIN
+
+MAX
+
+MAX
+
+MAX
+
+TYP
+96
+
+-88
+
+TYP
+96
+
+84
+
+TYP
+92
+
+0.56*VA
+
+UNIT
+dB
+
+dB
+
+UNIT
+dB
+
+dB
+
+UNIT
+dB
+
+mV
+
+www.eshine-ic.com
+
+5 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+3.4 Digital filter characteristics
+
+PARAMETER
+
+SYMBOL
+
+MIN
+
+TYP
+
+MAX
+
+UNIT
+
+Single-Speed Mode
+
+Passband (-0.1 dB) (Note 6)
+
+Passband Ripple
+
+Stopband (Note 6)
+
+Stopband Attenuation
+
+-
+
+-
+
+-
+
+-
+
+Total Group Delay (Fs = Output Sample Rate)
+
+tgd
+
+Double-Speed Mode
+
+Passband (-0.1 dB) (Note 6)
+
+Passband Ripple
+
+Stopband (Note 6)
+
+Stopband Attenuation
+
+-
+
+-
+
+-
+
+-
+
+Total Group Delay (Fs = Output Sample Rate)
+
+tgd
+
+Quad-Speed Mode
+
+Passband (-0.1 dB) (Note 6)
+
+Passband Ripple
+
+Stopband (Note 6)
+
+Stopband Attenuation
+
+-
+
+-
+
+-
+
+-
+
+Total Group Delay (Fs = Output Sample Rate)
+
+tgd
+
+High-Pass Filter Characteristics
+
+Frequency Response -3.0 dB
+
+-0.13 dB (Note 7)
+
+Phase Deviation @ 20 Hz (Note 7)
+
+Passband Ripple
+
+-
+
+-
+
+-
+
+-
+
+0
+
+-0.035
+
+0.5687
+
+70
+
+-
+
+0
+
+-0.025
+
+0.5604
+
+69
+
+-
+
+0
+
+-0.025
+
+0.5
+
+60
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+12/Fs
+
+-
+
+-
+
+-
+
+-
+
+9/Fs
+
+-
+
+-
+
+-
+
+-
+
+5/Fs
+
+1
+
+20
+
+10
+
+-
+
+0.4895
+
+0.035
+
+-
+
+-
+
+-
+
+0.4895
+
+0.025
+
+-
+
+-
+
+-
+
+0.2604
+
+0.025
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+0
+
+Fs
+
+dB
+
+Fs
+
+dB
+
+s
+
+Fs
+
+dB
+
+Fs
+
+dB
+
+s
+
+Fs
+
+dB
+
+Fs
+
+dB
+
+s
+
+Hz
+
+Hz
+
+Deg
+
+dB
+
+Note 6: Filter characteristics scale precisely with Fs
+
+Note 7: Response shown is for Fs equal to 48 kHz. Filter characteristics scale with Fs.
+
+www.eshine-ic.com
+
+6 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+3.5 DC electrical characteristics
+
+(GND = 0 V, All voltages with respect to 0 V. MCLK=12.288 MHz; Master Mode)
+
+PARAMETER
+
+SYMBOL MIN TYP MAX UNIT
+
+DC Power Supplies: Positive Analog
+
+Positive Digital
+
+Positive Logic
+
+(Normal Operation) VA = 3.3 V
+
+VD = 3.3 V
+
+VL = 3.3 V
+
+VA
+
+VD
+
+VL
+
+IA
+
+ID
+
+IL
+
+Power Supply Rejection Ratio (1 kHz) (Note 8)
+
+PSRR
+
+3
+
+3
+
+3
+
+17.2
+
+1.16
+
+0.43
+
+-
+
+3.3
+
+3.3
+
+3.3
+
+17.3
+6
+
+1.26
+
+0.97
+
+50
+
+3.6
+
+3.6
+
+3.6
+
+V
+
+V
+
+V
+
+18.1
+
+mA
+
+2.2
+
+1.06
+
+-
+
+mA
+
+mA
+
+dB
+
+Note 8: Power Down Mode is defined as RST = Low, with all clocks and data lines held static at a
+
+valid logic levels.
+
+3.6 Digital characteristics
+
+PARAMETER
+High-Level Input Voltage (% of VL)
+
+Low-Level Input Voltage (% of VL)
+
+High-Level Output Voltage at Io = 100 A (% of VL)
+
+Low-Level Output Voltage at Io =100 A (% of VL)
+
+Input Leakage Current
+
+SYMBOL MIN
+70%
+
+VIH
+
+TYP MAX UNIT
+-
+
+V
+
+-
+
+VIL
+
+VOH
+
+VOL
+
+Iin
+
+-
+
+70%
+
+-
+
+-10
+
+-
+
+-
+
+-
+
+-
+
+30%
+
+-
+
+15%
+
+10
+
+V
+
+V
+
+V
+
+A
+
+www.eshine-ic.com
+
+7 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+3.7 Switching characteristics-serial audio port
+
+(Logic "0" = GND = 0 V, Logic "1" = VL, CL = 20 pF)
+
+PARAMETER
+
+SYMBOL
+
+MIN
+
+TYP
+
+MAX
+
+UNIT
+
+MCLK Specifications
+
+MCLK Period
+
+MCLK Pulse Duty Cycle
+
+Master Mode
+
+SCLK falling to LRCK Single-Speed
+
+Double-Speed
+
+Quad-Speed
+
+SCLK falling to SDOUT valid.
+
+SCLK Duty Cycle. Single-Speed
+
+Double-Speed
+
+Quad-Speed
+
+Slave Mode
+
+Single-Speed (Note 9)
+
+LRCK Duty Cycle
+
+SCLK Period
+
+SCLK Duty Cycle
+
+SDOUT valid before SCLK rising
+
+SDOUT valid after SCLK rising
+
+SCLK falling to LRCK edge
+
+Double-Speed (Note 9)
+
+LRCK Duty Cycle
+
+SCLK Period
+
+SCLK Duty Cycle
+
+SDOUT valid before SCLK rising
+
+SDOUT valid after SCLK rising
+
+SCLK falling to LRCK edge
+
+Quad-Speed (Note 9)
+
+LRCK Duty Cycle
+
+SCLK Period
+
+SCLK Duty Cycle
+
+SDOUT valid before SCLK rising
+
+SDOUT valid after SCLK rising
+
+SCLK falling to LRCK edge
+
+tclkw
+
+tmslr
+
+tsdo
+
+tsclkw
+
+tstp
+
+thld
+
+tslrd
+
+tsclkw
+
+tstp
+
+thld
+
+tslrd
+
+tsclkw
+
+tstp
+
+thld
+
+tslrd
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+50
+
+50
+
+30
+
+50
+
+-
+
+50
+
+-
+
+-
+
+50
+
+-
+
+50
+
+-
+
+-
+
+50
+
+-
+
+33
+
+-
+
+-
+
+39
+
+78
+
+40
+
+-20
+
+-20
+
+-8
+
+-
+
+-
+
+-
+
+-
+
+40
+
+156
+
+45
+
+10
+
+5
+
+-20
+
+40
+
+156
+
+45
+
+10
+
+5
+
+-20
+
+40
+
+78
+
+29.7
+
+10
+
+5
+
+-8
+
+45
+
+1953
+
+60
+
+20
+
+20
+
+8
+
+32
+
+-
+
+-
+
+-
+
+60
+
+-
+
+55
+
+-
+
+-
+
+20
+
+60
+
+-
+
+55
+
+-
+
+-
+
+20
+
+60
+
+-
+
+50
+
+-
+
+-
+
+8
+
+ns
+
+ns
+
+%
+
+ns
+
+ns
+
+ns
+
+ns
+
+%
+
+%
+
+%
+
+%
+
+ns
+
+%
+
+ns
+
+ns
+
+ns
+
+%
+
+ns
+
+%
+
+ns
+
+ns
+
+ns
+
+%
+
+ns
+
+%
+
+ns
+
+ns
+
+ns
+
+Note 9: For a description of speed modes, please refer to Table on page 15.
+
+www.eshine-ic.com
+
+8 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+Figure 1. Master Mode, Left-Justified SAI
+
+Figure 2. Slave Mode, Left-Justified SAI
+
+Figure 3. Master Mode, I²S SAI
+
+Figure 4. Slave Mode, I²S SAI
+
+www.eshine-ic.com
+
+9 / 19
+
+2011.12
+
+4. Pin description
+
+CJC5340_ V1.0
+
+PIN NAME
+M0
+
+M1
+
+MCLK
+
+VL
+
+SDOUT
+
+#
+1
+
+16
+
+2
+
+3
+
+4
+
+PIN DESCRIPTION
+Mode Selection (Input) - Determines the operational mode of the device.
+
+Master Clock (Input) - Clock source for the delta-sigma modulator and
+digital filters.
+
+Logic Power (Input) - Positive power for the digital input/output.
+
+Serial Audio Data Output (Output) - Output for two’s complement serial
+audio data.
+
+GND
+
+VD
+
+SCLK
+
+LRCK
+
+/RST
+
+AINL
+
+AINR
+
+VQ
+
+VA
+
+FILT+
+
+5,14 Ground (Input) - Ground reference. Must be connected to analog ground.
+
+6
+
+7
+
+8
+
+9
+
+10
+
+12
+
+11
+
+13
+
+15
+
+Digital Power (Input) - Positive power supply for the digital section.
+
+Serial Clock (Input/Output) - Serial clock for the serial audio interface.
+
+Left Right Clock (Input/Output) - Determines which channel, Left or Right,
+is currently active on the serial audio data line.
+
+Reset (Input) - The device enters a low power mode when low.
+
+Analog Input (Input) - The full-scale analog input level is specified in the
+Analog Characteristics specification table.
+
+Quiescent Voltage (Output) - Filter connection for the internal quiescent
+reference voltage.
+
+Analog Power (Input) - Positive power supply for the analog section.
+
+Positive Voltage Reference (Output) - Positive reference voltage for the
+internal sampling circuits.
+
+www.eshine-ic.com
+
+10 / 19
+
+2011.12
+
+5. Typical connection diagram
+
+CJC5340_ V1.0
+
+www.eshine-ic.com
+
+11 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+6. Application
+
+6.1 Single-, double- and quad-speed modes
+
+The CJC5340 can support output sample rates from 2 kHz to 200 kHz. The proper speed mode
+
+can be determined by the desired output sample rate and the external MCLK/LRCK ratio, as
+
+shown in Table 1.
+
+SPEED MODE
+
+Single-Speed Mode
+
+Double-Speed Mode
+
+Quad-Speed Mode
+
+MCLK/LRCK
+RATIO
+512x
+
+256x
+
+256x
+
+128x
+
+128x
+
+64x*
+
+OUTPUT SAMPLE RATE RANGE(kHz)
+
+43 - 50
+
+2 - 50
+
+86 - 100
+
+4 - 100
+
+172 - 200
+
+100 - 200
+
+* Quad-Speed Mode, 64x only available in Master Mode.
+
+Table 1. Speed Modes and the Associated Output Sample Rates (Fs)
+
+6.2 Operation as either a clock master or slave
+
+The CJC5340 supports operation as either a clock master or slave. As a clock master, the LRCK
+
+and SCLK pins are outputs with the left/right and serial clocks synchronously generated on-chip.
+
+As a clock slave, the LRCK and SCLK pins are inputs and require the left/right and serial clocks to
+
+be externally generated. The selection of clock master or slave is made via the Mode pins as
+
+shown in Table 2.
+
+M1(PIN 16)
+0
+
+M0(PIN 1)
+0
+
+0
+
+1
+
+1
+
+1
+
+0
+
+1
+
+MODE
+
+Clock Master, Single-Speed Mode
+
+Clock Master, Double-Speed Mode
+
+Clock Master, Quad-Speed Mode
+
+Clock Slave, All Speed Modes
+
+Table 2. CJC5340 Mode Control
+
+www.eshine-ic.com
+
+12 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+6.3 Operation as a clock master
+
+As a clock master, LRCK and SCLK operate as outputs. The left/right and serial clocks are
+
+internally derived from the master clock with the left/right clock equal to Fs and the serial clock
+
+equal to 64x Fs, as shown in Figure 18.
+
+Figure 18. CJC5340 Master Mode Clocking
+
+6.4 Operation as a clock slave with auto-detect
+
+LRCK and SCLK operate as inputs in clock slave mode. It is recommended that the left/right clock
+
+be synchronously derived from the master clock and must be equal to Fs. It is also recommended
+
+that the serial clock be synchronously derived from the master clock and be equal to 64x Fs to
+
+maximize system performance.
+
+A unique feature of
+
+the CJC5340 is the automatic selection of either Single-, Double- or
+
+Quad-Speed mode when operating as a clock slave. The auto-mode select feature negates the
+
+need to configure the Mode pins to correspond to the desired mode. The auto-mode selection
+
+feature supports all standard audio sample rates from 2 to 200 kHz. However, there are ranges of
+
+non-standard audio sample rates that are not supported when operating with a fast MCLK (512x,
+
+256x, 128x for Single-, Double-, and Quad-Speed Modes, respectively). Please refer to Table for
+
+supported sample rate ranges.
+
+www.eshine-ic.com
+
+13 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+7. Master clock
+
+The CJC5340 requires a Master clock (MCLK) which runs the internal sampling circuits and
+
+digital filters. There is also an internal MCLK divider which is automatically activated based on the
+
+speed mode and frequency of the MCLK. Table 3 shows a listing of the external MCLK/LRCK
+
+ratios that are required. Table 4 lists some common audio output sample rates and the required
+
+MCLK frequency. Please note that not all of the listed sample rates are supported when operating
+
+with a fast MCLK (512x, 256x, 128x for Single-, Double-, and Quad-Speed Modes, respectively).
+
+PARAMETER
+MCLK/LRCK Ratio
+
+SING-SPEED MODE DOUBLE-SPEED MODE
+
+256x, 512x
+
+128x, 256x
+
+QUAD-SPEED MODE
+64x*,128x
+
+* Quad Speed, 64x only available in Master Mode.
+
+Table 3. Master Clock (MCLK) Ratios
+
+SAMPLE RATE
+(kHz)
+32
+
+44.1
+
+48
+
+64
+
+88.2
+
+96
+
+192
+
+MCLK (MHz)
+
+8.192
+
+11.2896
+22.5792
+
+12.288
+24.576
+
+8.192
+
+11.2896
+22.5792
+
+12.288
+24.576
+
+12.288
+24.576
+
+Table 4. Master Clock (MCLK) Frequencies for Standard Audio Sample Rates
+
+www.eshine-ic.com
+
+14 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+7.1 Serial audio interface
+
+The CJC5340 supports both I²S and Left-Justified serial audio formats. Upon start-up,
+
+the
+
+CJC5340 will detect the logic level on SDOUT (pin 4). A 10 KΩ pull-up to VL is needed to select
+
+I²S format, and a 10 KΩ pulldown to GND is needed to select Left-Justified format. Figures 19 and
+
+20 illustrate the I²S and Left-Justified audio formats. Please see Figures 13 through 16, for more
+
+information on the required timing for the two serial audio interface formats. Also see Application
+
+Note AN282 for a detailed discussion of the serial audio interface formats.
+
+Figure 19. I²S Serial Audio Interface
+
+Figure 20. Left-Justified Serial Audio Interface
+
+8.Power-up sequence
+
+Reliable power-up can be accomplished by keeping the device in reset until the power supplies,
+
+clocks and configuration pins are stable. It is also recommended that reset be enabled if the
+
+analog or digital supplies drop below the minimum specified operating voltages to prevent
+
+power-glitch-related issues.
+
+www.eshine-ic.com
+
+15 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+9.Grounding and power supply decoupling
+
+As with any high-resolution converter, achieving optimal performance from the CJC5340 requires
+
+careful attention to power supply and grounding arrangements. Figure 17 shows the
+
+recommended power arrangements, with VA and VL connected to clean supplies. VD, which
+
+powers the digital filter, may be run from the system logic supply or may be powered from the
+
+analog supply via a resistor. In this case, no additional devices should be powered from VD.
+
+Decoupling capacitors should be as near to the ADC as possible, with the low-value ceramic
+
+capacitor being the nearest. All signals, especially clocks, should be kept away from the FILT+
+
+and VQ pins in order to avoid unwanted coupling into the modulators. The FILT+ and VQ
+
+decoupling capacitors, particularly the 0.01 μF, must be positioned to minimize the electrical path
+
+from FILT+ and
+
+REF_GND. Furthermore, all ground pins on CJC5340 should be referenced to the same ground
+
+reference.
+
+10. Synchronization of multiple devices
+
+In systems where multiple ADCs are required, the user can achieve simultaneous sampling if the
+
+MCLK and LRCK signals are the same for all of the CJC5340’s in the system. If only one master
+
+clock source is needed, one solution is to place one CJC5340 in Master mode, and slave all of
+
+the other CJC5340’s to the one master. If multiple master clock sources are needed, a possible
+
+solution would be to supply all clocks from the same external source and time the CJC5340 reset
+
+with the inactive (falling) edge of MCLK. This will ensure that all converters begin sampling on the
+
+same clock edge.
+
+www.eshine-ic.com
+
+16 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+11. Parameter definitions
+
+Dynamic range
+
+The ratio of the rms value of the signal to the rms sum of all other spectral components over the
+
+specified bandwidth. Dynamic Range is a signal-to-noise ratio measurement over the specified
+
+bandwidth made with a -60 dBFS signal. 60 dB is added to resulting measurement to refer the
+
+measurement to full-scale. This technique ensures that the distortion components are below the
+
+noise level and do not affect the measurement. This measurement technique has been accepted
+
+by the Audio Engineering Society, AES17-1991, and the Electronic Industries Association of
+
+Japan, EIAJ CP-307. Expressed in decibels.
+
+Total harmonic distortion + noise
+
+The ratio of the rms value of the signal to the rms sum of all other spectral components over the
+
+specified bandwidth (typically 10 Hz to 20 kHz), including distortion components. Expressed in
+
+decibels. Measured at -1 and -20 dBFS as suggested in AES17-1991 Annex A.
+
+Frequency response
+
+A measure of the amplitude response variation from 10 Hz to 20 kHz relative to the amplitude
+
+response at 1 kHz. Units in decibels.
+
+Interchannel isolation
+
+A measure of crosstalk between the left and right channels. Measured for each channel at the
+
+converter's output with no signal to the input under test and a full-scale signal applied to the other
+
+channel. Units in decibels.
+
+Interchannel gain mismatch
+
+The gain difference between left and right channels. Units in decibels.
+
+Gain error
+
+The deviation from the nominal full-scale analog input for a full-scale digital output.
+
+Gain drift
+
+The change in gain value with temperature. Units in ppm/°C.
+
+Offset error
+
+The deviation of the mid-scale transition (111...111 to 000...000) from the ideal. Units in mV.
+
+www.eshine-ic.com
+
+17 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+12.Package dimensions
+
+16L TSSOP (4.4 mm BODY) PACKAGE DRAWING
+
+INCHES
+
+MIN
+-
+
+0.002
+
+0.03346
+
+0.00748
+
+0.193
+
+0.248
+
+0.169
+
+-
+
+0.020
+
+0°
+
+DIM
+A
+
+A1
+
+A2
+
+b
+
+D
+
+E
+
+E1
+
+e
+
+L
+
+μ
+
+NOM
+-
+
+0.004
+
+0.0354
+
+0.0096
+
+0.1969
+
+0.2519
+
+0.1732
+
+MAX
+0.043
+
+0.006
+
+0.037
+
+0.012
+
+0.201
+
+0.256
+
+0.177
+
+0.026 BSC
+
+-
+
+0.024
+
+0.028
+
+4°
+
+8°
+
+MILLIMETERS
+
+NOTE
+
+MIN
+-
+
+0.05
+
+0.85
+
+0.19
+
+4.90
+
+6.30
+
+4.30
+
+-
+
+0.50
+
+0°
+
+NOM
+-
+
+-
+
+0.90
+
+0.245
+
+5.00
+
+6.40
+
+4.40
+
+0.65 BSC
+
+0.60
+
+4°
+
+MAX
+1.10
+
+0.15
+
+0.95
+
+0.30
+
+5.10
+
+6.50
+
+4.50
+
+-
+
+0.70
+
+8°
+
+2,3
+
+1
+
+1
+
+Controlling Dimension is Millimeters
+
+JEDEC #: MO-153
+
+1. “D” and “E1” are reference datums and do not included mold flash or protrusions, but do
+
+include mold mismatch and are measured at the parting line, mold flash or protrusions shall not
+
+exceed 0.20 mm per side.
+
+2. Dimension “b” does not include dambar protrusion/intrusion. Allowable dambar protrusion shall
+
+be
+
+0.13 mm total in excess of “b” dimension at maximum material condition. Dambar intrusion shall
+
+not reduce dimension “b” by more than 0.07 mm at least material condition.
+
+3. These dimensions apply to the flat section of the lead between 0.10 and 0.25 mm from lead
+
+tips.
+
+www.eshine-ic.com
+
+18 / 19
+
+2011.12
+
+CJC5340_ V1.0
+
+13.Thermal characteristics
+
+PARAMETER
+Allowable Junction Temperature
+
+Junction to Ambient Thermal Impedance
+
+SYMBOL MIN
+
+-
+
+ΘJA
+
+-
+
+-
+
+TYP MAX
+135
+
+-
+
+75
+
+-
+
+UNIT
+℃
+℃/W
+
+www.eshine-ic.com
+
+19 / 19
+
+2011.12
+
+
