@@ -7334,7 +7334,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Module_Andre/Module_Andre.kicad_sch"
+		(property "Sheetfile" "Module_Andre.kicad_sch"
 			(at 124.46 50.1146 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7496,7 +7496,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Module_KyleS/Module_KyleS.kicad_sch"
+		(property "Sheetfile" "Module_KyleS.kicad_sch"
 			(at 124.46 100.9146 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7592,7 +7592,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Module_Joshua/Module_Joshua.kicad_sch"
+		(property "Sheetfile" "Module_Joshua.kicad_sch"
 			(at 124.46 72.9746 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7658,7 +7658,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Module_JaronGarbi/Module_JaronGarbi.kicad_sch"
+		(property "Sheetfile" "Module_JaronGarbi.kicad_sch"
 			(at 125.73 149.1746 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7932,7 +7932,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Module_Micah/Module_Micah.kicad_sch"
+		(property "Sheetfile" "Module_Micah.kicad_sch"
 			(at 124.46 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)

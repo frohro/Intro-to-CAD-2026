@@ -10926,7 +10926,7 @@
 			(justify left bottom)
 		)
 		(uuid "05fd36ec-edc9-419f-a376-13ea9a41d45e")
-		(property "Net Class" "1V1"
+		(property "Netclass" "1V1"
 			(at 182.88 76.7715 90)
 			(hide yes)
 			(show_name no)
@@ -10963,7 +10963,7 @@
 			(justify left bottom)
 		)
 		(uuid "06a5f221-3f35-45e1-a425-7041fd22a46b")
-		(property "Net Class" "5V"
+		(property "Netclass" "5V"
 			(at 186.1185 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -10999,7 +10999,7 @@
 			(justify left bottom)
 		)
 		(uuid "281ae4a5-f01f-47a8-a27e-7afe575df7cb")
-		(property "Net Class" "5V"
+		(property "Netclass" "5V"
 			(at 165.7985 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -11036,7 +11036,7 @@
 			(justify left bottom)
 		)
 		(uuid "6c424b8d-26b2-4280-8ea8-ecbd1e938c6d")
-		(property "Net Class" "5V0"
+		(property "Netclass" "5V0"
 			(at 201.3585 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -11072,7 +11072,7 @@
 			(justify left bottom)
 		)
 		(uuid "a5f3ebd3-3ec0-4760-af3f-a006a8545b9e")
-		(property "Net Class" "1V1"
+		(property "Netclass" "1V1"
 			(at 168.91 76.7715 90)
 			(hide yes)
 			(show_name no)
@@ -11109,7 +11109,7 @@
 			(justify left bottom)
 		)
 		(uuid "eee876ee-17eb-4a65-9ccc-17a965d5cc9c")
-		(property "Net Class" "5V0"
+		(property "Netclass" "5V0"
 			(at 159.4485 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -11145,7 +11145,7 @@
 			(justify right bottom)
 		)
 		(uuid "f879cc99-f247-4c89-90a2-246eba1343e5")
-		(property "Net Class" "5V"
+		(property "Netclass" "5V"
 			(at 203.8985 72.39 0)
 			(hide yes)
 			(show_name no)

@@ -4049,7 +4049,7 @@
 			(justify left bottom)
 		)
 		(uuid "40023fff-a32b-4122-883e-1f24c2b44f81")
-		(property "Net Class" "1V1"
+		(property "Netclass" "1V1"
 			(at 134.62 94.5515 90)
 			(hide yes)
 			(show_name no)
@@ -4086,7 +4086,7 @@
 			(justify left bottom)
 		)
 		(uuid "cd64d335-4bf3-48d4-a559-132f3b55954c")
-		(property "Net Class" "1V1"
+		(property "Netclass" "1V1"
 			(at 139.7 94.5515 90)
 			(hide yes)
 			(show_name no)
