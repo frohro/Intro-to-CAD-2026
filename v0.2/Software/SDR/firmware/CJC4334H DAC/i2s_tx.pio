@@ -1,0 +1,73 @@
+;
+; CJC4334H 64fs Stereo I2S Transmitter PIO Program
+;
+; Zero-Overhead Timing:
+;   - Exactly 128 PIO cycles per stereo frame (64 cycles Left, 64 cycles Right)
+;   - Exactly 64 BCLK cycles per stereo frame (32 BCLKs Left, 32 BCLKs Right)
+;   - 100% symmetric 50.0% duty cycle SCLK (1 cycle LOW, 1 cycle HIGH)
+;   - Sample rate: 48,000.0 Hz  --> BCLK = 3,072,000.0 Hz (3.072 MHz)
+;
+
+.program i2s_tx
+.side_set 2
+
+; Side-set encoding:
+;   Bit 0: SCK (BCLK, GP16)
+;   Bit 1: WS  (LRCK, GP17)
+;
+; 0b00 = SCK 0, WS 0 (Left channel, SCK low)
+; 0b01 = SCK 1, WS 0 (Left channel, SCK high)
+; 0b10 = SCK 0, WS 1 (Right channel, SCK low)
+; 0b11 = SCK 1, WS 1 (Right channel, SCK high)
+
+.wrap_target
+    ; ── LEFT CHANNEL (WS = 0, 32 BCLKs = 64 PIO cycles) ──────────
+    ; 1st BCLK: 1-bit I2S delay (WS drops to 0, shift dummy bit 31, set loop y=30)
+    out x, 1               side 0b00
+    set y, 30              side 0b01
+
+    ; Remaining 31 BCLKs of Left channel (16 data bits + 15 zero pad bits)
+left_loop:
+    out pins, 1            side 0b00 ; Shift bit on falling edge SCK=0
+    jmp y-- left_loop      side 0b01 ; Sample bit on rising edge SCK=1
+
+    ; ── RIGHT CHANNEL (WS = 1, 32 BCLKs = 64 PIO cycles) ─────────
+    ; 1st BCLK: 1-bit I2S delay (WS rises to 1, shift dummy bit 31, set loop y=30)
+    out x, 1               side 0b10
+    set y, 30              side 0b11
+
+    ; Remaining 31 BCLKs of Right channel (16 data bits + 15 zero pad bits)
+right_loop:
+    out pins, 1            side 0b10 ; Shift bit on falling edge SCK=0
+    jmp y-- right_loop     side 0b11 ; Sample bit on rising edge SCK=1
+.wrap
+
+% c-sdk {
+#include "hardware/clocks.h"
+
+static inline void i2s_tx_program_init(PIO pio, uint sm, uint offset, uint data_pin, uint sck_pin, uint ws_pin, uint sample_rate) {
+    pio_gpio_init(pio, data_pin);
+    pio_gpio_init(pio, sck_pin);
+    pio_gpio_init(pio, ws_pin);
+
+    pio_sm_set_consecutive_pindirs(pio, sm, data_pin, 1, true);
+    pio_sm_set_consecutive_pindirs(pio, sm, sck_pin, 2, true);
+
+    pio_sm_config c = i2s_tx_program_get_default_config(offset);
+    sm_config_set_out_pins(&c, data_pin, 1);
+    sm_config_set_sideset_pins(&c, sck_pin);
+    sm_config_set_sideset(&c, 2, false, false);
+
+    // Shift MSB first, Autopull enabled at 32 bits threshold
+    sm_config_set_out_shift(&c, false, true, 32);
+
+    // 128 PIO cycles per stereo frame (64 BCLKs * 2 PIO cycles/BCLK)
+    // Sample rate 48000 Hz --> PIO clock = 6.144 MHz (BCLK = 3.072 MHz)
+    float bit_clk = (float)sample_rate * 128.0f;
+    float div = (float)clock_get_hz(clk_sys) / bit_clk;
+    sm_config_set_clkdiv(&c, div);
+
+    pio_sm_init(pio, sm, offset, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
