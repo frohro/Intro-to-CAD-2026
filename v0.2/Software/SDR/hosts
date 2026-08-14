@@ -1,0 +1,28 @@
+127.0.0.1	localhost
+127.0.1.1	frohro-260-old
+#172.18.16.161	frohro-260
+100.111.133.119 frohro-260
+#192.147.172.36	fweb.wallawalla.edu fweb
+192.168.1.36	frohro-U729X
+#192.168.1.147	l380-256
+#192.168.2.1	router
+#192.168.2.223	hamshack
+#192.168.254.14	2760p-home
+172.18.16.59	frohro-2760p
+192.168.1.147	silver
+192.168.1.134	octoprint
+100.73.146.23	frohro-school
+192.168.1.144   frohro-school-at-home
+172.16.11.31 frohne-af60
+172.16.11.30 krh-af60
+172.16.11.1  fast
+172.16.12.1  slow
+192.168.1.1	frohro-a475
+
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

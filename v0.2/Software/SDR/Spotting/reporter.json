@@ -1,0 +1,12 @@
+{
+  "output_dir": "/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures",
+  "harvester_config": "config.json",
+  "callsign": "KL7NA",
+  "grid": "DN06",
+  "decode_timeout": 180,
+  "stale_file_seconds": 900,
+  "cleanup_interval_seconds": 60,
+  "frequency_hz": 0,
+  "radios": [],
+  "pskreporter": { "enabled": true, "host": "report.pskreporter.info", "port": 4739, "identifier": 2026 }
+}

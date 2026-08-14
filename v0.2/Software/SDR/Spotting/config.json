@@ -1,0 +1,17 @@
+{
+  "output_dir": "/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures",
+  "sample_rate": 96000,
+  "output_rate": 12000,
+  "sdrs": [
+    {
+      "sdr_id": "Board_1",
+      "serial_port": "/dev/ttyACM0",
+      "audio_label": "S2026",
+      "center_freq": 14074000,
+      "modes": [
+        { "mode": "FT8",  "offset": 0,    "audio_if": 1500 },
+        { "mode": "FT4",  "offset": 6000, "audio_if": 1500 }
+      ]
+    }
+  ]
+}
