@@ -1,39 +1,6 @@
-LTspice 24.0.12 for Windows
-Circuit: * Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026.asc
-Start Time: Fri Feb 13 07:40:43 2026
-solver = Normal
-Maximum thread count: 8
-tnom = 27
-temp = 27
-method = Gear
-Limiting rise time of source v1 to 2.52525e-08
-Limiting fall time of source v1 to 2.52525e-08
-Limiting rise time of source v2 to 2.52525e-08
-Limiting fall time of source v2 to 2.52525e-08
-Limiting rise time of source v6 to 2.52525e-08
-Limiting fall time of source v6 to 2.52525e-08
-Limiting rise time of source v7 to 2.52525e-08
-Limiting fall time of source v7 to 2.52525e-08
-WARNING: Less than two connections to node nc_01.  This node is used by v5.
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
-Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
-Gmin = 0
-Gmin stepping succeeded in finding the operating point.
-
-Total elapsed time: 567.946 seconds.
-
+LTspice 26.0.1 for Windows
+Circuit: Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026.net
+Start Time: Wed Jun 24 22:48:01 2026
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026.net(67): Instance with that name already defined.
+K L4 L5 .9975
+^
