@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -253,7 +269,11 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
+<<<<<<< Updated upstream:v0.1/Hardware/Intro-to-CAD-2026.kicad_pro
       "sch_revision": "0.2"
+=======
+      "sch_revision": ""
+>>>>>>> Stashed changes:Intro-to-CAD-2026.kicad_pro
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -1241,7 +1261,11 @@
       {
         "filename": "Intro-to-CAD-2026.kicad_sch",
         "name": "Intro-to-CAD-2026",
+<<<<<<< Updated upstream:v0.1/Hardware/Intro-to-CAD-2026.kicad_pro
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
+=======
+        "uuid": "00000000-0000-0000-0000-000000000000"
+>>>>>>> Stashed changes:Intro-to-CAD-2026.kicad_pro
       }
     ],
     "used_designators": "",

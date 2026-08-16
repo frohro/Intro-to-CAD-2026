@@ -1,0 +1,15 @@
+LTspice 26.0.1 for Windows
+Circuit: Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026._OPA161x_no_buffer.net
+Start Time: Wed Jun 24 16:46:08 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = Gear
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 5.611 seconds.
+
+Files loaded:
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\TayloeDetectorAmplifier_Balanced_2026._OPA161x_no_buffer.net
+Z:\home\frohro\Classes\Intro to Engineering\2026\Intro-to-CAD-2026\Frohne\Docs\OPA161x.LIB
+
