@@ -7437,7 +7437,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "We should switch X this transformer\nso the choke is on the input."
+	(text "We should switch X this transformer\nso the choke is on the input, though\nthis way is giving us a 6 dB gain we\nwould lose with the choke on the input."
 		(exclude_from_sim no)
 		(at 89.154 57.912 0)
 		(effects
