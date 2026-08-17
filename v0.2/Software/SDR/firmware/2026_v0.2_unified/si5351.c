@@ -8,6 +8,18 @@
 
 #define CLK_CTRL_INT_PLLA  0x4F
 
+static uint32_t s_xtal_freq = SI5351_XTAL_FREQ;
+
+void si5351_set_xtal_freq(uint32_t freq_hz) {
+    if (freq_hz >= 20000000UL && freq_hz <= 35000000UL) {
+        s_xtal_freq = freq_hz;
+    }
+}
+
+uint32_t si5351_get_xtal_freq(void) {
+    return s_xtal_freq;
+}
+
 static uint32_t gcd(uint32_t a, uint32_t b) {
     while (b != 0) {
         uint32_t t = b;
@@ -20,14 +32,16 @@ static uint32_t gcd(uint32_t a, uint32_t b) {
 void si5351_write_reg(i2c_inst_t *i2c, uint8_t reg, uint8_t val)
 {
     uint8_t buf[2] = { reg, val };
-    i2c_write_blocking(i2c, SI5351_I2C_ADDR, buf, 2, false);
+    i2c_write_timeout_us(i2c, SI5351_I2C_ADDR, buf, 2, false, 10000);
 }
 
 uint8_t si5351_read_reg(i2c_inst_t *i2c, uint8_t reg)
 {
     uint8_t val = 0;
-    i2c_write_blocking(i2c, SI5351_I2C_ADDR, &reg, 1, true);
-    i2c_read_blocking(i2c, SI5351_I2C_ADDR, &val, 1, false);
+    int r = i2c_write_timeout_us(i2c, SI5351_I2C_ADDR, &reg, 1, true, 10000);
+    if (r >= 0) {
+        i2c_read_timeout_us(i2c, SI5351_I2C_ADDR, &val, 1, false, 10000);
+    }
     return val;
 }
 
@@ -36,7 +50,7 @@ static void write_reg_block(i2c_inst_t *i2c, uint8_t base, const uint8_t *bytes)
     uint8_t buf[9];
     buf[0] = base;
     for (int i = 0; i < 8; i++) buf[i + 1] = bytes[i];
-    i2c_write_blocking(i2c, SI5351_I2C_ADDR, buf, 9, false);
+    i2c_write_timeout_us(i2c, SI5351_I2C_ADDR, buf, 9, false, 10000);
 }
 
 bool si5351_init(i2c_inst_t *i2c)
@@ -117,7 +131,7 @@ bool si5351_calculate_lo(uint32_t target_hz, uint32_t sample_rate, bool johnson_
                          lo_calc_mode_t mode, lo_candidate_t *cand)
 {
     memset(cand, 0, sizeof(*cand));
-    uint32_t crystal = SI5351_XTAL_FREQ;
+    uint32_t crystal = s_xtal_freq;
     uint32_t multiplier = johnson_mode ? 4 : 1;
     uint32_t n_step = johnson_mode ? 1 : 2;
     uint32_t half_bw = sample_rate / 2;

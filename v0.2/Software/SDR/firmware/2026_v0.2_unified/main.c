@@ -26,6 +26,8 @@
 #include "hardware/pio.h"
 #include "hardware/dma.h"
 #include "hardware/irq.h"
+#include "hardware/flash.h"
+#include "hardware/sync.h"
 #include "pico/multicore.h"
 #include "pico/cyw43_arch.h"
 #include "lwip/tcp.h"
@@ -80,6 +82,10 @@ static void apply_sample_rate(uint32_t rate);
 static void handle_line(const char *line, uint8_t len, void (*reply_fn)(const char *));
 static void cdc_write(const char *s);
 
+/* WiFi SSID and Password state */
+static char s_wifi_ssid[64] = DEFAULT_WIFI_SSID;
+static char s_wifi_pass[64] = DEFAULT_WIFI_PASSWORD;
+
 /* TCP Control Server */
 static struct tcp_pcb *s_tcp_server_pcb = NULL;
 static struct tcp_pcb *s_active_tcp_client = NULL;
@@ -94,7 +100,7 @@ static void tcp_write_str(const char *s) {
 /* ======================================================================
  * Core 1: owns DMA IRQ, handles rate-reconfiguration sentinel
  * ====================================================================== */
-static void __not_in_flash_func(dma_handler)(void) {
+static void dma_handler(void) {
     const uint32_t *filled_buf;
     uint32_t wpb = g_words_per_buf;
 
@@ -206,48 +212,72 @@ static void apply_sample_rate(uint32_t rate) {
  * ====================================================================== */
 void audio_task(void) {
     uint32_t ptr_val = 0;
-    if (!multicore_fifo_pop_timeout_us(0, &ptr_val) || ptr_val == 0) return;
+    while (multicore_fifo_pop_timeout_us(0, &ptr_val)) {
+        if (ptr_val == 0) continue;
 
-    const uint32_t *src = (const uint32_t *)(uintptr_t)ptr_val;
-    uint32_t wpb = g_words_per_buf;
+        const uint32_t *src = (const uint32_t *)(uintptr_t)ptr_val;
+        uint32_t wpb = g_words_per_buf;
 
-    // 1. Stream via OpenHPSDR Protocol 1 if network client is connected
-    if (openhpsdr_is_active()) {
-        openhpsdr_push_samples(src, wpb);
-    }
+        // 1. Stream via OpenHPSDR Protocol 1 if network client is connected
+        if (openhpsdr_is_active()) {
+            openhpsdr_push_samples(src, wpb);
+        }
 
-    // 2. Stream via USB Audio Class 1.0 if USB host is listening
-    if (tud_audio_mounted() && s_audio_alt > 0) {
-        tu_fifo_t *ff = tud_audio_get_ep_in_ff();
-        if (ff) {
-            static uint8_t packed[MAX_WORDS_PER_BUF * 3];
-            for (uint32_t i = 0; i < wpb; i++) {
-                uint32_t w = src[i] << 1;
-                packed[3*i+0] = (uint8_t)(w >>  8);
-                packed[3*i+1] = (uint8_t)(w >> 16);
-                packed[3*i+2] = (uint8_t)(w >> 24);
-            }
-            uint32_t bytes = wpb * 3u;
-            if (tu_fifo_remaining(ff) >= bytes) {
-                tud_audio_write(packed, (uint16_t)bytes);
+        // 2. Stream via USB Audio Class 1.0 if USB host is listening
+        if (tud_audio_mounted() && s_audio_alt > 0) {
+            tu_fifo_t *ff = tud_audio_get_ep_in_ff();
+            if (ff) {
+                static uint8_t packed[MAX_WORDS_PER_BUF * 3];
+                for (uint32_t i = 0; i < wpb; i++) {
+                    uint32_t w = src[i] << 1;
+                    packed[3*i+0] = (uint8_t)(w >>  8);
+                    packed[3*i+1] = (uint8_t)(w >> 16);
+                    packed[3*i+2] = (uint8_t)(w >> 24);
+                }
+                uint32_t bytes = wpb * 3u;
+                if (tu_fifo_remaining(ff) >= bytes) {
+                    tud_audio_write(packed, (uint16_t)bytes);
+                }
             }
         }
     }
 }
 
 /* ======================================================================
- * OpenHPSDR Callbacks
+ * OpenHPSDR Callbacks (Deferred execution to protect lwIP & prevent audio stalls)
  * ====================================================================== */
+static volatile uint32_t s_pending_freq_hz = 0;
+static volatile uint32_t s_pending_rate_hz = 0;
+
 static void on_hpsdr_freq_change(uint32_t freq_hz) {
-    lo_candidate_t cand;
-    if (si5351_tune_frequency(i2c0, freq_hz, g_sample_rate, BOARD_DIRECT_MODE, s_lo_mode, &cand)) {
-        s_last_hz = freq_hz;
-        s_last_type = cand.ptype;
-    }
+    s_pending_freq_hz = freq_hz;
 }
 
 static void on_hpsdr_rate_change(uint32_t rate_hz) {
-    apply_sample_rate(rate_hz);
+    if (rate_hz == 48000U || rate_hz == 96000U) {
+        if (rate_hz != g_sample_rate) {
+            s_pending_rate_hz = rate_hz;
+        }
+    }
+}
+
+static void service_hpsdr_pending_tuning(void) {
+    if (s_pending_rate_hz != 0) {
+        uint32_t rate = s_pending_rate_hz;
+        s_pending_rate_hz = 0;
+        apply_sample_rate(rate);
+    }
+    if (s_pending_freq_hz != 0) {
+        uint32_t freq = s_pending_freq_hz;
+        s_pending_freq_hz = 0;
+        if (freq != s_last_hz) {
+            lo_candidate_t cand;
+            if (si5351_tune_frequency(i2c0, freq, g_sample_rate, BOARD_DIRECT_MODE, LO_MODE_FRACTIONAL_EXACT, &cand)) {
+                s_last_hz = freq;
+                s_last_type = cand.ptype;
+            }
+        }
+    }
 }
 
 /* ======================================================================
@@ -258,25 +288,97 @@ static void cdc_write(const char *s) {
     tud_cdc_write_flush();
 }
 
-static void handle_line(const char *line, uint8_t len, void (*reply_fn)(const char *))
+static void handle_line(const char *raw_line, uint8_t raw_len, void (*reply_fn)(const char *))
 {
+    if (raw_len == 0) return;
+    
+    // Trim leading whitespace/newlines
+    uint8_t start = 0;
+    while (start < raw_len && (raw_line[start] == ' ' || raw_line[start] == '\t' || raw_line[start] == '\r' || raw_line[start] == '\n')) {
+        start++;
+    }
+    if (start >= raw_len) return;
+
+    // Copy and trim trailing whitespace/CR/LF
+    char line[LINE_BUF_LEN];
+    uint8_t len = 0;
+    for (uint8_t i = start; i < raw_len && len < sizeof(line) - 1; i++) {
+        char c = raw_line[i];
+        if (c != '\r' && c != '\n') {
+            line[len++] = c;
+        }
+    }
+    while (len > 0 && (line[len - 1] == ' ' || line[len - 1] == '\t')) {
+        len--;
+    }
+    line[len] = '\0';
     if (len == 0) return;
+
+    // Create uppercase version for case-insensitive matching
+    char upper_line[LINE_BUF_LEN];
+    for (uint8_t i = 0; i <= len; i++) {
+        char c = line[i];
+        upper_line[i] = (c >= 'a' && c <= 'z') ? (c - 32) : c;
+    }
+
     char reply[128];
 
-    if (strncmp(line, "VER", 3) == 0) {
-        reply_fn("VER,SDR PCM1808 WiFi/USB 3.3\r\nOK\r\n");
+    if (strncmp(upper_line, "VER", 3) == 0) {
+        reply_fn("VER,0.2\r\nOK\r\n");
         return;
     }
-    if (strncmp(line, "XTAL", 4) == 0) {
-        snprintf(reply, sizeof(reply), "XTAL,%lu\r\nOK\r\n", (unsigned long)SI5351_XTAL_FREQ);
-        reply_fn(reply);
+    if (strncmp(upper_line, "HELP", 4) == 0 || strcmp(upper_line, "?") == 0) {
+        reply_fn("Commands: WIFI?, WIFI,ssid,pass, FREQ,hz, RATE,48000, MODE, VER\r\nOK\r\n");
         return;
     }
-    if (strncmp(line, "MODE", 4) == 0) {
+    if (strncmp(upper_line, "MODE", 4) == 0) {
         reply_fn(BOARD_DIRECT_MODE ? "MODE,DIRECT\r\nOK\r\n" : "MODE,JOHNSON\r\nOK\r\n");
         return;
     }
-    if (strncmp(line, "RATE,", 5) == 0) {
+    // WiFi Status and Configuration: WIFI? or WIFI or WIFI,SSID,PASS
+    if (strncmp(upper_line, "WIFI?", 5) == 0 || strcmp(upper_line, "WIFI") == 0) {
+        int status = cyw43_wifi_link_status(&cyw43_state, CYW43_ITF_STA);
+        const char *st_str = "DOWN";
+        if (status == CYW43_LINK_JOIN) st_str = "JOINING";
+        else if (status == CYW43_LINK_NOIP) st_str = "NO_IP";
+        else if (status == CYW43_LINK_UP) st_str = "CONNECTED";
+        else if (status == CYW43_LINK_FAIL) st_str = "AUTH_FAILED";
+        else if (status == CYW43_LINK_NONET) st_str = "NO_NETWORK";
+        else if (status == CYW43_LINK_BADAUTH) st_str = "BAD_AUTH";
+
+        uint8_t *ip = (uint8_t*)&(cyw43_state.netif[CYW43_ITF_STA].ip_addr.addr);
+        snprintf(reply, sizeof(reply), "WIFI,%s,IP:%u.%u.%u.%u,SSID:%s\r\nOK\r\n",
+                 st_str, ip[0], ip[1], ip[2], ip[3], s_wifi_ssid);
+        reply_fn(reply);
+        return;
+    }
+    if (strncmp(upper_line, "WIFI,", 5) == 0) {
+        // Syntax: WIFI,<SSID>,<PASSWORD> (case sensitive SSID/Password preserved from original line)
+        char buf[LINE_BUF_LEN];
+        strncpy(buf, line + 5, sizeof(buf) - 1);
+        buf[sizeof(buf) - 1] = '\0';
+        char *ssid = strtok(buf, ",");
+        char *pass = strtok(NULL, ",");
+        if (ssid) {
+            strncpy(s_wifi_ssid, ssid, sizeof(s_wifi_ssid) - 1);
+            s_wifi_ssid[sizeof(s_wifi_ssid) - 1] = '\0';
+            if (pass) {
+                strncpy(s_wifi_pass, pass, sizeof(s_wifi_pass) - 1);
+                s_wifi_pass[sizeof(s_wifi_pass) - 1] = '\0';
+            } else {
+                s_wifi_pass[0] = '\0';
+            }
+            uint32_t auth = (s_wifi_pass[0] == '\0') ? CYW43_AUTH_OPEN : CYW43_AUTH_WPA2_AES_PSK;
+            const char *pass_param = (s_wifi_pass[0] == '\0') ? NULL : s_wifi_pass;
+            cyw43_arch_wifi_connect_async(s_wifi_ssid, pass_param, auth);
+            snprintf(reply, sizeof(reply), "WIFI,CONNECTING,%s\r\nOK\r\n", s_wifi_ssid);
+            reply_fn(reply);
+        } else {
+            reply_fn("ERROR,invalid wifi format\r\n");
+        }
+        return;
+    }
+    if (strncmp(upper_line, "RATE,", 5) == 0) {
         uint32_t r = (uint32_t)strtoul(line + 5, NULL, 10);
         if (r == 48000U || r == 96000U) {
             apply_sample_rate(r);
@@ -288,22 +390,22 @@ static void handle_line(const char *line, uint8_t len, void (*reply_fn)(const ch
         return;
     }
     // LO Mode Selection: LOMODE,BEST | LOMODE,MID | LOMODE,WORST | LOMODE,FRAC
-    if (strncmp(line, "LOMODE,", 7) == 0) {
-        if (strncmp(line + 7, "BEST", 4) == 0) s_lo_mode = LO_MODE_BEST_INTEGER;
-        else if (strncmp(line + 7, "MID", 3) == 0) s_lo_mode = LO_MODE_MIDDLE_INTEGER;
-        else if (strncmp(line + 7, "WORST", 5) == 0) s_lo_mode = LO_MODE_WORST_INTEGER;
-        else if (strncmp(line + 7, "FRAC", 4) == 0) s_lo_mode = LO_MODE_FRACTIONAL_EXACT;
+    if (strncmp(upper_line, "LOMODE,", 7) == 0) {
+        if (strncmp(upper_line + 7, "BEST", 4) == 0) s_lo_mode = LO_MODE_BEST_INTEGER;
+        else if (strncmp(upper_line + 7, "MID", 3) == 0) s_lo_mode = LO_MODE_MIDDLE_INTEGER;
+        else if (strncmp(upper_line + 7, "WORST", 5) == 0) s_lo_mode = LO_MODE_WORST_INTEGER;
+        else if (strncmp(upper_line + 7, "FRAC", 4) == 0) s_lo_mode = LO_MODE_FRACTIONAL_EXACT;
         reply_fn("OK\r\n");
         return;
     }
-    // Query current frequency: FREQ,
-    if (strcmp(line, "FREQ,") == 0 || strcmp(line, "FREQ") == 0) {
+    // Query current frequency: FREQ, or FREQ
+    if (strcmp(upper_line, "FREQ,") == 0 || strcmp(upper_line, "FREQ") == 0) {
         snprintf(reply, sizeof(reply), "%lu\r\nOK,%c,0\r\n", (unsigned long)s_last_hz, s_last_type);
         reply_fn(reply);
         return;
     }
     // Single-parameter Tune Command: FREQ,<hz>  (e.g., FREQ,7050000)
-    if (strncmp(line, "FREQ,", 5) == 0) {
+    if (strncmp(upper_line, "FREQ,", 5) == 0) {
         // Count commas to see if it's direct frequency or full register dump
         int commas = 0;
         for (int i = 0; line[i]; i++) if (line[i] == ',') commas++;
@@ -363,27 +465,47 @@ static void handle_line(const char *line, uint8_t len, void (*reply_fn)(const ch
 }
 
 static void cdc_task(void) {
-    if (!tud_cdc_connected()) { s_line_len = 0; return; }
-
     while (tud_cdc_available()) {
         uint8_t ch;
         tud_cdc_read(&ch, 1);
 
-        if (ch == 0x03) { s_line_len = 0; continue; }
+        // Ctrl-C: cancel line
+        if (ch == 0x03) {
+            s_line_len = 0;
+            continue;
+        }
+
+        // Ctrl-D: status prompt (Quisk initialization)
         if (ch == 0x04) {
             s_line_len = 0;
             cdc_write("SDR ready\r\n");
             continue;
         }
-        if (ch == '\r') continue;
-        if (ch == '\n') {
-            s_line[s_line_len] = '\0';
-            handle_line(s_line, s_line_len, cdc_write);
-            s_line_len = 0;
+
+        // Enter / Return (Carriage Return or Line Feed)
+        if (ch == '\r' || ch == '\n') {
+            if (s_line_len > 0) {
+                s_line[s_line_len] = '\0';
+                handle_line(s_line, s_line_len, cdc_write);
+                s_line_len = 0;
+            }
             continue;
         }
-        if (s_line_len < LINE_BUF_LEN - 1)
-            s_line[s_line_len++] = (char)ch;
+
+        // Backspace / Delete
+        if (ch == '\b' || ch == 127) {
+            if (s_line_len > 0) {
+                s_line_len--;
+            }
+            continue;
+        }
+
+        // Printable characters - buffer without local echo
+        if (ch >= 32 && ch <= 126) {
+            if (s_line_len < LINE_BUF_LEN - 1) {
+                s_line[s_line_len++] = (char)ch;
+            }
+        }
     }
 }
 
@@ -492,15 +614,7 @@ bool tud_audio_get_req_entity_cb(uint8_t rhport, tusb_control_request_t const *p
 }
 
 void tud_cdc_line_state_cb(uint8_t itf, bool dtr, bool rts) {
-    (void)itf; (void)rts;
-    if (dtr && !s_sdr_ready_sent) {
-        cdc_write("SDR ready\r\n");
-        s_sdr_ready_sent = true;
-    }
-    if (!dtr) {
-        s_sdr_ready_sent = false;
-        s_line_len = 0;
-    }
+    (void)itf; (void)dtr; (void)rts;
 }
 
 void tud_cdc_rx_cb(uint8_t itf) { (void)itf; }
@@ -510,9 +624,14 @@ void tud_cdc_rx_cb(uint8_t itf) { (void)itf; }
  * ====================================================================== */
 int main(void)
 {
+    /* Initialize TinyUSB / Board */
     board_init();
-    vreg_set_voltage(VREG_VOLTAGE_1_20);
-    set_sys_clock_khz(250000, true);
+
+    tusb_rhport_init_t dev_init = {
+        .role  = TUSB_ROLE_DEVICE,
+        .speed = TUSB_SPEED_AUTO
+    };
+    tusb_init(BOARD_TUD_RHPORT, &dev_init);
 
     /* GPIO Setup for Mode Pins */
     gpio_init(MODE_M0_PIN);
@@ -574,29 +693,55 @@ int main(void)
     apply_hardware_config(48000U);
     multicore_launch_core1(core1_entry);
 
-    /* Initialize TinyUSB */
-    tusb_rhport_init_t dev_init = {
-        .role  = TUSB_ROLE_DEVICE,
-        .speed = TUSB_SPEED_AUTO
-    };
-    tusb_init(BOARD_TUD_RHPORT, &dev_init);
-
     /* Initialize Pico W WiFi (CYW43439) */
+    bool wifi_ok = false;
     if (cyw43_arch_init() == 0) {
+        wifi_ok = true;
         cyw43_arch_enable_sta_mode();
-        // Non-blocking WiFi connect attempt
-        cyw43_arch_wifi_connect_async(DEFAULT_WIFI_SSID, DEFAULT_WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK);
+        // Connect attempt with auto-auth detection (Open vs WPA2-PSK)
+        uint32_t auth = (s_wifi_pass[0] == '\0') ? CYW43_AUTH_OPEN : CYW43_AUTH_WPA2_AES_PSK;
+        const char *pass_param = (s_wifi_pass[0] == '\0') ? NULL : s_wifi_pass;
+        cyw43_arch_wifi_connect_async(s_wifi_ssid, pass_param, auth);
 
         // Initialize OpenHPSDR UDP server and TCP Control
         openhpsdr_init(on_hpsdr_freq_change, on_hpsdr_rate_change);
         start_tcp_control_server();
     }
 
+    uint32_t last_led_poll = 0;
     while (true) {
         tud_task();
         cdc_task();
         audio_task();
         openhpsdr_task();
-        cyw43_arch_poll();
+        service_hpsdr_pending_tuning();
+        if (wifi_ok) {
+            cyw43_arch_poll();
+        }
+
+        // Continuous Heartbeat LED & Auto-reconnect
+        uint32_t now_ms = to_ms_since_boot(get_absolute_time());
+        if (wifi_ok && (now_ms - last_led_poll >= 250)) {
+            last_led_poll = now_ms;
+            int st = cyw43_tcpip_link_status(&cyw43_state, CYW43_ITF_STA);
+            if (st == CYW43_LINK_UP) {
+                // Heartbeat pulse: blink every 500ms (1 Hz) to show healthy main loop
+                bool active = openhpsdr_is_active();
+                uint32_t period = active ? 125 : 500; // Fast blink when streaming IQ, steady 1 Hz heartbeat when idle
+                cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, (now_ms / period) % 2);
+            } else if (st == CYW43_LINK_JOIN || st == CYW43_LINK_NOIP) {
+                cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, (now_ms / 250) % 2); // Blinking while joining
+            } else {
+                cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, (now_ms / 1000) % 2); // Slow pulse when down
+                // Auto retry connecting every 10 seconds if link is down
+                static uint32_t last_reconnect_ms = 0;
+                if (now_ms - last_reconnect_ms >= 10000 && strlen(s_wifi_ssid) > 0) {
+                    last_reconnect_ms = now_ms;
+                    uint32_t auth = (s_wifi_pass[0] == '\0') ? CYW43_AUTH_OPEN : CYW43_AUTH_WPA2_AES_PSK;
+                    const char *pass_param = (s_wifi_pass[0] == '\0') ? NULL : s_wifi_pass;
+                    cyw43_arch_wifi_connect_async(s_wifi_ssid, pass_param, auth);
+                }
+            }
+        }
     }
 }

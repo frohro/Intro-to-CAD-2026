@@ -8,7 +8,16 @@
 // Si5351a I2C address (A0 pin tied to GND)
 #define SI5351_I2C_ADDR     0x60
 
-// Reference crystal: 24.576 MHz
+// ==============================================================================
+// Si5351 Crystal Calibration
+// Nominal crystal: 24.576 MHz (24576000 Hz)
+//
+// Calibration Formula:
+//   F_calibrated = F_nominal * (F_reference_true_hz / F_dial_observed_hz)
+//
+// Calibration for this board (NBS / WWV 15.000000 MHz observed at 14.997522 MHz):
+//   F_calibrated = 24576000 * (15000000 / 14997522) = 24580058 Hz (+165.23 ppm)
+// ==============================================================================
 #ifndef SI5351_XTAL_FREQ
 #define SI5351_XTAL_FREQ    24576000UL
 #endif
@@ -71,6 +80,10 @@ void si5351_set_freq_regs(i2c_inst_t *i2c, uint32_t N,
 
 // Program using a calculated candidate struct
 void si5351_apply_candidate(i2c_inst_t *i2c, const lo_candidate_t *cand, bool direct_mode);
+
+// Reference crystal calibration runtime control
+void si5351_set_xtal_freq(uint32_t freq_hz);
+uint32_t si5351_get_xtal_freq(void);
 
 // High-level frequency tune: computes best LO on RP2040 and programs Si5351a
 bool si5351_tune_frequency(i2c_inst_t *i2c, uint32_t target_hz, uint32_t sample_rate,

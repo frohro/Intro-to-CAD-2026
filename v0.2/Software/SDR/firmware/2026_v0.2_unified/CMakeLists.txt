@@ -33,7 +33,7 @@ add_executable(sdr_pico_w_unified
 pico_generate_pio_header(sdr_pico_w_unified ${CMAKE_CURRENT_LIST_DIR}/i2s_rx.pio)
 
 target_include_directories(sdr_pico_w_unified PRIVATE 
-    .
+    ${CMAKE_CURRENT_LIST_DIR}
     ${PICO_TINYUSB_PATH}/hw/bsp
     ${PICO_TINYUSB_PATH}/src
 )
@@ -47,6 +47,8 @@ target_link_libraries(sdr_pico_w_unified
     hardware_irq
     hardware_clocks
     hardware_vreg
+    hardware_flash
+    hardware_sync
     pico_multicore
     tinyusb_device
     tinyusb_board

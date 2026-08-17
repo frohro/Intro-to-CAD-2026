@@ -9,7 +9,8 @@
 #define HPSDR_PORT              1024
 #define HPSDR_PACKET_SIZE       1032
 #define HPSDR_SYNC_WORD         0xEFFE
-#define HPSDR_EP6_IQ_DATA       0x01
+#define HPSDR_DATA_PACKET       0x01
+#define HPSDR_EP6_ENDPOINT      0x06
 #define HPSDR_DISCOVERY_RESP    0x02
 
 // Callback function type when host changes frequency or sample rate

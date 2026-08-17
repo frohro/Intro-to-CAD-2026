@@ -1,6 +1,0 @@
-{
-  "name": "Pico W SDR Firmware & Web Console",
-  "description": "RP2040 / Pico W SDR firmware supporting OpenHPSDR Protocol 1 over WiFi, UAC1 USB Audio, flexible Si5351a LO tuning, and an interactive web controller.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
