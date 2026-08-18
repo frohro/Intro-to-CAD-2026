@@ -36,8 +36,10 @@ Soapy2026SDR::Soapy2026SDR(const SoapySDR::Kwargs &args)
     , _ringHead(0), _ringTail(0), _ringCount(0), _ringOverflow(false)
 {
     // Audio device name can be overridden via args
-    if (args.count("audio_label"))
+    if (args.count("audio_label")) {
         _audioDeviceName = args.at("audio_label");
+        _audioLabelExplicit = true;
+    }
 
     // ── Open serial port ──────────────────────────────────────────────────
     _serialPath = args.count("serial_port") ? args.at("serial_port") : "";

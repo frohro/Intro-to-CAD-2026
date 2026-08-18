@@ -122,14 +122,14 @@ When instantiating the device in code (or via applications like SDR++), you can 
 | Argument | Description | Default |
 | :--- | :--- | :--- |
 | `serial_port` | Forces the driver to use a specific serial port (e.g., `/dev/ttyACM1`), skipping auto-discovery. | Auto-discovered |
-| `audio_label` | A search string used to find the correct ALSA audio card in `/proc/asound/cards`. Crucial when running multiple boards to ensure the audio stream matches the serial port. | `"WWU SDR"` |
+| `audio_label` | The ALSA card label used to select the correct audio card in `/proc/asound/cards`. Crucial when running multiple boards to ensure the audio stream matches the serial port. When supplied explicitly, a missing label is an error; the driver will not silently fall back to another board. | `"WWU SDR"` |
 
 **Example of explicitly mapping a specific board:**
 ```cpp
 SoapySDR::Kwargs args;
 args["driver"] = "2026sdr";
 args["serial_port"] = "/dev/ttyACM1";
-args["audio_label"] = "card 2"; // Maps to ALSA hw:CARD=2,DEV=0
+args["audio_label"] = "S2026_1"; // Maps to ALSA hw:CARD=S2026_1,DEV=0
 SoapySDR::Device *sdr = SoapySDR::Device::make(args);
 ```
 

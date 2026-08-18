@@ -9,12 +9,12 @@ from pathlib import Path
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--ramdisk", default="/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures",
-                    help="capture directory (the option name is retained for compatibility)")
+    ap.add_argument("--directory", default="/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures",
+                    help="directory containing harvester WAV files")
     ap.add_argument("--older-than", type=int, default=900)
     ap.add_argument("--all", action="store_true", help="remove all .wav and .wav.part files")
     args = ap.parse_args()
-    root = Path(args.ramdisk); now = time.time(); removed = 0
+    root = Path(args.directory); now = time.time(); removed = 0
     for path in root.iterdir():
         if not path.is_file() or not (path.name.endswith(".wav") or path.name.endswith(".wav.part")): continue
         if not args.all and now - path.stat().st_mtime < args.older_than: continue

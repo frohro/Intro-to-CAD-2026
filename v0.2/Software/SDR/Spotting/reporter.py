@@ -32,10 +32,8 @@ class Reporter:
     def __init__(self, cfg):
         self.cfg, self.seen, self.seq = cfg, set(), 0
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        # output_dir is persistent storage by default. Keep accepting the old
-        # ramdisk key so existing reporter configurations continue to work.
-        self.ramdisk = Path(cfg.get("output_dir", cfg.get("ramdisk", "/home/frohro/SDR/Spotting/captures")))
-        self.ramdisk.mkdir(parents=True, exist_ok=True)
+        self.output_dir = Path(cfg.get("output_dir", "/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures"))
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         self.stale_seconds = int(cfg.get("stale_file_seconds", 900))
         self.cleanup_interval = int(cfg.get("cleanup_interval_seconds", 60))
         self.last_cleanup = 0.0
@@ -48,7 +46,7 @@ class Reporter:
         now = time.time()
         if not force and now - self.last_cleanup < self.cleanup_interval: return
         self.last_cleanup = now
-        for path in self.ramdisk.iterdir():
+        for path in self.output_dir.iterdir():
             if not path.is_file() or not (path.name.endswith(".wav") or path.name.endswith(".wav.part")): continue
             try:
                 age = now - path.stat().st_mtime
@@ -125,8 +123,8 @@ def main():
     reporter = Reporter(cfg)
     reporter.cleanup(force=True)
     # Recover completed WAVs that were created while the reporter was stopped.
-    for path in sorted(reporter.ramdisk.glob("*.wav")): reporter.process(path)
-    observer = Observer(); observer.schedule(Handler(reporter), str(reporter.ramdisk), recursive=False); observer.start()
+    for path in sorted(reporter.output_dir.glob("*.wav")): reporter.process(path)
+    observer = Observer(); observer.schedule(Handler(reporter), str(reporter.output_dir), recursive=False); observer.start()
     try:
         while True:
             reporter.cleanup(); time.sleep(1)

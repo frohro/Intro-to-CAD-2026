@@ -12,6 +12,16 @@
         { "mode": "FT8",  "offset": 0,    "audio_if": 1500 },
         { "mode": "FT4",  "offset": 6000, "audio_if": 1500 }
       ]
+    },
+    {
+      "sdr_id": "Board_2",
+      "serial_port": "/dev/ttyACM1",
+      "audio_label": "S2026_1",
+      "center_freq": 21107000,
+      "modes": [
+        { "mode": "FT8",  "offset": -33000, "audio_if": 1500 },
+        { "mode": "FT4",  "offset": 33000,  "audio_if": 1500 }
+      ]
     }
   ]
 }

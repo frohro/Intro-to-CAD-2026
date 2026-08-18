@@ -94,16 +94,57 @@ struct Branch {
     size_t blockCount = 0; // Track blocks for periodic RMS reporting
 };
 
-static void runSdr(const SdrConfig &cfg, const fs::path &ramdisk) {
-    // 1. Create DC Blocker to prevent center-spike from destroying SNR
-    iirfilt_crcf dcblock = iirfilt_crcf_create_dc_blocker(0.0005f);
+static void destroyBranches(std::vector<Branch> &branches) noexcept {
+    for (auto &branch : branches) {
+        branch.wav.reset();
+        if (branch.nco) { nco_crcf_destroy(branch.nco); branch.nco = nullptr; }
+        if (branch.decim) { firdecim_crcf_destroy(branch.decim); branch.decim = nullptr; }
+    }
+}
 
-    try {
-        SoapySDR::Kwargs args; args["driver"] = "2026sdr"; args["serial_port"] = cfg.serial; args["audio_label"] = cfg.audio;
-        SoapySDR::Device *dev = SoapySDR::Device::make(args);
-        if (!dev) throw std::runtime_error("unable to create Soapy device");
-        dev->setSampleRate(SOAPY_SDR_RX, 0, INPUT_RATE); dev->setFrequency(SOAPY_SDR_RX, 0, cfg.center);
-        SoapySDR::Stream *stream = dev->setupStream(SOAPY_SDR_RX, SOAPY_SDR_CF32); dev->activateStream(stream);
+static void runSdr(const SdrConfig &cfg, const fs::path &outputDir) {
+    constexpr auto retryDelay = std::chrono::seconds(5);
+
+    // Each radio retries independently. A missing or disconnected board does
+    // not stop other radios, and plugging it in later allows recovery without
+    // restarting the harvester.
+    while (running) {
+        SoapySDR::Device *dev = nullptr;
+        SoapySDR::Stream *stream = nullptr;
+        bool streamActive = false;
+        iirfilt_crcf dcblock = nullptr;
+        std::vector<Branch> branches;
+
+        auto cleanup = [&]() noexcept {
+            if (streamActive && dev) {
+                try { dev->deactivateStream(stream); } catch (...) {}
+                streamActive = false;
+            }
+            if (stream && dev) {
+                try { dev->closeStream(stream); } catch (...) {}
+                stream = nullptr;
+            }
+            if (dev) {
+                try { SoapySDR::Device::unmake(dev); } catch (...) {}
+                dev = nullptr;
+            }
+            destroyBranches(branches);
+            if (dcblock) { iirfilt_crcf_destroy(dcblock); dcblock = nullptr; }
+        };
+
+        try {
+            SoapySDR::Kwargs args; args["driver"] = "2026sdr"; args["serial_port"] = cfg.serial; args["audio_label"] = cfg.audio;
+            dev = SoapySDR::Device::make(args);
+            if (!dev) throw std::runtime_error("unable to create Soapy device");
+            dev->setSampleRate(SOAPY_SDR_RX, 0, INPUT_RATE); dev->setFrequency(SOAPY_SDR_RX, 0, cfg.center);
+            stream = dev->setupStream(SOAPY_SDR_RX, SOAPY_SDR_CF32);
+            if (!stream) throw std::runtime_error("unable to create Soapy stream");
+            dev->activateStream(stream); streamActive = true;
+
+            // Create the DC blocker only after the radio has opened, so a
+            // missing device does not allocate DSP state on every retry.
+            dcblock = iirfilt_crcf_create_dc_blocker(0.0005f);
+            if (!dcblock) throw std::runtime_error("unable to create DC blocker");
         
         std::vector<float> taps(65); std::vector<liquid_float_complex> input(INPUT_BLOCK), mixed(INPUT_BLOCK), output(OUTPUT_BLOCK);
         liquid_float_complex carry[DECIM]{}; size_t carryCount = 0;
@@ -115,9 +156,10 @@ static void runSdr(const SdrConfig &cfg, const fs::path &ramdisk) {
         if (std::abs(dcGain) < 1.0e-6f) throw std::runtime_error("invalid decimator coefficients");
         for (float &tap : taps) tap /= dcGain;
         
-        std::vector<Branch> branches; branches.reserve(cfg.modes.size());
+        branches.reserve(cfg.modes.size());
         for (const auto &m : cfg.modes) {
             Branch b; b.mode = m; b.nco = nco_crcf_create(LIQUID_NCO); b.decim = firdecim_crcf_create(DECIM, taps.data(), taps.size());
+            if (!b.nco || !b.decim) throw std::runtime_error("unable to create DSP branch for " + m.mode);
             firdecim_crcf_set_scale(b.decim, 1.0f);
             const double ncoHz = static_cast<double>(m.audioIf - m.offset);
             nco_crcf_set_frequency(b.nco, static_cast<float>(2.0 * M_PI * ncoHz / INPUT_RATE));
@@ -163,14 +205,14 @@ static void runSdr(const SdrConfig &cfg, const fs::path &ramdisk) {
                         b.frame = utcFrameStart(b.mode.mode, now) + framePeriod(b.mode.mode);
                     if (now < b.frame) continue;
                     b.waitingForBoundary = false;
-                    b.wav = std::make_unique<WavFrame>(ramdisk, cfg, b.mode, b.frame);
+                    b.wav = std::make_unique<WavFrame>(outputDir, cfg, b.mode, b.frame);
                     b.samples = 0;
                 }
                 
                 size_t consumed = 0;
                 const size_t samplesPerFrame = frameSamples(b.mode.mode);
                 while (consumed < outCount) {
-                    if (!b.wav) b.wav = std::make_unique<WavFrame>(ramdisk, cfg, b.mode, b.frame);
+                    if (!b.wav) b.wav = std::make_unique<WavFrame>(outputDir, cfg, b.mode, b.frame);
                     const size_t take = std::min(outCount - consumed, samplesPerFrame - b.samples);
                     b.wav->write(output.data() + consumed, take); consumed += take; b.samples += take;
                     if (b.samples == samplesPerFrame) {
@@ -182,10 +224,19 @@ static void runSdr(const SdrConfig &cfg, const fs::path &ramdisk) {
             for (size_t i = 0; i < carryCount; ++i) carry[i] = input[total - carryCount + i];
             for (size_t i = 0; i < carryCount; ++i) input[i] = carry[i];
         }
-        dev->deactivateStream(stream); dev->closeStream(stream); SoapySDR::Device::unmake(dev);
-    } catch (const std::exception &e) { std::cerr << cfg.id << ": " << e.what() << '\n'; }
-    
-    iirfilt_crcf_destroy(dcblock);
+        cleanup();
+        } catch (const std::exception &e) {
+            cleanup();
+            if (running) {
+                std::cerr << cfg.id << ": " << e.what()
+                          << "; retrying in " << retryDelay.count() << " seconds\n";
+                // Use short sleeps so SIGINT/SIGTERM stops promptly even
+                // while a radio is absent.
+                for (int i = 0; i < 50 && running; ++i)
+                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            }
+        }
+    }
 }
 
 static void stop(int) { running = false; }
@@ -194,9 +245,7 @@ int main(int argc, char **argv) {
     const fs::path configPath = argc > 1 ? argv[1] : "config.json"; std::ifstream in(configPath);
     if (!in) { std::cerr << "Cannot open " << configPath << '\n'; return 1; }
     json root; in >> root;
-    // output_dir is persistent storage by default. Keep accepting the old
-    // ramdisk key so existing configurations continue to work.
-    const fs::path outputDir(root.value("output_dir", root.value("ramdisk", "/home/frohro/SDR/Spotting/captures")));
+    const fs::path outputDir(root.value("output_dir", "/home/frohro/Projects/Intro-to-CAD-2026/v0.2/Software/SDR/Spotting/captures"));
     fs::create_directories(outputDir);
     std::vector<SdrConfig> configs;
     for (const auto &x : root.at("sdrs")) {

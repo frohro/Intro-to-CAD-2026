@@ -137,10 +137,12 @@ void Soapy2026SDR::_setupAudio()
     ai->contextOk = true;
 
     // Build the hw:CARD=X,DEV=0 device ID string directly from /proc/asound/cards.
-    // Two-pass: first try the full _audioDeviceName, then fall back to "sdr".
+    // An explicit audio_label is authoritative: never silently fall back to a
+    // different board's audio card. The fallback is only for auto-discovery.
     std::string hwDeviceStr;
-    for (int pass = 0; pass < 2 && hwDeviceStr.empty(); pass++) {
-        std::string needle = (pass == 0) ? _audioDeviceName : "sdr";
+    const int passes = _audioLabelExplicit ? 1 : 2;
+    for (int pass = 0; pass < passes && hwDeviceStr.empty(); pass++) {
+        std::string needle = (_audioLabelExplicit || pass == 0) ? _audioDeviceName : "sdr";
         std::string cardName = _findAlsaCardName(needle);
         if (!cardName.empty()) {
             hwDeviceStr = "hw:CARD=" + cardName + ",DEV=0";
@@ -151,6 +153,11 @@ void Soapy2026SDR::_setupAudio()
     }
 
     if (hwDeviceStr.empty()) {
+        if (_audioLabelExplicit) {
+            ma_context_uninit(&ai->context);
+            delete ai;
+            throw std::runtime_error("2026SDR: explicit audio_label '" + _audioDeviceName + "' did not match an ALSA card");
+        }
         SoapySDR_logf(SOAPY_SDR_WARNING,
             "2026SDR: could not find ALSA card for '%s' in /proc/asound/cards; "
             "falling back to default (may be resampled by PipeWire)",
