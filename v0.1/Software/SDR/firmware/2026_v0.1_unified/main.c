@@ -1,14 +1,25 @@
 /*
- * main.c -- Unified RP2040 / Pico W SDR Firmware (v0.2)
+ * main.c -- Unified RP2040 / RP2350 (Pico W & Pico 2 W) SDR Firmware (v0.1 Hardware)
  *
  * Features:
+ *   • Target Boards: Raspberry Pi Pico W (RP2040) and Pico 2 W (RP2350)
  *   • Dual Streaming: USB Audio Class 1.0 (UAC1) + OpenHPSDR Protocol 1 over WiFi
  *   • Autonomous On-Board Si5351 LO calculation (Golden Integer & Fractional fallback)
  *   • Dual FREQ command support:
  *       1. Legacy Quisk format: FREQ,<hz>,<N>,<a>,<b>,<c>,<P1>,<P2>,<P3>
  *       2. Direct frequency:    FREQ,<hz>  (computes best LO on-chip)
- *   • Sample Rate switching: 48 kHz (M1=0) / 96 kHz (M1=1) dynamically
+ *   • Sample Rate switching: 48 kHz (MD1=0) / 96 kHz (MD1=1) dynamically
  *   • TCP Control Server on Port 5000 in parallel with USB CDC
+ *
+ * GPIO Pin Assignments (Intro-to-CAD-2026 v0.1 board):
+ *   GPIO 10 : FMT  -- OUT (LOW) : PCM1808 FMT (I2S standard format)
+ *   GPIO 11 : MD1  -- OUT       : PCM1808 MD1 (LOW = 512fs/48 kHz, HIGH = 256fs/96 kHz)
+ *   GPIO 12 : SDA  -- I2C       : Si5351a / MS5351M data (100 kHz)
+ *   GPIO 13 : SCL  -- I2C       : Si5351a / MS5351M clock
+ *   GPIO 14 : DATA -- IN (PIO)  : PCM1808 DOUT (I2S serial audio)
+ *   GPIO 15 : BCK  -- IN (PIO)  : PCM1808 BCK  (bit clock from ADC)
+ *   GPIO 16 : WS   -- IN (PIO)  : PCM1808 LRCK (word select / frame sync)
+ *   GPIO 22 : DBG  -- OUT       : DMA ISR toggle (~500 Hz square wave for logic analyser)
  */
 
 #include <stdio.h>
@@ -37,15 +48,16 @@
 #include "openhpsdr.h"
 #include "wifi_config.h"
 
-/* GPIO pin assignments */
+/* GPIO pin assignments for Intro-to-CAD-2026 v0.1 board */
 #define I2C_SDA_PIN    12
 #define I2C_SCL_PIN    13
-#define MODE_M0_PIN    22   /* PCM1808 MD0: held LOW (I2S format) */
-#define MODE_M1_PIN    26   /* PCM1808 MD1: 0=48kHz, 1=96kHz      */
+#define MODE_FMT_PIN   10   /* PCM1808 FMT: held LOW (I2S standard format) */
+#define MODE_M1_PIN    11   /* PCM1808 MD1: 0=48kHz, 1=96kHz      */
 
-#define PCM_DATA_PIN   9
-#define PCM_BCK_PIN    10
-#define PCM_WS_PIN     11
+#define PCM_DATA_PIN   14   /* PCM1808 DOUT (PIO in_base)         */
+#define PCM_BCK_PIN    15   /* PCM1808 BCK  (PIO in_base + 1)     */
+#define PCM_WS_PIN     16   /* PCM1808 LRCK (PIO in_base + 2)     */
+#define DEBUG_PIN      22   /* DMA ISR toggle for logic analyser  */
 
 #define I2C_SPEED_HZ   100000U
 #define BOARD_DIRECT_MODE true
@@ -101,6 +113,7 @@ static void tcp_write_str(const char *s) {
  * Core 1: owns DMA IRQ, handles rate-reconfiguration sentinel
  * ====================================================================== */
 static void dma_handler(void) {
+    gpio_xor_mask(1u << DEBUG_PIN);
     const uint32_t *filled_buf;
     uint32_t wpb = g_words_per_buf;
 
@@ -181,7 +194,7 @@ static void core1_entry(void) {
  * Hardware Reconfiguration
  * ====================================================================== */
 static void apply_hardware_config(uint32_t rate) {
-    gpio_put(MODE_M0_PIN, 0);
+    gpio_put(MODE_FMT_PIN, 0);
     if (rate >= 96000U) {
         gpio_put(MODE_M1_PIN, 1);
         g_words_per_buf = 192;
@@ -324,7 +337,7 @@ static void handle_line(const char *raw_line, uint8_t raw_len, void (*reply_fn)(
     char reply[128];
 
     if (strncmp(upper_line, "VER", 3) == 0) {
-        reply_fn("VER,0.2\r\nOK\r\n");
+        reply_fn("VER,0.1\r\nOK\r\n");
         return;
     }
     if (strncmp(upper_line, "HELP", 4) == 0 || strcmp(upper_line, "?") == 0) {
@@ -633,16 +646,20 @@ int main(void)
     };
     tusb_init(BOARD_TUD_RHPORT, &dev_init);
 
-    /* GPIO Setup for Mode Pins */
-    gpio_init(MODE_M0_PIN);
-    gpio_set_dir(MODE_M0_PIN, GPIO_OUT);
-    gpio_put(MODE_M0_PIN, 0);
+    /* GPIO Setup for Mode and Debug Pins */
+    gpio_init(MODE_FMT_PIN);
+    gpio_set_dir(MODE_FMT_PIN, GPIO_OUT);
+    gpio_put(MODE_FMT_PIN, 0);
 
     gpio_init(MODE_M1_PIN);
     gpio_set_dir(MODE_M1_PIN, GPIO_OUT);
     gpio_put(MODE_M1_PIN, 0);
 
-    /* PIO I2S Pins */
+    gpio_init(DEBUG_PIN);
+    gpio_set_dir(DEBUG_PIN, GPIO_OUT);
+    gpio_put(DEBUG_PIN, 0);
+
+    /* PIO I2S Pins (GPIO 14, 15, 16) */
     for (int pin = PCM_DATA_PIN; pin <= PCM_WS_PIN; pin++) {
         pio_gpio_init(pio0, pin);
         gpio_pull_up(pin);

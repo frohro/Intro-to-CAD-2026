@@ -1,6 +1,6 @@
-# Unified Pico W / Pico 2 W SDR Firmware (v0.2 Hardware)
+# Unified Pico W / Pico 2 W SDR Firmware (v0.1 Hardware)
 
-High-performance, dual-mode SDR firmware for the **Intro-to-CAD-2026 v0.2 SDR Receiver** targeting either the **Raspberry Pi Pico W (RP2040 + CYW43439)** or **Raspberry Pi Pico 2 W (RP2350 + CYW43439)**.
+High-performance, dual-mode SDR firmware for the **Intro-to-CAD-2026 v0.1 SDR Receiver Board** targeting either the **Raspberry Pi Pico W (RP2040 + CYW43439)** or **Raspberry Pi Pico 2 W (RP2350 + CYW43439)**.
 
 ---
 
@@ -24,7 +24,7 @@ High-performance, dual-mode SDR firmware for the **Intro-to-CAD-2026 v0.2 SDR Re
 
 ### Dual-Core Threading Model
 - **Core 1 (Real-Time Audio DSP)**:
-  - Samples the **PCM1808 24-bit ADC** via custom RP2040/RP2350 PIO microcode (`i2s_rx.pio`) on GPIO 9, 10, 11.
+  - Samples the **PCM1808 24-bit ADC** via custom RP2040/RP2350 PIO microcode (`i2s_rx.pio`) on **GPIO 14, 15, 16**.
   - Alternates ping-pong DMA buffers with zero CPU jitter.
   - Pushes 32-bit aligned I/Q frames into the lock-free inter-core hardware FIFO.
 - **Core 0 (Networking & Protocol Engine)**:
@@ -36,19 +36,22 @@ High-performance, dual-mode SDR firmware for the **Intro-to-CAD-2026 v0.2 SDR Re
 
 ---
 
-## 2. Hardware Pinout (Intro-to-CAD-2026 v0.2)
+## 2. GPIO Pin Assignments (Intro-to-CAD-2026 v0.1 Board)
 
-| Signal | Pico W / Pico 2 W GPIO | Function |
-| :--- | :--- | :--- |
-| **I2S DATA** | GPIO 9 | PCM1808 SDOUT (PIO Input) |
-| **I2S BCK** | GPIO 10 | PCM1808 Bit Clock (PIO Input) |
-| **I2S WS** | GPIO 11 | PCM1808 Word Select / LRCK (PIO Input) |
-| **I2C SDA** | GPIO 12 | Si5351a Synthesizer I2C Data |
-| **I2C SCL** | GPIO 13 | Si5351a Synthesizer I2C Clock |
-| **MODE M0** | GPIO 22 | PCM1808 MD0 (Held LOW for I2S format) |
-| **MODE M1** | GPIO 26 | PCM1808 MD1 (0 = 48 kHz, 1 = 96 kHz) |
-| **Si5351 CLK2** | SCKI | 24.576 MHz Master Clock to PCM1808 |
-| **Si5351 CLK0/1** | LO I/Q | Direct Quadrature LO to QSD Mixer |
+All assignments target the **Intro-to-CAD-2026 v0.1 PCB**:
+
+| GPIO | Signal | Direction | Notes |
+| :--- | :--- | :--- | :--- |
+| **10** | **FMT** | OUT (LOW) | PCM1808 FMT — LOW = I2S standard format |
+| **11** | **MD1** | OUT | PCM1808 MD1 — LOW = 512fs / 48 kHz, HIGH = 256fs / 96 kHz |
+| **12** | **SDA** | I2C | Si5351a / MS5351M I2C data (100 kHz) |
+| **13** | **SCL** | I2C | Si5351a / MS5351M I2C clock |
+| **14** | **DATA** | IN (PIO) | PCM1808 DOUT — I2S serial audio |
+| **15** | **BCK** | IN (PIO) | PCM1808 BCK — bit clock from ADC |
+| **16** | **WS** | IN (PIO) | PCM1808 LRCK — word select / frame sync |
+| **22** | **DBG** | OUT | DMA ISR toggle — ~500 Hz square wave for logic analyser |
+
+*Note on BCK*: BCK at 48 kHz = 3.072 MHz; at 96 kHz = 6.144 MHz. PIO runs at 125 MHz (32 ns/cycle) leaving ~5× margin at the fastest BCK rate.
 
 ---
 

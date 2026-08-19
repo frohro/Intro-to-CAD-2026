@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
 # Unified USB + WiFi OpenHPSDR SDR Firmware for Raspberry Pi Pico W / Pico 2 W (CYW43439)
-# Targets Intro-to-CAD-2026 v0.2 Board
+# Targets Intro-to-CAD-2026 v0.1 Board
 #
 # Supports:
 #   • Target Boards: Pico W (RP2040) or Pico 2 W (RP2350) via -DPICO_BOARD=pico_w / -DPICO_BOARD=pico2_w
@@ -22,28 +22,28 @@ if(NOT DEFINED PICO_TINYUSB_PATH AND DEFINED ENV{HOME})
     set(PICO_TINYUSB_PATH "$ENV{HOME}/tinyusb" CACHE PATH "Path to TinyUSB")
 endif()
 
-project(sdr_v0.2_unified C CXX ASM)
+project(sdr_v0.1_unified C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-add_executable(sdr_v0.2_unified
+add_executable(sdr_v0.1_unified
     main.c
     si5351.c
     openhpsdr.c
     usb_descriptors.c
 )
 
-pico_generate_pio_header(sdr_v0.2_unified ${CMAKE_CURRENT_LIST_DIR}/i2s_rx.pio)
+pico_generate_pio_header(sdr_v0.1_unified ${CMAKE_CURRENT_LIST_DIR}/i2s_rx.pio)
 
-target_include_directories(sdr_v0.2_unified PRIVATE 
+target_include_directories(sdr_v0.1_unified PRIVATE 
     ${CMAKE_CURRENT_LIST_DIR}
     ${PICO_TINYUSB_PATH}/hw/bsp
     ${PICO_TINYUSB_PATH}/src
 )
 
-target_link_libraries(sdr_v0.2_unified
+target_link_libraries(sdr_v0.1_unified
     pico_stdlib
     pico_cyw43_arch_lwip_poll
     hardware_i2c
@@ -59,7 +59,7 @@ target_link_libraries(sdr_v0.2_unified
     tinyusb_board
 )
 
-pico_enable_stdio_usb(sdr_v0.2_unified 0)
-pico_enable_stdio_uart(sdr_v0.2_unified 1)
+pico_enable_stdio_usb(sdr_v0.1_unified 0)
+pico_enable_stdio_uart(sdr_v0.1_unified 1)
 
-pico_add_extra_outputs(sdr_v0.2_unified)
+pico_add_extra_outputs(sdr_v0.1_unified)
