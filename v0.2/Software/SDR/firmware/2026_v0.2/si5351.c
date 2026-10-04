@@ -155,8 +155,8 @@ uint32_t si5351_set_freq_integer(i2c_inst_t *i2c, uint32_t freq_hz, bool direct_
         si5351_write_reg(i2c, SI5351_REG_CLK1_CTRL, CLK_CTRL_INT_PLLA);
         write_reg_block(i2c, SI5351_REG_MS0_BASE, ms_regs);
         write_reg_block(i2c, SI5351_REG_MS1_BASE, ms_regs);
-        si5351_write_reg(i2c, SI5351_REG_CLK0_PHOFF, 0);
-        si5351_write_reg(i2c, SI5351_REG_CLK1_PHOFF, (uint8_t)(best_M & 0x7F)); // 90 deg offset
+        si5351_write_reg(i2c, SI5351_REG_CLK0_PHOFF, (uint8_t)(best_M & 0x7F));
+        si5351_write_reg(i2c, SI5351_REG_CLK1_PHOFF, 0); // 90 deg offset
     } else {
         // v0.2 JOHNSON mode: CLK1=LO input (CLK2=ADC SCKI)
         si5351_write_reg(i2c, SI5351_REG_CLK1_CTRL, CLK_CTRL_INT_PLLA);
@@ -191,8 +191,8 @@ void si5351_set_freq_regs(i2c_inst_t *i2c, uint32_t N,
         si5351_write_reg(i2c, SI5351_REG_CLK1_CTRL, CLK_CTRL_INT_PLLA);
         write_reg_block(i2c, SI5351_REG_MS0_BASE, ms_regs);
         write_reg_block(i2c, SI5351_REG_MS1_BASE, ms_regs);
-        si5351_write_reg(i2c, SI5351_REG_CLK0_PHOFF, 0);
-        si5351_write_reg(i2c, SI5351_REG_CLK1_PHOFF, (uint8_t)(N & 0x7F));
+        si5351_write_reg(i2c, SI5351_REG_CLK0_PHOFF, (uint8_t)(N & 0x7F));
+        si5351_write_reg(i2c, SI5351_REG_CLK1_PHOFF, 0);
     } else {
         // v0.2 JOHNSON mode: CLK1=LO input (CLK2=ADC SCKI)
         si5351_write_reg(i2c, SI5351_REG_CLK1_CTRL, CLK_CTRL_INT_PLLA);
