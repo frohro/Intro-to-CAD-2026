@@ -34,3 +34,4 @@ Re-sync notes: [Docs/FIRMWARE_RESTORE.md](Docs/FIRMWARE_RESTORE.md).
 - Tag `archive/pre-version-split` — layout before this reorg (student `Module_*` at repo root).
 - Long-lived git branch `v0.2` held hardware work before the monorepo split; prefer paths under `v0.2/` on `master` going forward.
 - Student module credits: [Docs/CREDITS.md](Docs/CREDITS.md).
+![](README_v0.2_3D.png)

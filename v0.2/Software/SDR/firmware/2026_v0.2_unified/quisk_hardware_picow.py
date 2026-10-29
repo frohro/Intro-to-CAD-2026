@@ -8,6 +8,31 @@
 from __future__ import print_function, absolute_import, division
 import os, sys
 
+################ Receivers Hermes, Raspberry Pi Pico W OpenHPSDR Receiver
+## hardware_file_name		Hardware file path, rfile
+# This is the file that contains the control logic for each radio.
+#hardware_file_name = 'quisk_hardware_picow.py'
+
+## widgets_file_name		Widget file path, rfile
+# This optional file adds additional controls for the radio.
+#widgets_file_name = 'quisk_widgets_picow.py'
+
+## udp_rx_ip		Pico W IP address, text
+# Enter the IP address of the Pico W on your local Wi-Fi network.
+udp_rx_ip = '192.168.1.186'
+
+## rx_udp_port		Hardware UDP port, integer
+# This is the OpenHPSDR Protocol 1 UDP port number.
+rx_udp_port = 1024
+
+## sample_rate		Sample rate, integer choice
+# Sample rate for the PCM1808 ADC (48000 or 96000).
+sample_rate = 48000
+
+## rx_udp_clock		Clock frequency Hertz, integer
+# Nominal frequency of the Si5351 reference crystal in Hertz.
+rx_udp_clock = 24576000
+
 try:
     from hermes.quisk_hardware import Hardware as BaseHardware
 except ImportError:
@@ -28,6 +53,7 @@ class Hardware(BaseHardware):
         self.bandEdge1 = 0
         self.bandEdge2 = 0
         self._current_sample_rate = getattr(conf, 'sample_rate', 48000)
+        self.conf.rx_sample_rate = self._current_sample_rate
         
         try:
             super(Hardware, self).__init__(app, conf)
@@ -81,6 +107,27 @@ class Hardware(BaseHardware):
         return self.HeartBeat()
 
     # --------------------------------------------------------------------------
+    # Variable Decimation (VarDecim) for Quisk Config Screen
+    # --------------------------------------------------------------------------
+    def VarDecimGetRates(self):
+        """Return allowable sample rates for the Config / Sound screen."""
+        return (48000, 96000)
+
+    def VarDecimGetRate(self):
+        """Return the current active sample rate."""
+        return self._current_sample_rate
+
+    def VarDecimSetRate(self, rate):
+        """Called by Quisk when the user changes rate on the Config screen."""
+        rate = int(rate)
+        self.SetSampleRate(rate)
+        return self._current_sample_rate
+
+    def VarDecimGetLabels(self):
+        """Return human-readable labels for the sample rate choices."""
+        return ("48 kSPS (Standard)", "96 kSPS (Wide Band)")
+
+    # --------------------------------------------------------------------------
     # Hermes-Lite 2 & Peripheral Stubs (Suppress unwanted hardware options)
     # --------------------------------------------------------------------------
     def set_attenuation(self, att):
@@ -127,6 +174,7 @@ class Hardware(BaseHardware):
         print(f"[*] Setting Pico W Sample Rate to {new_rate} SPS...")
         self._current_sample_rate = new_rate
         self.conf.sample_rate = new_rate
+        self.conf.rx_sample_rate = new_rate
 
         # If OpenHPSDR C backend has SetControlBit / SendControlPacket
         if hasattr(self, 'SetControlBit'):
@@ -271,4 +319,3 @@ class ConfigWidgets(object):
             self.lbl_result.SetLabel(msg)
         except Exception as e:
             self.lbl_result.SetLabel(f"Error calculating: {e}")
-
