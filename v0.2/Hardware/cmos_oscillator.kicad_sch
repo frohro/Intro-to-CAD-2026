@@ -1804,6 +1804,16 @@
 		)
 		(uuid "665a0235-655d-473e-bb91-9c1dfa396d8a")
 	)
+	(text "Oops!  This should not be more than 1.1V and should be AC coupled.\nA possible hack to fix this is to make a \"teepee\"\n[X1 pad of R36][ 680 Ω (0603) ][ 100 nF (0603) ][LO_CLK pad of R36]\n                                      |\n                              [ 220 Ω (0603) ]\n                                      |\n                       		 [Nearest GND]\n\nThe present setup works.  It is not in spec though and probably causes more phase jitter."
+		(exclude_from_sim no)
+		(at 199.39 120.142 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "83a67d01-45a0-49e0-83fc-86a1938e4c87")
+	)
 	(text "24.576 MHz osc.\n(allows 48 kHz \nor 96 kHz)"
 		(exclude_from_sim no)
 		(at 139.192 112.522 0)
