@@ -1,0 +1,34 @@
+;
+; i2s_rx.pio — I2S slave receive for PCM1808 audio ADC
+; Targets Intro-to-CAD-2026 v0.1 board
+;
+; Pin assignment — three consecutive GPIO inputs starting at base (GPIO 14):
+;   base + 0 = GPIO 14 = DATA  (SDOUT from PCM1808)
+;   base + 1 = GPIO 15 = BCK   (bit clock from PCM1808)
+;   base + 2 = GPIO 16 = WS    (LRCK / word-select from PCM1808)
+
+.program i2s_rx
+
+.wrap_target
+    wait 1 pin 2            ; wait for WS/LRCK = HIGH  (sync anchor)
+    wait 0 pin 2            ; wait for WS/LRCK falling edge → left channel start
+
+    ; ── LEFT channel: 32 bits (24 valid + 8 zeros), MSB first ──────────
+    set x, 31               ; loop counter: 32 iterations
+
+left_loop:
+    wait 0 pin 1            ; wait for BCK LOW
+    wait 1 pin 1            ; wait for BCK HIGH (rising edge: DATA valid)
+    in   pins, 1            ; shift DATA bit into ISR; autopush fires on 32nd bit
+    jmp  x-- left_loop
+
+    ; ── RIGHT channel: wait for WS rising edge, then 32 bits ───────────
+    wait 1 pin 2            ; wait for WS/LRCK = HIGH → right channel start
+    set x, 31
+
+right_loop:
+    wait 0 pin 1            ; wait for BCK LOW
+    wait 1 pin 1            ; wait for BCK HIGH
+    in   pins, 1            ; shift DATA bit into ISR; autopush fires on 32nd bit
+    jmp  x-- right_loop
+.wrap
