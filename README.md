@@ -35,3 +35,9 @@ Re-sync notes: [Docs/FIRMWARE_RESTORE.md](Docs/FIRMWARE_RESTORE.md).
 - Long-lived git branch `v0.2` held hardware work before the monorepo split; prefer paths under `v0.2/` on `master` going forward.
 - Student module credits: [Docs/CREDITS.md](Docs/CREDITS.md).
 ![](README_v0.2_3D.png)
+
+## License
+
+All software, firmware, schematics, and PCB design files in this repository are released under the [MIT License](LICENSE). Commercial manufacturing, modification, and sale are explicitly permitted and encouraged.
+
+*Disclaimer: Provided "AS IS" without warranty of any kind. Builders and sellers are solely responsible for compliance with local RF and radio regulations.*
