@@ -1566,7 +1566,7 @@
         "uuid": "c12dc015-e6cb-468c-8de4-269c3106de0e"
       }
     ],
-    "used_designators": "R43-44,C63",
+    "used_designators": "Je4,TR2,U9,U14-15,S3,J8,J16,J19-21,FB11,e6-7,#PWR30,#PWR83-87,#PWR90-92,#PWR97,#PWR188-200,#FLG2,#FLG8,#FLG11-13,#FLG102,TP13,TP15,TP19-24,TP28,JP5,JP15-16,JP69,JP84-85,JP87,JP90-148,R2,R43-51,R62,R71,R77,R80,C63,C95-98,C100-103,C105,C107,C111,C115-123",
     "variants": []
   },
   "sheets": [

@@ -4767,7 +4767,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2012241239_Hangzhou-Ruimeng-Tech-MS5351M_C1509083.pdf"
+		(property "Datasheet" "https://qrp-labs.com/images/synth/ms5351m.pdf"
 			(at 130.81 115.57 0)
 			(hide yes)
 			(show_name no)

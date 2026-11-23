@@ -11524,18 +11524,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "87d497f6-f55e-40ff-a990-bc61a81f4e04")
+			(uuid "041c0dcb-ce59-4c15-89c3-a9c0ca642226")
 		)
 		(pin "1"
-			(uuid "696d6d52-b81e-4693-b888-680e3cec8d45")
+			(uuid "304173e6-769a-4ad2-b847-db231ef7e53b")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "S1")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "S1")
@@ -11624,18 +11618,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "897847c9-b0f4-4e47-984f-cb7d3c9a4754")
+			(uuid "91149899-a5db-4e55-bc65-9a5837ade816")
 		)
 		(pin "1"
-			(uuid "73789160-9a0b-48b5-ae5e-65cc6471a28b")
+			(uuid "908a9347-dcd0-4a32-9166-31be7a2d40bd")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP24")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP24")
@@ -11724,18 +11712,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "73c0b421-f7b1-4fae-b5f5-ee7bfdaf5edb")
+			(uuid "6a240683-1834-4028-9bb6-4ef3da046de1")
 		)
 		(pin "1"
-			(uuid "ec4ea6dc-4432-4294-a181-a6d4d8be462f")
+			(uuid "018b90eb-7c79-4408-b067-6a61bf63ea12")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP51")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP51")
@@ -11813,15 +11795,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7206482-0e84-4936-a8cf-80bdede17b12")
+			(uuid "9d1577b2-fad0-418f-91ec-2f3903601bda")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0109")
@@ -11910,18 +11886,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "c8e7226e-a093-4ba2-b884-71b3842d6f96")
+			(uuid "f5814f2f-f216-478a-8bab-4548e37f85ee")
 		)
 		(pin "1"
-			(uuid "e7a46957-7f5f-4433-ade5-f5e8cc18abb5")
+			(uuid "10fdc71a-e186-4fa7-9058-afab84664b74")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP54")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP54")
@@ -12010,18 +11980,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "3471c323-c6d6-4516-8992-aece1191a362")
+			(uuid "0071ca6e-a3db-429e-8a84-fdc0030f1759")
 		)
 		(pin "1"
-			(uuid "18b15121-dc15-4028-93fa-c9d58c2e1381")
+			(uuid "e3617aaf-4717-4c11-8bef-94949432f040")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP63")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP63")
@@ -12110,18 +12074,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "20256176-720b-4219-875f-1d22050ed5ec")
+			(uuid "7b38c408-a967-4d74-a3c3-e014a1aee0e8")
 		)
 		(pin "1"
-			(uuid "df7d41e1-8d3f-4432-ac9d-ca6a5f0bbdb3")
+			(uuid "c6b60319-9322-4174-b549-bb09a81ccbcc")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP34")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP34")
@@ -12199,15 +12157,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "46ed8f4a-beed-477d-b849-588920367d7e")
+			(uuid "8297edf8-5e6b-42a4-bf28-26150a45259d")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR076")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR076")
@@ -12284,15 +12236,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c3ea980-d3d6-4353-998c-bd247972e9b4")
+			(uuid "d19871fd-f061-4a62-90ca-a874f213a134")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0104")
@@ -12381,18 +12327,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "bf0cbd76-30ec-4008-a288-ee3cbc533df9")
+			(uuid "f19d749e-56cc-4903-9410-af9f371be664")
 		)
 		(pin "1"
-			(uuid "c70fcc73-e992-45a4-9c2a-9543598a6511")
+			(uuid "5d5e57c3-b030-41f8-b08e-0688d89326a9")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP77")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP77")
@@ -12481,18 +12421,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "9e40f095-a3cb-4014-9356-31ddeac38a97")
+			(uuid "aced6e01-2df3-4be4-b326-9e00e78c6d9a")
 		)
 		(pin "1"
-			(uuid "8438a444-6f22-4171-9091-e5c46fe6392a")
+			(uuid "47394a4b-1a7d-4f61-a9c1-875f6d4c6df5")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP79")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP79")
@@ -12581,18 +12515,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "a2a9990d-9eda-4a95-8f51-627b3ee8843f")
+			(uuid "1480aea0-629c-4176-954c-34bdea2262a0")
 		)
 		(pin "1"
-			(uuid "7fd616d2-8573-4de6-988a-0a696c3ff090")
+			(uuid "07417f11-26a5-4d30-b73e-a1b4bb0c48fa")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP49")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP49")
@@ -12681,18 +12609,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "cbc2410e-f5f5-4a06-8eab-c3c520278ab5")
+			(uuid "e3b56b38-c6d1-4e19-bd4b-dec28e7e02c5")
 		)
 		(pin "1"
-			(uuid "c25b2af1-68c6-4544-8314-e2a6c22cb484")
+			(uuid "4f820245-a789-416a-991c-8dc71dae33e6")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP65")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP65")
@@ -12770,15 +12692,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "f6a4374e-ca80-4377-afeb-2171c9494c49")
+			(uuid "9cf208ed-5c8f-44eb-be7b-40e4c2bcdc7a")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0120")
@@ -12855,15 +12771,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f4707b7-8977-422c-8d05-0b59855f3376")
+			(uuid "a7fe7b18-346b-4672-b1bf-6551a170acc5")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#FLG09")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#FLG09")
@@ -12952,18 +12862,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "dc3c2555-5307-4900-acbe-d32fdc95745c")
+			(uuid "8f6ab70d-fd14-47d0-b11a-209e3ea20034")
 		)
 		(pin "1"
-			(uuid "1c60133a-374a-4c06-814c-b3fd161e38c0")
+			(uuid "8ace0c0e-ac5d-44fc-b250-1916b9d6a2e4")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP42")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP42")
@@ -13052,18 +12956,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "de590eb6-6425-4d63-ada1-307a8c497fa8")
+			(uuid "0ab20d49-fdd9-437e-a6ce-c4730d3ad441")
 		)
 		(pin "1"
-			(uuid "e440b7ba-c10f-44cd-9346-032999d6bd6e")
+			(uuid "f3b4b9e1-1fdb-46d3-baa6-2400c6c2be09")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP28")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP28")
@@ -13148,141 +13046,135 @@
 			)
 		)
 		(pin "9"
-			(uuid "84a57d03-e351-46af-b417-a2ee3a328b47")
+			(uuid "37999fe1-8462-486d-8cf0-a1a6caa3e312")
 		)
 		(pin "42"
-			(uuid "55380f06-5a21-4c7a-b534-4eb443199f66")
+			(uuid "4d2a0d9b-e6e4-4395-be58-b5d200195099")
 		)
 		(pin "4"
-			(uuid "e9621c44-9dea-41ff-a61a-d0fccda02744")
+			(uuid "03925f39-7298-4c7b-bc93-0aeb3a415f2a")
 		)
 		(pin "41"
-			(uuid "e47a872d-07aa-48f2-82e6-5962657d6def")
+			(uuid "16f51229-c136-448f-b523-d6bb1244bfdf")
 		)
 		(pin "2"
-			(uuid "6d3589ae-1236-4949-af05-c6828b30f0d1")
+			(uuid "17db2ee9-4843-4765-8fbb-431ad462b032")
 		)
 		(pin "20"
-			(uuid "cafd5a38-6238-4302-9f66-5403ad00977c")
+			(uuid "63388812-6e17-4fa5-94be-b9614ce30e02")
 		)
 		(pin "21"
-			(uuid "b6bdad40-6388-4c34-ab4d-1dd05cf0147a")
+			(uuid "53a0974b-e014-4c3f-b06d-2f57381b39db")
 		)
 		(pin "40"
-			(uuid "a75d73fa-dc21-478c-89b2-c0306ecceea2")
+			(uuid "eb84837d-20f3-444f-a4de-b10caf03df69")
 		)
 		(pin "43"
-			(uuid "7f6bd63a-f6fa-4eac-86a7-142beb3fc807")
+			(uuid "6eedc23a-26d4-49dc-91ca-cfe7339142ac")
 		)
 		(pin "12"
-			(uuid "09e88a32-9c02-4ae0-bff5-9e046f856ee5")
+			(uuid "3cd6ce36-a370-4802-aeb4-4c252ce22c7e")
 		)
 		(pin "14"
-			(uuid "ffe98fcf-11a5-41d7-bc22-19d64a40761e")
+			(uuid "d0e27b1b-5a66-4be3-a94a-8f8423bba4d7")
 		)
 		(pin "5"
-			(uuid "852de18b-63da-407d-ae3d-fb3eb05dc2cc")
+			(uuid "30e009a0-a49f-4a6e-9796-6d7ae5f38b40")
 		)
 		(pin "6"
-			(uuid "519457be-fec4-42de-9f36-99b0d9f884d5")
+			(uuid "fd45c587-4226-4a2b-b24e-6863d5b90ff7")
 		)
 		(pin "22"
-			(uuid "88f88c5c-ae87-4790-abbf-cfcca556c4db")
+			(uuid "5ea13b31-e07b-49a5-b0ec-24bd46020ea2")
 		)
 		(pin "19"
-			(uuid "1316671d-9cd3-46a4-bea4-c4e103449d32")
+			(uuid "dd78d929-c496-4b3a-b01f-ddbdfa2819a9")
 		)
 		(pin "39"
-			(uuid "88ac1ac1-2b17-47ae-b49b-b9a43dc7d2f6")
+			(uuid "87420380-2f13-41b0-b001-7848952266b7")
 		)
 		(pin "32"
-			(uuid "2746f248-ef29-4a35-979a-5d54a2df0758")
+			(uuid "6e4f2c78-44cc-462a-b608-58ff93cb554d")
 		)
 		(pin "15"
-			(uuid "29007660-555c-481f-902c-057caf30d545")
+			(uuid "d3967154-c038-4ae0-b8c4-e477bebb0282")
 		)
 		(pin "1"
-			(uuid "854736c1-3861-4be7-9dfc-f3c3a5335882")
+			(uuid "7b626a5b-4b56-4810-876d-7ab2ccef16b3")
 		)
 		(pin "31"
-			(uuid "a1136600-8075-4324-be06-4ea773c6a05a")
+			(uuid "131e4917-a908-493b-8168-6f4f911e7e6a")
 		)
 		(pin "37"
-			(uuid "9cf63ee6-f6ce-4028-a2ae-7102f4385f71")
+			(uuid "2e40166a-e4e9-4abc-92f3-f329219df6f3")
 		)
 		(pin "7"
-			(uuid "0ee92139-d0e5-4183-ab07-04449d048a41")
+			(uuid "b441903c-ad0e-4fdd-a6a7-7dc3e12df0bd")
 		)
 		(pin "34"
-			(uuid "f22b9cc8-c2ae-48fb-8ac4-875ec6de19fe")
+			(uuid "6bd26aa8-ea36-42f2-b20e-93f51eb6eb43")
 		)
 		(pin "33"
-			(uuid "8bf9b392-bdb2-4e49-8c51-d60d072f1088")
+			(uuid "8efac8d3-596f-419a-89c9-194da3c9ca4b")
 		)
 		(pin "28"
-			(uuid "4c481ee5-6aad-4914-b44a-e8350ba78ede")
+			(uuid "c56f3d92-c754-4fd8-b3c0-3edbc02db8ee")
 		)
 		(pin "13"
-			(uuid "ed394214-00f7-4b1f-9bfe-d1fce0ec43b0")
+			(uuid "37fe17cd-3e5c-412a-990f-baf9c2b9174e")
 		)
 		(pin "36"
-			(uuid "6b6f2631-1ee3-424c-881b-510cc226ec3f")
+			(uuid "8b2c8a2a-8036-42a2-8709-ccfaba2963e8")
 		)
 		(pin "24"
-			(uuid "7c155b17-dcb8-4729-8e28-1527284fd0b8")
+			(uuid "fbe6e670-3b23-4c11-84e3-9a3a8bd644d8")
 		)
 		(pin "11"
-			(uuid "9c01908e-ac8a-4ead-a711-80e1d8cd4974")
+			(uuid "2d3e6d82-ef31-4e35-92f3-080bc8b73bcc")
 		)
 		(pin "26"
-			(uuid "b7d8e52c-2eeb-4219-89bb-4a883ae912cc")
+			(uuid "b678d169-6097-409f-a9c3-783ba6a4a38f")
 		)
 		(pin "3"
-			(uuid "00572c4a-f625-4c89-823b-ccfffa53cb21")
+			(uuid "b6bac898-d3c8-43a7-b6e4-70934c3076bb")
 		)
 		(pin "18"
-			(uuid "218622f0-b5a9-4ef3-a5fd-71e8c4b21008")
+			(uuid "43363660-3392-47f6-a943-dd3d4684f81e")
 		)
 		(pin "29"
-			(uuid "963742ac-9a5f-4ff6-a938-7c8a57fdc7ec")
+			(uuid "a8483e1f-94bf-4456-aec3-39a894508be4")
 		)
 		(pin "16"
-			(uuid "084f4481-a7a1-43d1-ba76-08f8a2addda1")
+			(uuid "2d33f097-afc9-4536-9330-111bce0ba7f8")
 		)
 		(pin "27"
-			(uuid "5d399297-f3f3-41fd-9c90-eea67bb6932c")
+			(uuid "807a36e0-7169-46ff-a9a2-25e6014e8727")
 		)
 		(pin "25"
-			(uuid "4cd5563e-fb01-4c83-8fdf-2bcd1c49f94b")
+			(uuid "4e1abf21-511a-4ec3-8065-7f0013817a56")
 		)
 		(pin "30"
-			(uuid "fafc5152-782f-452e-b407-25177ecc62dc")
+			(uuid "6e92d83b-beac-4933-ac2d-8fd319b4449d")
 		)
 		(pin "17"
-			(uuid "63f8f8ee-c453-4bc2-ad3d-ee218265881a")
+			(uuid "cfe1948e-c9e5-4e9c-aa04-0b09021ca968")
 		)
 		(pin "8"
-			(uuid "b99344ad-7424-4574-aa33-5ff92a77dd5e")
+			(uuid "7707d738-264c-4f3f-8e91-17d6a3c3ae22")
 		)
 		(pin "23"
-			(uuid "a0f28b91-6382-4bee-882d-042370082948")
+			(uuid "1e78b633-f55c-4bf9-9393-f81a6db83073")
 		)
 		(pin "35"
-			(uuid "99df90e3-c6ea-4a9d-a894-1a8af572246e")
+			(uuid "2a9881da-3a4b-46df-a4fd-02093f4b8106")
 		)
 		(pin "38"
-			(uuid "940d66fa-9d8d-4fa9-9522-f2418cfa4dba")
+			(uuid "74b07613-c528-43f9-af44-f6e7ef17adce")
 		)
 		(pin "10"
-			(uuid "db94db34-19ab-4bc3-be5d-bd8862f13c10")
+			(uuid "44fdc6ac-cd9e-44fb-ac96-50d69974a601")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "U3")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "U3")
@@ -13360,15 +13252,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6807e13-ed26-4769-a9cb-7b8b87b83ac8")
+			(uuid "b7b7f894-ba4a-4054-af5b-70fca860222a")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0101")
@@ -13457,18 +13343,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "9887de18-5bb4-4e66-a5a9-6707c2b3f9ea")
+			(uuid "39904bf7-a32e-41ba-9e39-c2b4b2e7af8e")
 		)
 		(pin "1"
-			(uuid "8f1459c8-5c00-42db-ac5e-aa2923035959")
+			(uuid "9e10d245-8e71-4e86-873c-4e21f698eb94")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP58")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP58")
@@ -13557,18 +13437,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "5f55fea4-a886-40f1-ad27-9dd994676f3e")
+			(uuid "ca5d6270-ef2d-4e6a-a07f-503def2e016b")
 		)
 		(pin "1"
-			(uuid "bfcac7cb-a607-4567-8abc-d091c40c6ab9")
+			(uuid "0336e7f5-eca3-463d-b051-57746dffbbbf")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP44")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP44")
@@ -13645,15 +13519,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "b99269ea-88b7-457c-9858-a8cd5d5ab6a8")
+			(uuid "2c228eaf-7c5e-42c6-8f6c-ae6a4353f8a2")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#FLG07")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#FLG07")
@@ -13730,15 +13598,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ca722c3-fc6d-47f7-86f0-c5773bcec9a7")
+			(uuid "37bc20e6-b32b-4fd6-9652-a347e0186f41")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#FLG0101")
@@ -13815,15 +13677,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "10f22390-68f8-4880-bb03-17010827aa71")
+			(uuid "eb8dc4b4-e783-4db5-bcf4-0c77e5e15847")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0102")
@@ -13912,18 +13768,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "faf07522-9e58-4003-ba64-4e1e8315726f")
+			(uuid "dfdff4b6-c421-416d-8041-f1613482b7af")
 		)
 		(pin "1"
-			(uuid "53db552d-807c-45b9-b000-37c63da70404")
+			(uuid "49afddd4-647a-4b61-9a7e-a0b487bdfc1f")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP47")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP47")
@@ -14012,18 +13862,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "318ca007-082d-4db5-92b3-cbc5ff93c2d8")
+			(uuid "100ea507-8476-4e4c-8d7c-eaff5d8c49d5")
 		)
 		(pin "1"
-			(uuid "76f5c21e-9a38-4b82-8e82-56e3f9d98a60")
+			(uuid "c75c4308-66ea-41ae-9f9d-ffddd81bc3be")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP38")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP38")
@@ -14101,15 +13945,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f223a84-e44e-4eb7-be54-4de45b1bd38e")
+			(uuid "8fe1b8cd-340d-4e75-aa79-ebf2281345b4")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0107")
@@ -14198,18 +14036,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "1c3d5f74-5e00-4c3a-93d1-2e76ed4dc307")
+			(uuid "e21086e9-5bc4-4be4-8964-130a1f98e81a")
 		)
 		(pin "1"
-			(uuid "7525a57a-bc4f-406d-a7ef-9e02e6722ecf")
+			(uuid "80bfee8a-cd46-470f-9680-0a3148e6999f")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP36")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP36")
@@ -14298,18 +14130,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "0f6ae98a-578a-41f7-89f7-a6d3d894c143")
+			(uuid "3f20c8c2-0c64-4553-a6b0-5007afd218e2")
 		)
 		(pin "1"
-			(uuid "ef9e82ca-157c-4395-81a5-7af8d754c974")
+			(uuid "d26a6038-daa7-4647-9010-ed572c208742")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP33")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP33")
@@ -14398,18 +14224,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "78b5db8b-d7ee-447b-980c-df444d4cf03b")
+			(uuid "a0db8891-7c58-494f-97b9-6f2675c61b4c")
 		)
 		(pin "1"
-			(uuid "4a7fa57b-4e08-442c-8a9c-3537fb193bfa")
+			(uuid "29f7320a-4d0f-4413-ae41-9f709b65fac4")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP74")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP74")
@@ -14498,18 +14318,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "576ccfd9-299c-4e72-8d55-dff5c55626db")
+			(uuid "71593985-97ff-41cd-9ba9-9bd0dde473df")
 		)
 		(pin "1"
-			(uuid "de712402-db16-4675-b980-e3fa8ff00541")
+			(uuid "fca7f8d2-754a-40b2-bf39-d6b5c8174cab")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP83")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP83")
@@ -14586,15 +14400,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "df970691-2a4a-49d3-8e3a-bdd71c9ee83a")
+			(uuid "123bb95c-2c14-470d-aa95-ef7330442982")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR0122")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0122")
@@ -14672,15 +14480,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "9eb44561-28f3-4b56-b4a5-e77d02a01e0a")
+			(uuid "1948b7ac-6266-4ad3-b0a8-9006179336e1")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR0121")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0121")
@@ -14769,18 +14571,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "dcd59190-4714-40cf-9e3a-ae2412b6e76e")
+			(uuid "b2e4a8dd-c725-43a3-a5fb-c0eb154dba4b")
 		)
 		(pin "1"
-			(uuid "4ec231cc-e6cb-45fe-9f57-ea29f510440e")
+			(uuid "d80ed911-8111-4676-a027-9f49bc59d757")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP72")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP72")
@@ -14857,15 +14653,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "0cc6fcb6-5f47-4545-b4ac-9ac090ff3fc9")
+			(uuid "52b21b04-6edd-40a1-b23f-e2f7178d996b")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0103")
@@ -14954,18 +14744,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "4cad9fc5-91e0-4a72-ac96-f70c98983793")
+			(uuid "da3e8eeb-3242-491f-9746-e981d4b667cb")
 		)
 		(pin "1"
-			(uuid "8572a97d-7d97-4de7-9ef4-b1459d733b27")
+			(uuid "c57bf899-6f3b-4737-b809-e7bddafd1823")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP26")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP26")
@@ -15054,18 +14838,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "65cc16ee-c1ec-4ae7-bdb3-4dda86d516ce")
+			(uuid "85de289e-a8b3-4a54-846e-389ae442c235")
 		)
 		(pin "1"
-			(uuid "8f7a1cdd-e47d-4eed-8f60-c8bbbfc25f0d")
+			(uuid "0979b4d3-fcf2-4a22-a2b8-183aa0f15696")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP70")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP70")
@@ -15154,18 +14932,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "b1f69d4a-b638-405a-b64f-047d85dc1f24")
+			(uuid "8ec3d709-a30b-4c28-a485-9f2f4b96c90d")
 		)
 		(pin "1"
-			(uuid "8085ccf8-a3dd-4941-8aa7-2a835e237f65")
+			(uuid "13c63bef-618b-46c9-b5da-771c2760d118")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP66")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP66")
@@ -15254,18 +15026,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "a54d01f1-0dbe-407c-8b6e-623e1f3c50da")
+			(uuid "c3cf3e4c-1f96-464f-9b5e-e19cd79d1c50")
 		)
 		(pin "1"
-			(uuid "ca0ee94d-452c-48f9-9071-a43464818872")
+			(uuid "b803a438-3a25-4881-a8b5-43981ce38680")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP22")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP22")
@@ -15340,15 +15106,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "cb9cb596-9aaa-4bdc-81ef-54771ed96bf2")
+			(uuid "eb162a6f-4b26-4e01-9f7b-d63957556d14")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "J7")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "J7")
@@ -15578,18 +15338,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "40a88adb-968e-467c-bc26-df509b9d38e2")
+			(uuid "5d2f47df-2020-4a5c-8a69-0ed1ad9fbd7a")
 		)
 		(pin "1"
-			(uuid "49a938cd-051d-4194-b793-fa324cb02a2c")
+			(uuid "0b89fa53-554e-426d-95d6-7634c4cdd06d")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "C39")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "C39")
@@ -15678,18 +15432,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "85d6ece3-c3e8-43ba-94a2-4a78d86fa6ee")
+			(uuid "c6c8ca4f-5bca-4c55-b9f0-ed485286fe33")
 		)
 		(pin "1"
-			(uuid "57cb9fa0-6178-4697-b5a3-fdf0c6f68791")
+			(uuid "2ab49c51-588d-4ad9-9d06-f7959e05cae4")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP62")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP62")
@@ -15766,15 +15514,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec50b7bf-33bb-4f2f-bc8a-cd4b02816bd4")
+			(uuid "fcc00a8d-3411-45f0-b862-6a7fc01b125e")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#FLG010")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#FLG010")
@@ -15863,18 +15605,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "5a6fa7da-0a9f-40ad-b553-5cc29a156384")
+			(uuid "9e44c6ac-cdea-426f-ab6c-0d847d76a24f")
 		)
 		(pin "1"
-			(uuid "66978446-5ef1-4b00-9918-f396c6b42a3d")
+			(uuid "7ce4a27b-bf7a-451d-b95e-eecd40eafcaa")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP73")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP73")
@@ -15963,18 +15699,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "d5df828c-aedf-43d4-9936-3f0b7bc20419")
+			(uuid "3fc3e342-02c6-4607-ac64-9ad1d3bb25bf")
 		)
 		(pin "1"
-			(uuid "494708fa-e450-4e4d-86ce-f437dd38ff68")
+			(uuid "3abf6480-74cc-44ba-b95f-3c4c4eab52ef")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP29")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP29")
@@ -16063,18 +15793,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "ea9c0dc4-b290-4712-8950-0cc8f1e7cacd")
+			(uuid "fa59777d-13c7-4f7a-a748-cfe8a047c7f4")
 		)
 		(pin "1"
-			(uuid "20fb4a26-06bf-4bab-a1b2-a98151a8dbf5")
+			(uuid "be0d2b20-7268-43bf-8432-93b58a09b32f")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP71")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP71")
@@ -16163,18 +15887,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "660c3349-196d-4812-87f7-1e23108c7cfd")
+			(uuid "b89ce34e-0f7f-4aca-9d73-11a40d1e4348")
 		)
 		(pin "1"
-			(uuid "c75b5860-a15c-4b82-9ba0-8dd64ad3f184")
+			(uuid "3aa2bd43-f61c-44a9-aeea-3ddad7617bdb")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP60")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP60")
@@ -16251,15 +15969,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "152d130a-fc7b-4acc-8340-59a16778cbff")
+			(uuid "6759530a-b179-44c8-ba11-fed635872680")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0105")
@@ -16348,18 +16060,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "61cf2692-208a-48c2-a94d-ae7b6ce87a6d")
+			(uuid "5a818ee9-6ab1-4200-a502-43aa746f03b5")
 		)
 		(pin "1"
-			(uuid "dfdfa0cb-fa0f-41c9-9d82-00fbacfc3ebe")
+			(uuid "91afb3da-710f-458d-9487-523adcafc0d6")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP53")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP53")
@@ -16448,18 +16154,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "f363df07-a106-4136-810a-088a0ac2e8c8")
+			(uuid "18eceb4d-637f-4010-b23c-886aec8144af")
 		)
 		(pin "1"
-			(uuid "1f033aae-8e7e-4414-91e8-1b8c2fd7bbf4")
+			(uuid "84c368fd-0923-42f0-9894-3c1ad77c36a6")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP39")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP39")
@@ -16548,64 +16248,64 @@
 			)
 		)
 		(pin "17"
-			(uuid "9dda26f7-fa70-4e0e-affa-94132385e56d")
+			(uuid "75d50c8c-2a85-4b1d-98f1-9d95fc9f4ab0")
 		)
 		(pin "18"
-			(uuid "59a0cab3-194b-4046-964b-febfee856e0a")
+			(uuid "d402ed16-c710-443e-901f-3f9c5ac7b255")
 		)
 		(pin "20"
-			(uuid "62697344-5d52-4625-998a-2b7d6d54690e")
+			(uuid "dfda988d-1e22-4940-b4e5-c6b9ecaf394d")
 		)
 		(pin "16"
-			(uuid "b69d2a43-3f9e-4ec7-b863-4e332847d92f")
+			(uuid "ade475bf-9396-4e2d-855f-a38dd905dc00")
 		)
 		(pin "9"
-			(uuid "59b74eae-ba00-4797-b868-54ba632e9a62")
+			(uuid "662274b2-b09f-47f9-b2f7-c44882649ce8")
 		)
 		(pin "19"
-			(uuid "bf5cf8b3-3ea0-45ba-80d6-5719ea304045")
+			(uuid "d19de1f1-e694-4c07-bda9-e38955d7a2e2")
 		)
 		(pin "13"
-			(uuid "80fca18b-26f4-4f21-a39a-2c854a760db8")
+			(uuid "11953fbe-cb91-4349-9910-ab71361c4075")
 		)
 		(pin "1"
-			(uuid "ce939fef-df81-48c1-826a-69a808b96e26")
+			(uuid "c9db2393-651d-45b9-90c0-bad3caa84113")
 		)
 		(pin "3"
-			(uuid "8c647bde-614d-4c1b-b2a4-715d67868f58")
+			(uuid "a4bbab7a-3a55-47fd-b2c7-dff6d42b50e0")
 		)
 		(pin "14"
-			(uuid "779d4da5-c8e6-4a42-b59b-1cf00be616b5")
+			(uuid "484f06a7-aba0-4a71-b726-0acf46907d3b")
 		)
 		(pin "11"
-			(uuid "42215479-47f8-4f5c-9fc9-df1b2b286791")
+			(uuid "cc179692-e9a9-4036-bba4-ea84962c1486")
 		)
 		(pin "10"
-			(uuid "b68b5bc9-12ee-457f-93cb-d02e27ba3282")
+			(uuid "193e591a-4b32-49a6-8887-5a4fee90c39f")
 		)
 		(pin "7"
-			(uuid "cbbdba2a-edf1-4ad3-9ce6-cdcbcb1d5407")
+			(uuid "d09e7ebe-20d5-418f-a47c-a8eddc2ce19c")
 		)
 		(pin "5"
-			(uuid "d18a980c-3aba-4771-b2f3-e9b47d1c82c0")
+			(uuid "99e0a41a-d5a5-46a7-b5cf-220585c0c549")
 		)
 		(pin "8"
-			(uuid "a42c0bd8-6542-4401-8858-88cd9d866397")
+			(uuid "4e7cc0a4-4584-459e-a882-9237cdee8336")
 		)
 		(pin "2"
-			(uuid "a950fb79-ce5c-4098-90b0-130181fd9980")
+			(uuid "68ede647-e2b3-4b45-9509-78051a3ce5b0")
 		)
 		(pin "15"
-			(uuid "873cfe6d-3ff9-4f02-99f4-d6ef986b9ecf")
+			(uuid "7aeaa810-b1f9-4ebf-87bc-d88427207852")
 		)
 		(pin "12"
-			(uuid "5c3cb21c-e742-47f0-9c4f-e579da9db2e3")
+			(uuid "07d90571-bbc4-4b22-9550-cd1abc1b80dc")
 		)
 		(pin "4"
-			(uuid "2ca8fac5-24fd-46ad-9dfa-8d05eea0477e")
+			(uuid "f6b7f323-87c6-44a9-85c5-708e695ba1ae")
 		)
 		(pin "6"
-			(uuid "9d601789-a378-47ba-acfa-181b8c173145")
+			(uuid "6898e9cd-ce24-4687-a7b3-afed18342bcb")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -16696,18 +16396,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "bf5a6609-9db8-497c-8670-0d28d7e8cd66")
+			(uuid "635d73b9-3aa6-4005-90e6-91f2a696ae2d")
 		)
 		(pin "1"
-			(uuid "6fcc619d-2ebf-422e-a122-8affff8f3e75")
+			(uuid "b2c192ef-d565-44ca-b9f3-daff808ab7a1")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP57")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP57")
@@ -16795,10 +16489,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "4094069a-d7ed-4ab6-a2b6-51738977a49c")
+			(uuid "7cdeb0a8-e3b5-4f6d-b154-c675066acd01")
 		)
 		(pin "1"
-			(uuid "2082862c-3d02-4626-b5b6-62f8073a51ac")
+			(uuid "a3ad65aa-d07f-4a92-92e8-06c753751130")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -16889,18 +16583,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "898efd0a-c695-402b-ad0b-fa834f29489f")
+			(uuid "537fe1e7-2cdb-4ac5-b931-4723b7edbe2d")
 		)
 		(pin "1"
-			(uuid "783cd058-e568-4e8f-9b88-adad837fe48d")
+			(uuid "b6e57d05-d95b-4fff-ae17-3c9228119b1b")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP59")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP59")
@@ -16989,18 +16677,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "e1ca7df3-2dc8-4ee4-b87d-df4cc29bbaf3")
+			(uuid "19ef743b-4836-4432-a715-fd68cb36f6aa")
 		)
 		(pin "1"
-			(uuid "f350f1fb-897f-42c1-bd22-d8784ed82584")
+			(uuid "01753594-0e7d-44a9-8586-0f3a560e1db8")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP48")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP48")
@@ -17089,18 +16771,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "6d14c681-82f8-4c2b-a478-ec06ccffd733")
+			(uuid "b40eb5f2-882b-43fd-a0e6-54f3a3dbe244")
 		)
 		(pin "1"
-			(uuid "725321b0-6da1-4fe0-9a28-f027f1bb0e71")
+			(uuid "fb4a5109-6f22-4b3e-b66d-d1713afc6f6f")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP75")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP75")
@@ -17189,18 +16865,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "f2bf7448-9c9b-4fa6-b088-ad9620b2669e")
+			(uuid "c207fe7e-acc3-43e7-a77c-0f4b1c77a0c9")
 		)
 		(pin "1"
-			(uuid "39dc8085-6657-4afe-8c30-cbd29d6e41b1")
+			(uuid "77b6c5c3-9957-4992-8a38-1c370fbacc0a")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP20")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP20")
@@ -17277,15 +16947,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "02a874d7-7801-4d0e-8ac6-e68f0119d523")
+			(uuid "83db3993-6eb0-4f99-993c-d597d3372f3d")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR075")
@@ -17374,18 +17038,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "5ccbdd50-8beb-48da-bb5b-3887cb583ed0")
+			(uuid "e5d1dab0-ced8-47ea-adf0-7a52bebe8f98")
 		)
 		(pin "1"
-			(uuid "d9389f96-be1b-4c8f-8455-ee4209fcebd0")
+			(uuid "8090cded-b966-4513-955b-685f8250cdcc")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP31")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP31")
@@ -17474,18 +17132,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "70881237-92ca-410f-9e02-7d381dbc4b5b")
+			(uuid "fb540664-3a19-45b2-9691-bfa6673db12d")
 		)
 		(pin "1"
-			(uuid "ed984569-08b3-4313-b9a6-0c62dc487337")
+			(uuid "39c6bb51-2b03-4987-9f4e-bba6c2a2911d")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP46")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP46")
@@ -17574,18 +17226,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "ae57b168-9a19-4cd4-b248-31b83d815862")
+			(uuid "21d859d2-d6a4-4429-9ea9-340ad2acd9a9")
 		)
 		(pin "1"
-			(uuid "51cd0218-b597-49c1-b450-46aae7afe834")
+			(uuid "b8496652-8114-487c-a582-7fe3509a204b")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP37")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP37")
@@ -17674,18 +17320,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "a703527d-385b-43eb-8eba-ff3cf3ad4914")
+			(uuid "feba63df-108a-496c-8e9d-9e8e46017f8a")
 		)
 		(pin "1"
-			(uuid "61126cb7-8345-48b9-b9f9-d325ab7ce75e")
+			(uuid "daa81a0e-7bc8-4700-b27b-7ad8df526b7f")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP61")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP61")
@@ -17774,18 +17414,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "8ae4a9cc-4c30-47bc-af4e-a35f90499f44")
+			(uuid "31dbd85a-2fa6-45e3-ae37-472233e5b4f0")
 		)
 		(pin "1"
-			(uuid "424eadf6-6f8b-4c42-8272-7f502c2c2e6d")
+			(uuid "7e620e54-680e-47a1-8b32-104b081655a0")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP67")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP67")
@@ -17874,18 +17508,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "2cda1da9-8b5a-4dda-b345-2105bfbf1d3c")
+			(uuid "8a65d69d-96ef-48c6-b46a-efb5a4b9ace9")
 		)
 		(pin "1"
-			(uuid "21df12f7-50b2-4b51-bf4d-0029e1339605")
+			(uuid "25b289f2-a54f-4469-ba8e-1dd83d114602")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP80")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP80")
@@ -17974,18 +17602,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "91e1569d-edcd-4d31-8807-e068150f6467")
+			(uuid "88cb5214-0714-413d-b27b-9c9c1b0865ab")
 		)
 		(pin "1"
-			(uuid "809bc9c7-7fff-4c46-b716-b2d479dbc9a0")
+			(uuid "62c09013-47d5-496a-b861-2d76c3000633")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP45")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP45")
@@ -18062,15 +17684,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "c52be9f2-660c-4dea-b4a0-dc7bf7d5cb07")
+			(uuid "e636276f-1a2e-4d70-8712-36d843a07292")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#FLG06")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#FLG06")
@@ -18159,18 +17775,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "7d8144d6-20ac-4184-9925-d695d4189d34")
+			(uuid "1b4f7f8c-7d73-43ea-a195-e4667f56be3e")
 		)
 		(pin "1"
-			(uuid "0bd080bc-8ef4-4a8c-b294-69fca1886b94")
+			(uuid "212f8170-ba7a-4855-8d09-2a86ff0100ff")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP82")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP82")
@@ -18269,132 +17879,126 @@
 			)
 		)
 		(pin "8"
-			(uuid "3f988fa7-cf7a-4836-99b8-8580f910ee5d")
+			(uuid "b94d90a7-689b-48f9-8300-d354d80ded0a")
 		)
 		(pin "20"
-			(uuid "7aebcbb3-81dd-4e5f-9515-24dd234a9946")
+			(uuid "72a4ee8c-ec39-4938-843d-26aaacb25267")
 		)
 		(pin "19"
-			(uuid "a942ddfa-148b-4c01-980e-8ac59cd56b82")
+			(uuid "3b1f014a-daed-4240-9d93-59ce1edbe72b")
 		)
 		(pin "2"
-			(uuid "33092e9b-86f4-4030-95c2-9bd7d188a54f")
+			(uuid "ac0f2ca6-2031-48bd-ba20-d5a9b65180e4")
 		)
 		(pin "6"
-			(uuid "654c91c5-addc-4d79-8064-7c61496d5ecb")
+			(uuid "a190e218-ad7b-4463-9d57-7b328a8e61e4")
 		)
 		(pin "1"
-			(uuid "212f36f8-2c74-49f8-a977-a5f914942d77")
+			(uuid "0274d40d-125e-4cc7-a723-1d8d8726d530")
 		)
 		(pin "3"
-			(uuid "32dc2897-01b5-4551-a0f1-75004bdf7a9a")
+			(uuid "29755463-4887-4aa3-821c-040ab0cd13a0")
 		)
 		(pin "17"
-			(uuid "8371ca1b-6925-4b61-a198-c16aedb7358c")
+			(uuid "45f4a1e1-8249-4368-951d-97febdb4ee1f")
 		)
 		(pin "6"
-			(uuid "47d2b22b-339f-4924-9c2e-1ae67fb7f01f")
+			(uuid "f7cf9261-2780-4e71-a444-bc89ffb964ce")
 		)
 		(pin "15"
-			(uuid "ba47de45-fee8-4f1b-ae52-4d4beef569bf")
+			(uuid "342aa257-c5a8-4d1f-b544-694f397b2f2b")
 		)
 		(pin "2"
-			(uuid "921e75a2-dbc1-461f-859b-76130c411ea5")
+			(uuid "cbd7008a-9243-4254-8636-ef49fcb27a14")
 		)
 		(pin "12"
-			(uuid "ada01276-1c63-425c-bbc4-7f93db4a5ca9")
+			(uuid "3f9eaa8a-5976-4ae2-b941-abbcdb259391")
 		)
 		(pin "12"
-			(uuid "fba6d510-0d85-49a2-a6c7-00342a4775b1")
+			(uuid "5c9b8335-e8cd-4640-93d7-f658a7c162d2")
 		)
 		(pin "18"
-			(uuid "42de4c6d-e594-43c6-be57-4e0ddf14b721")
+			(uuid "62b2c947-60f2-450c-80bb-977ace0d30b1")
 		)
 		(pin "9"
-			(uuid "dfbe7716-95ce-41f0-bbc2-58655c9dc077")
+			(uuid "5d271450-08cf-4df7-9519-e908667e42c7")
 		)
 		(pin "7"
-			(uuid "464a0480-dc52-4021-8f80-38f9c37fc038")
+			(uuid "0be3cf5d-1f6b-4de2-a0f0-7891d0f73137")
 		)
 		(pin "1"
-			(uuid "284719db-3a2d-4792-acd5-faee550ea306")
+			(uuid "6aa42dff-0c8f-43f8-b417-50053ece1887")
 		)
 		(pin "4"
-			(uuid "5c3d6268-3fa0-443c-b4f4-e6144ef978c9")
+			(uuid "61c9609f-b398-4097-8a1a-4c8c0413374e")
 		)
 		(pin "11"
-			(uuid "e4f13f5b-78c7-4ff6-9df9-d8639bef4178")
+			(uuid "327739bb-fe4d-4b6a-bbde-90161f6ae8a0")
 		)
 		(pin "5"
-			(uuid "85443d9c-8ea4-4a84-8b1f-3e6e8ce4fe7a")
+			(uuid "c0fdc48c-4ffa-4b05-8d90-f80be6af1b2a")
 		)
 		(pin "5"
-			(uuid "ab217cf0-115b-449d-bb1f-99a82491474b")
+			(uuid "35f97530-7f4e-4e1b-903f-463e2e16b889")
 		)
 		(pin "13"
-			(uuid "3d3153ed-c2cd-4bec-869e-a1b9518bc03d")
+			(uuid "4bb5f644-0156-4508-afde-1aa76c61f3ac")
 		)
 		(pin "19"
-			(uuid "8e25d3ea-7e02-47e5-8bdd-9143a3bd2a56")
+			(uuid "9c17e534-8fab-4c24-adac-1f01447e9f91")
 		)
 		(pin "20"
-			(uuid "40f8f6b4-c00b-46f6-981f-911f70ec6227")
+			(uuid "9d665984-6449-4c20-952f-dd558eb525bb")
 		)
 		(pin "14"
-			(uuid "876c2066-b3cb-423a-b3fb-89fe8b7a7d75")
+			(uuid "fc4d9070-12c5-468f-86a0-227f29308102")
 		)
 		(pin "3"
-			(uuid "f6f980d6-afb1-4049-a4ba-6ce9f929be02")
+			(uuid "ce4f3d53-65f4-4888-acfb-203786768798")
 		)
 		(pin "16"
-			(uuid "716706e8-8c89-4374-bfde-276f2f0e02f1")
+			(uuid "bc89a68f-2ef9-43c8-a843-3b8064becccb")
 		)
 		(pin "8"
-			(uuid "7dad399f-2309-490c-9e44-9ce52433081c")
+			(uuid "40453b1f-ecaa-402e-8e30-3798ee97b836")
 		)
 		(pin "9"
-			(uuid "ede48abc-c9d0-4c8e-915e-01fd44ad6567")
+			(uuid "9edbb6a7-92d5-4647-ac98-0bd9de46b6fb")
 		)
 		(pin "14"
-			(uuid "a6f9dc72-998c-487f-9c6b-b797c8c24d7f")
+			(uuid "30b881e3-b24c-479b-b6eb-d9ab51d6b59c")
 		)
 		(pin "18"
-			(uuid "1d4dd92d-1a8e-4042-8ea5-8fcbbb063191")
+			(uuid "6538e8f7-5cde-40f6-b53f-3f9b9c0b2022")
 		)
 		(pin "4"
-			(uuid "f2d11fa6-3025-423d-bfc0-8a66d6360cfe")
+			(uuid "460bdcc2-46f5-47c4-a8e7-a58a9b3c2151")
 		)
 		(pin "17"
-			(uuid "04620113-4b76-469f-8589-78526f8a76af")
+			(uuid "811b636d-3380-42f3-ad17-567348bfb94e")
 		)
 		(pin "16"
-			(uuid "f41b2b55-afc5-4bbc-aa02-14d44d4c4706")
+			(uuid "2b8107cd-6ceb-465e-ba54-50fe9d4cfb75")
 		)
 		(pin "10"
-			(uuid "c5cca180-f7e7-46d4-9ec3-095091ad223e")
+			(uuid "edf37beb-9b16-460a-af7c-c14c9fc51929")
 		)
 		(pin "15"
-			(uuid "2341e470-eb94-4307-9707-68cbef963e01")
+			(uuid "714d749a-c198-457e-b757-50c739d5b40b")
 		)
 		(pin "7"
-			(uuid "cc90494f-a7d6-49be-ac46-104292bc6368")
+			(uuid "efd62414-a128-4f11-88e6-e97ee23a13f0")
 		)
 		(pin "13"
-			(uuid "8d62f55c-24db-47f2-b0a0-0eb6e4210add")
+			(uuid "07c8cb19-0b2e-4f73-9298-b95004be41f0")
 		)
 		(pin "11"
-			(uuid "f8028cc9-4d46-4bab-8160-51da5fcf2c9b")
+			(uuid "68651b4a-6789-43a3-9288-4003fbcbe2b6")
 		)
 		(pin "10"
-			(uuid "6fd5dc36-5468-4e58-88f5-2121becf3cf4")
+			(uuid "334fa655-b346-4def-a847-2565410876d8")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "J2")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "J2")
@@ -18483,18 +18087,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "e2778808-a010-44d0-9fd9-272dc4f89046")
+			(uuid "11a177ae-ba11-417e-bdf1-ba68d3040c9c")
 		)
 		(pin "1"
-			(uuid "e32151b7-6c95-4cee-834b-9d2c9ffa7b2d")
+			(uuid "e58eb4ad-31da-401d-89c7-f9d72320a8fa")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP55")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP55")
@@ -18583,18 +18181,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "9daa547e-572e-4543-bc15-b2c4eb6e4823")
+			(uuid "214fd089-3157-4014-9128-3143624c0dd9")
 		)
 		(pin "1"
-			(uuid "d5da248a-9acd-41db-a2ef-3deb582406ca")
+			(uuid "13057abf-41df-4b5a-9f82-b823833afc5a")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP32")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP32")
@@ -18693,132 +18285,126 @@
 			)
 		)
 		(pin "33"
-			(uuid "89e4137b-125c-476e-89fc-47a38f433f63")
+			(uuid "d718d585-fb01-48ff-9d74-86b7528b2e25")
 		)
 		(pin "21"
-			(uuid "ad0d2d6d-fd9b-4d0b-8b72-df35953fbc7c")
+			(uuid "35d2bb2f-be33-4dd9-a140-5fdbea05bf76")
 		)
 		(pin "29"
-			(uuid "3947dff7-0310-4fe8-bb1c-ca12fe5a80b6")
+			(uuid "bd30a2cb-ba23-4f93-b31b-fd2394bffc08")
 		)
 		(pin "30"
-			(uuid "70443bf7-87a0-4461-9f12-82b9d6ab298d")
+			(uuid "9e270949-3691-4af6-9d0a-839b3cf8699c")
 		)
 		(pin "30"
-			(uuid "c2277ada-f7e6-4c86-a2be-450807a808cd")
+			(uuid "392b522c-9b47-4c1a-8518-7134947715c9")
 		)
 		(pin "25"
-			(uuid "3ed90ceb-0f50-4b24-a444-0ccd6ea74258")
+			(uuid "11149fb9-e314-41c7-94ac-d6804df592d0")
 		)
 		(pin "28"
-			(uuid "1fb4f934-2574-4bce-b011-ee5b69e981b3")
+			(uuid "df101458-67e7-40f4-9b6c-6929bc50471b")
 		)
 		(pin "34"
-			(uuid "72fa6754-25a5-40a5-9588-044c159de809")
+			(uuid "142d4c6e-b15b-4747-b7ab-afc26846dabe")
 		)
 		(pin "27"
-			(uuid "b355a8d2-d78a-43d6-8e0f-25d6d4a83ca9")
+			(uuid "8ee3b7d7-93b1-4a7c-a88e-ce0aad1c930b")
 		)
 		(pin "35"
-			(uuid "c9528fbc-13c2-42a6-8739-5dba1528be15")
+			(uuid "ec682467-306b-42ab-bf2e-7a9c9cbdc4fb")
 		)
 		(pin "26"
-			(uuid "87702cfd-6143-45c2-9d95-45b52cd54870")
+			(uuid "41cdd6f4-1c83-4c76-b63a-58701e3773a2")
 		)
 		(pin "36"
-			(uuid "9c11d788-fc09-49a7-b341-7f201949c52c")
+			(uuid "c1ab1056-4f02-49d4-aee5-b7dbe22b414e")
 		)
 		(pin "39"
-			(uuid "dc1f10bf-d487-40a4-9f35-72d7655267d0")
+			(uuid "27149bc9-0881-464a-999b-1d1f4d9a8ac3")
 		)
 		(pin "40"
-			(uuid "fe3ac922-9e34-40cd-9c01-ba22936f12ad")
+			(uuid "07a4238e-3537-49f9-9583-cb8e39a48b63")
 		)
 		(pin "28"
-			(uuid "90fc6dec-1eb0-4845-ab59-b32168797971")
+			(uuid "06a84870-14d8-46e4-a9af-8c357f54bfaa")
 		)
 		(pin "24"
-			(uuid "db4fcf05-5d37-443d-89d0-d2c364931a98")
+			(uuid "54834c24-a619-476b-9974-4946931ba6cd")
 		)
 		(pin "38"
-			(uuid "7beb4fb2-5998-4859-838c-7dbf9d458d33")
+			(uuid "8c5a9dcd-ca79-4c37-9306-dafbefdb22c2")
 		)
 		(pin "38"
-			(uuid "8e79fc92-505f-43f7-8d53-f5a23e16ba45")
+			(uuid "b11b2d73-1eff-4a72-ba0b-c35111515401")
 		)
 		(pin "31"
-			(uuid "cb9c304f-3b65-49ce-b862-da4141a3cb5b")
+			(uuid "1746d086-4c6a-46f6-b192-ccb6707652e1")
 		)
 		(pin "31"
-			(uuid "9724f89c-960b-4127-a820-b044094ae593")
+			(uuid "34d0021b-8bb4-4901-a5fe-59fb9c01d56d")
 		)
 		(pin "23"
-			(uuid "0af6b602-cea7-4eb8-9828-bbe6261c0dcf")
+			(uuid "8549decd-7380-4d5d-85c2-6a8c378c5829")
 		)
 		(pin "35"
-			(uuid "b1c4ed4d-9e69-46ff-b7cf-740ec6ec9429")
+			(uuid "dc914718-312d-4041-9012-badff14e75b5")
 		)
 		(pin "25"
-			(uuid "30069891-80d5-46d2-9eed-bd578ec0d131")
+			(uuid "9be60be7-120b-4941-a6c5-e09f0981b905")
 		)
 		(pin "22"
-			(uuid "06cc5b14-1110-4030-83c2-5d5748417f20")
+			(uuid "52c245e1-2789-4670-9cc9-6f6586f298be")
 		)
 		(pin "39"
-			(uuid "8b2112b7-1f9e-47ed-ab5c-d83d70dc31a3")
+			(uuid "e4480fdd-bc4a-4a51-a3c0-2d1848a11e89")
 		)
 		(pin "36"
-			(uuid "d49f31f9-9d82-48b2-92da-c68e5f9229c2")
+			(uuid "cf7fe68b-9d4c-464d-b2de-a6de5affb4de")
 		)
 		(pin "37"
-			(uuid "b2aef5db-7136-40fa-92b0-a57872dfa442")
+			(uuid "f5395b44-47e8-4cc3-bdf8-34583f1f72db")
 		)
 		(pin "26"
-			(uuid "97aaa837-cfe1-4d8c-ac6d-3b550db15903")
+			(uuid "4b722479-5b66-4706-8bce-3d31b420075e")
 		)
 		(pin "40"
-			(uuid "702537ed-ceda-4cb9-b7e7-6397192f786a")
+			(uuid "ff1f5ea3-ed33-458a-8e84-c9143d72ba0e")
 		)
 		(pin "27"
-			(uuid "04ab71ff-2a47-45c2-bca1-80beadd887d8")
+			(uuid "a99996a7-f40c-4b93-8e6e-c29602ed13d1")
 		)
 		(pin "32"
-			(uuid "41963916-6916-49c0-90c4-1cfac6a37c3b")
+			(uuid "253c77c5-e062-4ba8-be60-34155aff49db")
 		)
 		(pin "23"
-			(uuid "9100ce10-1c15-4627-b560-8924fa784783")
+			(uuid "64627b1a-9ec7-474c-bb86-0cd2f2d5995d")
 		)
 		(pin "22"
-			(uuid "06070b34-3e20-4cb5-a5dd-5e700ed79198")
+			(uuid "8dd3df86-f426-4212-974b-d6c799cbd6bb")
 		)
 		(pin "37"
-			(uuid "cd70c28e-1062-404d-be91-3c5f45d1c540")
+			(uuid "7e0e7306-0279-40c4-8e62-97904ebe817d")
 		)
 		(pin "29"
-			(uuid "4b7a905c-99eb-48b3-909d-f6b08e4cf907")
+			(uuid "8c376fb0-9993-4639-b6b1-cc358bbbdf62")
 		)
 		(pin "33"
-			(uuid "9c62ef9c-b273-4757-8b18-603e0db13722")
+			(uuid "786c4cd8-f7eb-4564-86bd-6a9e05cea8d7")
 		)
 		(pin "24"
-			(uuid "68b87470-f02a-48e4-80d4-ea08631c8dd2")
+			(uuid "76fd5129-98cb-46f5-b417-a8eb00a8d026")
 		)
 		(pin "32"
-			(uuid "40c5624f-45ad-43eb-9965-e55f6fa839ff")
+			(uuid "d088f145-8da7-4699-ba83-8e9e31203309")
 		)
 		(pin "21"
-			(uuid "a9505538-9ba6-444d-a2c2-57152e2452b1")
+			(uuid "0f095a44-f30b-43e8-b630-440fce2b430f")
 		)
 		(pin "34"
-			(uuid "c15a795f-f38e-4cc4-84fd-ca7b73b8a038")
+			(uuid "fc18a952-294c-4d84-9680-2849bbb4e6d6")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "J3")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "J3")
@@ -18907,18 +18493,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "c9807730-22e9-438c-93ca-ffbdaa224446")
+			(uuid "0cbbb3aa-358f-44e7-9873-796659639738")
 		)
 		(pin "1"
-			(uuid "7b3496ee-4148-48f9-bd0d-3f9d3d4e8a59")
+			(uuid "315fe2ed-1e44-4ba1-8590-f5a3398ab329")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP25")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP25")
@@ -18995,15 +18575,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "d96de3ad-ca3f-4503-b074-35e8a1c932d4")
+			(uuid "51528866-5f44-4633-8164-3bb839dc6577")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0108")
@@ -19080,15 +18654,9 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfe02224-4527-47c4-84e3-888e4d618feb")
+			(uuid "cee1f661-6531-41c8-b3b8-ed90b405b219")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "#PWR0106")
@@ -19340,18 +18908,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "c90eba41-91d9-4023-8cfd-1306a89d2e52")
+			(uuid "a1e9b2f8-5b8d-40bd-8a86-7c3d2d851e8f")
 		)
 		(pin "1"
-			(uuid "e0bbf74c-54cd-451d-9d3c-19a702600d44")
+			(uuid "93fcc22b-7e51-460a-bf96-d1f235b7ec03")
 		)
 		(instances
-			(project ""
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "R29")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "R29")
@@ -19440,18 +19002,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "4b1753ab-eada-40f5-8b79-4ec4252aa2da")
+			(uuid "0fc811e4-ee9d-4808-a0ad-978caa3380eb")
 		)
 		(pin "1"
-			(uuid "b258bfd4-4422-4734-8eff-1bbe2246efe3")
+			(uuid "f307894c-c802-4c40-991a-f67fadfa33ea")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP56")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP56")
@@ -19542,64 +19098,64 @@
 			)
 		)
 		(pin "26"
-			(uuid "18f069c1-8287-4d50-aa00-b0876f8fa2ad")
+			(uuid "78c73a67-25e8-4a73-ad7a-6a3e3cf39509")
 		)
 		(pin "33"
-			(uuid "53bd2162-fe2c-467d-b2ab-61300a0fce96")
+			(uuid "723a0b50-3fdb-407b-8054-5552167f6a3e")
 		)
 		(pin "24"
-			(uuid "85331147-1a1e-46a8-a5b7-dc95a5043f8e")
+			(uuid "9bf1e197-5c69-4ac1-8785-84a704e23a51")
 		)
 		(pin "25"
-			(uuid "6a73bda2-4495-4675-92d4-e318355668dc")
+			(uuid "d64dd42d-f0cb-436b-844d-8f52c14e25a2")
 		)
 		(pin "35"
-			(uuid "72ebbb87-6b7c-4e1a-9642-99efe0ee6773")
+			(uuid "09aca6fb-f54d-4d7e-8c89-341e99027ed0")
 		)
 		(pin "36"
-			(uuid "51808dd5-7967-45ba-956c-c9c5dbf046bb")
+			(uuid "205d461c-e197-439a-980b-8233525eeb9c")
 		)
 		(pin "37"
-			(uuid "c33e8f33-e96a-48dc-886f-003fc66d58e6")
+			(uuid "424494a5-f0cd-48bb-91f5-45269d3b94b4")
 		)
 		(pin "38"
-			(uuid "dcf5ac36-397e-4bf7-84d5-5c482148058b")
+			(uuid "dd88c27c-e95a-4002-8476-7f1f210311f4")
 		)
 		(pin "39"
-			(uuid "cd31748d-8f00-4724-8446-6b342669b625")
+			(uuid "3f4bb4b8-0f29-4e6e-b788-dd4ebd08356e")
 		)
 		(pin "40"
-			(uuid "c65da29b-2c59-4f17-8388-044c17ecf33a")
+			(uuid "89148e2e-c1f6-4d4c-ae78-f511f8bfc1ae")
 		)
 		(pin "34"
-			(uuid "24b8d9fd-44f9-45fb-8231-8196293a4b4d")
+			(uuid "7d7b4a55-5c0b-4e4a-a12b-6b6ee8dd7e03")
 		)
 		(pin "21"
-			(uuid "c528e27a-0f80-45e0-ac2f-631033b3c94d")
+			(uuid "9f9d8894-d7eb-4496-8844-191ea2d703be")
 		)
 		(pin "30"
-			(uuid "f90bbeed-40c9-40cb-9f90-8bf56fb1e014")
+			(uuid "3dc34138-6149-47bf-909f-f6cb507354a2")
 		)
 		(pin "29"
-			(uuid "05e0d550-f05d-4e3c-aa31-55d89c180b45")
+			(uuid "2f4d3ccb-a159-4819-945c-cd0be4cdf25a")
 		)
 		(pin "22"
-			(uuid "c66a3e0b-835e-461a-a079-42e4713ab118")
+			(uuid "7f47726a-5ce7-47aa-9101-c91bd184f8f8")
 		)
 		(pin "31"
-			(uuid "29041b31-9692-4919-a133-aead9d35258b")
+			(uuid "81a25852-1ebc-409f-b6fd-df075e30a47c")
 		)
 		(pin "32"
-			(uuid "26fe4266-9c8b-4458-870d-e4fab31a65ed")
+			(uuid "e9985415-2c26-4535-a96e-285ad75001c2")
 		)
 		(pin "28"
-			(uuid "0daec02b-c4a5-478f-b5a8-ecc816f9222b")
+			(uuid "5275a59e-fe66-4af3-a8d9-d70af85db4b6")
 		)
 		(pin "23"
-			(uuid "54eecc0e-deab-415b-a4d7-e9eb1e8d0dca")
+			(uuid "9a218153-5a46-4f7b-8910-4671d0e5da2c")
 		)
 		(pin "27"
-			(uuid "eb383dde-f767-4a45-a747-583d4bc8ab0b")
+			(uuid "02382b70-427d-4db1-9af9-b5c1849d5873")
 		)
 		(instances
 			(project "Intro-to-CAD-2026"
@@ -19690,18 +19246,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "de03354a-4fe1-4b0d-a6c0-c1358edfd672")
+			(uuid "da8f4925-95ff-4a0f-8d40-ec48b7118380")
 		)
 		(pin "1"
-			(uuid "8505f67e-ef8f-4768-be4f-0f0fd0fc5bb7")
+			(uuid "19291120-99ba-46eb-9154-853475598f23")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP35")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP35")
@@ -19790,18 +19340,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "c101bf68-f195-4dce-814a-f57831bee1b8")
+			(uuid "e0ca384d-cbf2-4004-acde-3b36c8e9088e")
 		)
 		(pin "1"
-			(uuid "66620dea-f954-4a48-a2d4-e0b88f05ebf5")
+			(uuid "0c955b66-f34b-45be-a367-90e7eaeae905")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP41")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP41")
@@ -19890,18 +19434,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "3f9b91e2-7a61-4de0-ac2a-b4459dc7d45f")
+			(uuid "9d73b83b-8ff2-4e8f-9ff6-a5ecb5db6799")
 		)
 		(pin "1"
-			(uuid "6ff1a7ca-b544-4aa5-ae56-681a4a940037")
+			(uuid "11b4f4bf-c972-42bc-93af-904e8156f933")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP64")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP64")
@@ -19990,18 +19528,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "75bef4e9-50a8-4646-b598-1110d80cbde4")
+			(uuid "f823d0dd-535e-48d1-83e7-a85b228d9bef")
 		)
 		(pin "1"
-			(uuid "3182668c-6487-439d-8a03-af3ffc1ed492")
+			(uuid "4dfae6cd-f5e9-4139-9cd8-b05bf7e59bcb")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP81")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP81")
@@ -20090,18 +19622,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "f8f88743-2b7f-4a9b-ba2b-0667fa8fc852")
+			(uuid "496442d3-3203-4462-91e8-8643c2920109")
 		)
 		(pin "1"
-			(uuid "65672c17-82ee-4c30-b3d4-2cf4586367ae")
+			(uuid "6259eee7-ea04-46e9-97fa-c6fec8f40fc7")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP52")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP52")
@@ -20190,18 +19716,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "2d791331-a0d6-4c01-9641-5a8e165b7b91")
+			(uuid "fe0b67f2-6bd5-4bed-b0ce-03c2a5981d17")
 		)
 		(pin "1"
-			(uuid "2d070b1a-c2ec-4b8e-b2ce-cdaf6d993552")
+			(uuid "9f71b7d0-c6af-435b-94a3-d6f6d4da4274")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP40")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP40")
@@ -20290,18 +19810,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "fe8f0eb4-c481-48cf-9e59-f5fd9d33df79")
+			(uuid "e5153002-f5ff-4efc-aaa3-9bb0b330f049")
 		)
 		(pin "1"
-			(uuid "ba4d8bc5-8aca-4f06-8681-8ecb63cd9a1f")
+			(uuid "1b274b1f-7dd5-435c-9dd4-8094a986691d")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP43")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP43")
@@ -20390,18 +19904,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "dbc5e7b7-230b-4e39-90d6-eec54c6f5b48")
+			(uuid "64cab610-da1b-4c66-9a31-18e97d88fc0d")
 		)
 		(pin "1"
-			(uuid "51ebfedd-b666-45d7-8cd2-db84dd7c7992")
+			(uuid "1efcd86a-32b1-4f12-8568-77252f338b75")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP78")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP78")
@@ -20490,18 +19998,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "261e5360-21ff-4520-b29a-d1f67db9e021")
+			(uuid "7de00ee3-b95f-4d97-bc04-7910ec9b5817")
 		)
 		(pin "1"
-			(uuid "6a8a4d17-4e72-4391-889b-def6d9bd618d")
+			(uuid "6cfa8616-8144-405e-ba3d-a3660b717587")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP21")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP21")
@@ -20590,18 +20092,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "3265cf39-7f5e-48ec-92f6-0d5b35cca14d")
+			(uuid "d41b1687-d77c-4db2-a8ea-f09df3b5a8de")
 		)
 		(pin "1"
-			(uuid "365d150a-0fac-4ef3-9c10-56eb31855d74")
+			(uuid "e13b0295-47cc-402f-af57-0ef29eb7effa")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP76")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP76")
@@ -20690,18 +20186,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "6ebfd997-9778-48fa-bcde-b55c13da4da6")
+			(uuid "21e2a44d-57b8-47dd-a629-75785f4b518e")
 		)
 		(pin "1"
-			(uuid "cb9a370b-7e12-4c04-bdaf-f1e63bbfea30")
+			(uuid "ec01921f-ee59-4076-9aae-f9de890da80e")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP68")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP68")
@@ -20790,18 +20280,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "6a45ac3c-4742-4483-b225-783d60dde6e0")
+			(uuid "9b31526c-9fc6-4031-8859-9fdc1c6f9484")
 		)
 		(pin "1"
-			(uuid "842e21a5-5f73-4674-864d-14354118eaec")
+			(uuid "33e1ba05-5c1e-4d3c-8c27-a4cc95c66aed")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP30")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP30")
@@ -20890,18 +20374,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "4fcbfe34-49ce-4c85-b60e-304d38036074")
+			(uuid "b1f241e3-e212-4bfb-8f53-c919b713000b")
 		)
 		(pin "1"
-			(uuid "7b5b387d-d993-41fa-a37d-4f099d3bf234")
+			(uuid "b9532d59-5445-4192-8bc2-aeb54b13c826")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP27")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP27")
@@ -20990,18 +20468,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "17ce6b2b-d405-43b1-b0ef-122d04f2b5af")
+			(uuid "719ec95f-171a-48a9-b190-3e602539d740")
 		)
 		(pin "1"
-			(uuid "65785b5f-c8b9-4800-bd75-930e41f1efe5")
+			(uuid "23a95250-dc41-4408-a81f-4a5be4c79bd9")
 		)
 		(instances
-			(project "PCM1808_Sound_Card"
-				(path "/04b4b624-9c46-4205-aa19-e3356b229b17/06516c79-bfe4-40ed-9cd2-382c74eaa2ba"
-					(reference "JP23")
-					(unit 1)
-				)
-			)
 			(project "Intro-to-CAD-2026"
 				(path "/c12dc015-e6cb-468c-8de4-269c3106de0e/ed44bed7-549c-4a19-9507-4d924c35e7b0"
 					(reference "JP23")
